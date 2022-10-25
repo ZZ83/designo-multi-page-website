@@ -1,0 +1,86 @@
+/********************** Variables **********************/
+    // Descriptive base colors
+    $gray:        hsl(0, 0%, 49%);
+    $black:       hsl(0, 0%, 0%);
+    $white:       hsl(0, 0%, 100%);
+    $lightgray:   hsl(0, 0%, 90%);
+    $lightergray: hsl(0, 0%, 95%);
+
+/********************** Functions **********************/
+    // Convert pixes to rems
+    @function rem($size) {
+        @return calc($size / 16px * 1rem);
+    }
+
+/********************** Mixins **********************/
+    // BEM selectors
+    @mixin ele($element) {
+        &__#{$element} {
+            @content;
+        }
+    }
+
+    @mixin mod($modifier) {
+        &--#{$modifier} {
+            @content;
+        }
+    }
+
+    // Media queries
+    @mixin mq($break) {
+        @if $break == "medium" {
+            @media (min-width: 768px) {
+                @content;
+            }
+        }
+        @else if $break == "large" {
+            @media (min-width: 1360px) {
+                @content;
+            }
+        }
+    }
+
+/********************** PLACHOLDERS **********************/
+    // Flexbox 
+    %flex {
+        display: flex;
+    }
+
+    %flex-ai-c {
+        align-items: center;
+    }
+
+    %flex-jc-sb {
+        justify-content: space-between;
+    }
+
+    %flex-jc-sa {
+        justify-content: space-around;
+    }
+
+    %flex-jc-c {
+        justify-content: center;
+    }
+
+    %flex-d-r {
+        flex-direction: row;
+    }
+
+    %flex-d-c {
+        flex-direction: column;
+    }
+
+    %flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // Layout
+    %center {
+        margin: 0 auto;
+    }
+
+    %width-100 {
+        width: 100%;
+    }
