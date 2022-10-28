@@ -1,16 +1,1 @@
 @use '../abstracts' as *;
-
-header {
-    height: rem(79px);
-    margin-bottom: rem(124px);
-    border-bottom: 1px solid #E5E5E5;
-    @extend %flex;
-    @extend %flex-ai-c;
-    @extend %flex-jc-sb;
-    @include mq(medium) {
-        height: rem(88px);
-    }
-    @include mq(large) {
-        height: rem(128px);
-    }
-}

@@ -1,12 +1,1 @@
 @use '../abstracts' as *;
-
-footer {
-    height: rem(72px);
-    position: relative;
-    @extend %flex;
-    @extend %flex-ai-c;
-    @extend %flex-jc-sb;
-    @include mq(medium) {
-        height: rem(95px);
-    }
-}
