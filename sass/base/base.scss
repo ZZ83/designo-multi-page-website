@@ -11,3 +11,50 @@
 body {
     font-family: 'Jost', sans-serif;
 }
+
+h1,
+h2,
+h3 {
+    margin:  0;
+    padding: 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+h1 {
+    font-size:   rem(32px);
+    line-height: rem(36px);
+    @include mq(medium) {
+        font-size:   rem(48px);
+        line-height: rem(48px);
+    }
+}
+
+h2 {
+    font-size:      rem(28px);
+    line-height:    rem(36px);
+    letter-spacing: rem(1.4px);
+    @include mq(medium) {
+        font-size:      rem(40px);
+        line-height:    rem(48px);
+        letter-spacing: rem(2px);
+    }
+}
+
+h3 {
+    font-size:      rem(20px);
+    line-height:    rem(26px);
+    letter-spacing: rem(5px);
+}
+
+p {
+    font-size:   rem(16px);
+    line-height: rem(26px);
+    text-align: center;
+    font-weight: 400;
+}
+
+span {
+    font-size:      rem(15px);
+    letter-spacing: rem(5px);
+}

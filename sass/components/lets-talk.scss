@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.lets-talk {
+    &__header {
+        font-size:   rem(32px);
+        @include mq(medium) {
+            font-size:   rem(40px);
+            line-height: rem(40px);
+        }
+        @include mq(large) {
+            // may have to set text-align to left on large devices
+        }
+    }
+}

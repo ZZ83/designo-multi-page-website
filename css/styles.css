@@ -335,6 +335,57 @@ body {
   font-family: "Jost", sans-serif;
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.0875rem;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: 0.125rem;
+  }
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.3125rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+span {
+  font-size: 0.9375rem;
+  letter-spacing: 0.3125rem;
+}
+
 .logo {
   width: 7.1875rem;
   height: 2rem;
@@ -402,6 +453,16 @@ body {
 }
 .close-button:hover {
   color: hsl(0deg, 0%, 49%);
+}
+
+.lets-talk__header {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .lets-talk__header {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
