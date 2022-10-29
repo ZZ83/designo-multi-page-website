@@ -1,10 +1,11 @@
 /********************** Variables **********************/
     // Descriptive base colors
-    $gray:        hsl(0, 0%, 49%);
-    $black:       hsl(0, 0%, 0%);
-    $white:       hsl(0, 0%, 100%);
-    $lightgray:   hsl(0, 0%, 90%);
-    $lightergray: hsl(0, 0%, 95%);
+    $peach:      hsl(11, 73%,  66%);
+    $black:      hsl(270, 3%,  11%);
+    $white:      hsl(0,   0%, 100%);
+    $darkGray:   hsl(264, 5%,  20%);
+    $lightGray:  hsl(210, 17%, 95%);
+    $lightPeach: hsl(11, 100%, 80%);
 
 /********************** Functions **********************/
     // Convert pixes to rems
