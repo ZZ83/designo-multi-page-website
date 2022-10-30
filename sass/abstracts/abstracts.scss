@@ -77,6 +77,11 @@
         justify-content: center;
     }
 
+    // Border Raidus
+    %br-15 {
+        border-radius: 15px;
+    }
+
     // Layout
     %center {
         margin: 0 auto;

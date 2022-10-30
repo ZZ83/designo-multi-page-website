@@ -1,1 +1,9 @@
 @use '../abstracts' as *;
+
+header {
+    height: rem(96px);
+    background-color: red;
+    @include mq(medium) {
+        height: rem(155px);
+    }
+}
