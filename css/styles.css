@@ -374,6 +374,11 @@ span {
   letter-spacing: 0.3125rem;
 }
 
+.logo {
+  width: 12.625rem;
+  height: 1.6875rem;
+}
+
 .lets-talk__header {
   font-size: 2rem;
 }
