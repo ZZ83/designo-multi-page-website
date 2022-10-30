@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.primary-navigation {
+    
+    background-color: $black;
+    height: rem(235px);
+
+    &__link {
+        color: $white;
+        font-weight: 400;
+        font-size: rem(24px);
+        line-height: rem(25px);
+        letter-spacing: rem(2px);
+    }
+}

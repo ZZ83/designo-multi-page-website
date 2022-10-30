@@ -374,6 +374,19 @@ span {
   letter-spacing: 0.3125rem;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .logo {
   width: 12.625rem;
   height: 1.6875rem;
@@ -388,6 +401,18 @@ span {
     line-height: 2.5rem;
   }
 }
+.primary-navigation {
+  background-color: hsl(270deg, 3%, 11%);
+  height: 14.6875rem;
+}
+.primary-navigation__link {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0.125rem;
+}
+
 header {
   height: 6rem;
   background-color: red;
