@@ -8,31 +8,43 @@
     background-color: $peach;
     position: relative;
     overflow: hidden;
+    z-index: -1;
     background-image: url(../assets/home/desktop/bg-pattern-hero-home.svg);
     background-repeat: no-repeat;
     background-position: top rem(104px) right rem(-300px);
+    @extend %br-15;
     @include mq(medium) {
         background-position: top rem(120px) right rem(-120px);
     }
     @include mq(large) {
         background-position: top right;
+        display: flex;
+        height: rem(640px);
+        padding: 0;
     }
-    @extend %br-15;
     &__content {
+        margin: 0 auto;
+        max-width: 327px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 327px;
-        margin: 0 auto;
         @include mq(medium) {
             max-width: rem(575px);
+        }
+        @include mq(large) {
+           margin: rem(145px) rem(95px);
+           align-items: flex-start;
         }
     }
     &__header {
         padding-top:    rem(82px);
         padding-bottom: rem(30px);
+        @include mq(large) {
+            padding: 0;
+            margin-bottom: rem(24px);
+            text-align: left;
+        }
     }
-
     &__text{
         color: $white;
         font-weight: 400;
@@ -41,8 +53,10 @@
         @include mq(medium) {
             max-width: rem(445px);
         }
+        @include mq(large) {
+         text-align: left;
+        }
     }
-
     &__image {
         margin: auto;
         padding-top: 630px;
@@ -51,5 +65,11 @@
         left:   -9999px;
         right:  -9999px;
         bottom: -9999px;
+        @include mq(large) {
+            position: static;
+            padding-top: 0;
+            margin-top: -40px;
+            margin-right: -75px;
+        }
     }
 }

@@ -11,5 +11,6 @@ header {
     @extend %flex-jc-sb;
     @include mq(medium) {
         height: rem(155px);
+        position: static;
     }
 }
