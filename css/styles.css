@@ -327,6 +327,10 @@ header, .primary-navigation__inner {
   flex-direction: column;
 }
 
+.main-hero {
+  border-radius: 15px;
+}
+
 .primary-navigation, .primary-navigation__inner {
   width: 100%;
 }
@@ -353,6 +357,7 @@ h3 {
 }
 
 h1 {
+  color: hsl(0deg, 0%, 100%);
   font-size: 2rem;
   line-height: 2.25rem;
 }
@@ -415,6 +420,63 @@ span {
   width: 12.625rem;
   height: 1.6875rem;
   margin-top: 0.25rem;
+}
+
+.main-hero {
+  height: 52.6875rem;
+  padding: 0 0.625rem;
+  background-color: hsl(11deg, 73%, 66%);
+  position: relative;
+  overflow: hidden;
+  background-image: url(../assets/home/desktop/bg-pattern-hero-home.svg);
+  background-repeat: no-repeat;
+  background-position: top 6.5rem right -18.75rem;
+}
+@media (min-width: 768px) {
+  .main-hero {
+    background-position: top 7.5rem right -7.5rem;
+  }
+}
+@media (min-width: 1360px) {
+  .main-hero {
+    background-position: top right;
+  }
+}
+.main-hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 327px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .main-hero__content {
+    max-width: 35.9375rem;
+  }
+}
+.main-hero__header {
+  padding-top: 5.125rem;
+  padding-bottom: 1.875rem;
+}
+.main-hero__text {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+}
+@media (min-width: 768px) {
+  .main-hero__text {
+    max-width: 27.8125rem;
+  }
+}
+.main-hero__image {
+  margin: auto;
+  padding-top: 630px;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  right: -9999px;
+  bottom: -9999px;
 }
 
 .lets-talk__header {

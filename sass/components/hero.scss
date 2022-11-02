@@ -1,1 +1,55 @@
+@use '../abstracts' as *;
+
 // Have to overide the homepage h1 text-align on large devices and set it to text-align left
+
+.main-hero {
+    height: rem(843px);
+    padding: 0 rem(10px);
+    background-color: $peach;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../assets/home/desktop/bg-pattern-hero-home.svg);
+    background-repeat: no-repeat;
+    background-position: top rem(104px) right rem(-300px);
+    @include mq(medium) {
+        background-position: top rem(120px) right rem(-120px);
+    }
+    @include mq(large) {
+        background-position: top right;
+    }
+    @extend %br-15;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 327px;
+        margin: 0 auto;
+        @include mq(medium) {
+            max-width: rem(575px);
+        }
+    }
+    &__header {
+        padding-top:    rem(82px);
+        padding-bottom: rem(30px);
+    }
+
+    &__text{
+        color: $white;
+        font-weight: 400;
+        font-size: rem(15px);
+        line-height: rem(25px);
+        @include mq(medium) {
+            max-width: rem(445px);
+        }
+    }
+
+    &__image {
+        margin: auto;
+        padding-top: 630px;
+        position: absolute;
+        top:    -9999px;
+        left:   -9999px;
+        right:  -9999px;
+        bottom: -9999px;
+    }
+}
