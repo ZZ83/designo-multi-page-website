@@ -534,13 +534,17 @@ span {
   border-radius: 8px;
   font-weight: 500;
 }
+.btn:hover {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(11deg, 100%, 80%);
+}
 .btn--white {
   color: hsl(270deg, 3%, 11%);
   background-color: hsl(0deg, 0%, 100%);
 }
 .btn--peach {
-  color: hsl(270deg, 3%, 11%);
-  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(11deg, 73%, 66%);
 }
 
 .lets-talk__header {
