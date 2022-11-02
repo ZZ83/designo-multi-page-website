@@ -54,17 +54,22 @@ p {
     font-weight: 400;
 }
 
-span {
-    font-size:      rem(15px);
-    letter-spacing: rem(5px);
-}
-
 a {
     text-decoration: none;
 }
 
 ul {
     list-style-type: none;
+}
+
+li {
+    text-transform: uppercase;
+}
+
+span {
+    
+    font-size:      rem(15px);
+    letter-spacing: rem(5px);
 }
 
 .wrapper {

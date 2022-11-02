@@ -1,8 +1,13 @@
-document.querySelector(".icon").addEventListener("click", () => {
-   const nav =  document.querySelector("nav")
-   if(nav.style.display === "block") {
-        nav.style.display = "none";
-   } else {
-        nav.style.display = "block";
-   }
+const mainNav   = document.querySelector('.primary-navigation');
+const navToggle = document.querySelector('.mobile-menu-icons');
+
+navToggle.addEventListener('click', () => {
+    const vis = mainNav.getAttribute("data-visible");
+    if (vis === "false") {
+        mainNav  .setAttribute("data-visible",  true);
+        navToggle.setAttribute("aria-expanded", true);
+    } else if (vis === "true") {
+        mainNav  .setAttribute("data-visible",  false);
+        navToggle.setAttribute("aria-expanded", false);
+    }
 })
