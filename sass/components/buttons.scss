@@ -1,2 +1,21 @@
 @use '../abstracts' as *;
 
+.btn {
+    width: rem(152px);
+    height: rem(56px);
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-weight: 500;
+    @extend %flex-center;
+
+    &--white {
+        color: $black;
+        background-color: $white;
+    }
+
+    &--peach {
+        color: $black;
+        background-color: $white;
+    }
+}
+

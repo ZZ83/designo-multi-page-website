@@ -311,11 +311,11 @@ template {
 /********************** Functions **********************/
 /********************** Mixins **********************/
 /********************** PLACHOLDERS **********************/
-header, .primary-navigation__inner {
+header, .primary-navigation__inner, .main-hero__content {
   display: flex;
 }
 
-header {
+header, .main-hero__content {
   align-items: center;
 }
 
@@ -323,8 +323,14 @@ header, .primary-navigation__inner {
   justify-content: space-between;
 }
 
-.primary-navigation__inner {
+.primary-navigation__inner, .main-hero__content {
   flex-direction: column;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-hero {
@@ -347,6 +353,11 @@ body {
   margin: 0 auto;
   max-width: 90rem;
   font-family: "Jost", sans-serif;
+}
+@media (min-width: 768px) {
+  body {
+    overflow-y: scroll !important;
+  }
 }
 
 h1,
@@ -423,14 +434,17 @@ span {
   height: 1.6875rem;
   margin-top: 0.25rem;
 }
+.logo__image {
+  width: 100%;
+}
 
 .main-hero {
   height: 52.6875rem;
   padding: 0 0.625rem;
+  overflow: hidden;
   background-color: hsl(11deg, 73%, 66%);
   position: relative;
-  overflow: hidden;
-  z-index: -1;
+  z-index: 1;
   background-image: url(../assets/home/desktop/bg-pattern-hero-home.svg);
   background-repeat: no-repeat;
   background-position: top 6.5rem right -18.75rem;
@@ -442,18 +456,17 @@ span {
 }
 @media (min-width: 1360px) {
   .main-hero {
-    background-position: top right;
     display: flex;
     height: 40rem;
     padding: 0;
+    background-position: top right;
   }
 }
 .main-hero__content {
   margin: 0 auto;
   max-width: 327px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+  z-index: 3;
 }
 @media (min-width: 768px) {
   .main-hero__content {
@@ -472,8 +485,8 @@ span {
 }
 @media (min-width: 1360px) {
   .main-hero__header {
+    margin-bottom: 1.5625rem;
     padding: 0;
-    margin-bottom: 1.5rem;
     text-align: left;
   }
 }
@@ -482,6 +495,7 @@ span {
   font-weight: 400;
   font-size: 0.9375rem;
   line-height: 1.5625rem;
+  margin-bottom: 1.5rem;
 }
 @media (min-width: 768px) {
   .main-hero__text {
@@ -491,12 +505,14 @@ span {
 @media (min-width: 1360px) {
   .main-hero__text {
     text-align: left;
+    margin-bottom: 2.5rem;
   }
 }
 .main-hero__image {
   margin: auto;
   padding-top: 630px;
   position: absolute;
+  z-index: 2;
   top: -9999px;
   left: -9999px;
   right: -9999px;
@@ -504,11 +520,27 @@ span {
 }
 @media (min-width: 1360px) {
   .main-hero__image {
-    position: static;
+    margin-top: -2.5rem;
+    margin-right: -4.6875rem;
     padding-top: 0;
-    margin-top: -40px;
-    margin-right: -75px;
+    position: static;
   }
+}
+
+.btn {
+  width: 9.5rem;
+  height: 3.5rem;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-weight: 500;
+}
+.btn--white {
+  color: hsl(270deg, 3%, 11%);
+  background-color: hsl(0deg, 0%, 100%);
+}
+.btn--peach {
+  color: hsl(270deg, 3%, 11%);
+  background-color: hsl(0deg, 0%, 100%);
 }
 
 .lets-talk__header {
@@ -525,6 +557,7 @@ span {
   position: fixed;
   top: -100%;
   left: 0;
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0.85);
 }
 .primary-navigation[data-visible=true] {
@@ -592,14 +625,11 @@ span {
 header {
   height: 6rem;
   padding: 0 5%;
-  position: sticky;
-  top: 0;
   background-color: white;
 }
 @media (min-width: 768px) {
   header {
     height: 9.6875rem;
-    position: static;
   }
 }
 

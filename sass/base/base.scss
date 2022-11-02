@@ -12,6 +12,9 @@ body {
     margin: 0 auto;
     max-width: rem(1440px);
     font-family: 'Jost', sans-serif;
+    @include mq(medium) {
+        overflow-y: scroll !important;
+    }
 }
 
 h1,

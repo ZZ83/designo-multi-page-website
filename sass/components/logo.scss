@@ -4,4 +4,7 @@
     width: rem(202px);
     height: rem(27px);
     margin-top: rem(4px);
+    &__image {
+        width: 100%;
+    }
 }
