@@ -24,7 +24,6 @@ h3 {
     padding: 0;
     font-weight: 500;
     text-align: center;
-    text-transform: uppercase;
 }
 
 h1 {
@@ -38,6 +37,7 @@ h1 {
 }
 
 h2 {
+    text-transform: uppercase;
     font-size:      rem(28px);
     line-height:    rem(36px);
     letter-spacing: rem(1.4px);
