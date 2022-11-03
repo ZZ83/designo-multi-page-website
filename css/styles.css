@@ -311,7 +311,7 @@ template {
 /********************** Functions **********************/
 /********************** Mixins **********************/
 /********************** PLACHOLDERS **********************/
-header, .primary-navigation__inner, .main-hero__content {
+header, .primary-navigation__inner, .main-hero__content, .design-card__link {
   display: flex;
 }
 
@@ -323,7 +323,11 @@ header, .primary-navigation__inner {
   justify-content: space-between;
 }
 
-.primary-navigation__inner, .main-hero__content {
+.design-card__link {
+  justify-content: center;
+}
+
+.primary-navigation__inner, .main-hero__content, .design-card__link {
   flex-direction: column;
 }
 
@@ -333,7 +337,7 @@ header, .primary-navigation__inner {
   justify-content: center;
 }
 
-.main-hero {
+.main-hero, .design-card {
   border-radius: 15px;
 }
 
@@ -367,6 +371,7 @@ h3 {
   padding: 0;
   font-weight: 500;
   text-align: center;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -420,8 +425,10 @@ li {
 }
 
 span {
+  font-weight: 500;
   font-size: 0.9375rem;
   letter-spacing: 0.3125rem;
+  text-transform: uppercase;
 }
 
 .wrapper {
@@ -436,6 +443,95 @@ span {
 }
 .logo__image {
   width: 100%;
+}
+
+.design-card {
+  width: 100%;
+  height: 15.625rem;
+  text-align: center;
+  color: white;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.design-card:hover {
+  background-blend-mode: screen;
+  background-color: rgb(231, 129, 107);
+}
+@media (min-width: 768px) {
+  .design-card {
+    height: 12.5rem;
+  }
+}
+@media (min-width: 1360px) {
+  .design-card {
+    height: 19.25rem;
+  }
+}
+.design-card__link {
+  color: inherit;
+  width: 100%;
+  height: 100%;
+}
+.design-card__header {
+  margin-bottom: 2rem;
+}
+.design-card__text::after {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  padding-left: 0.9375rem;
+  content: url("../assets/shared/desktop/icon-right-arrow.svg");
+}
+.design-card--home {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+@media (min-width: 1360px) {
+  .design-card--home {
+    height: 100%;
+  }
+}
+.design-card--web {
+  background-image: url("../assets/home/mobile/image-web-design.jpg");
+}
+@media (min-width: 768px) {
+  .design-card--web {
+    background-image: url("../assets/home/tablet/image-web-design.jpg");
+  }
+}
+@media (min-width: 1360px) {
+  .design-card--web {
+    background-image: url("../assets/home/desktop/image-web-design-large.jpg");
+  }
+}
+.design-card--app {
+  background-image: url("../assets/home/mobile/image-app-design.jpg");
+}
+@media (min-width: 768px) {
+  .design-card--app {
+    background-image: url("../assets/home/tablet/image-app-design.jpg");
+  }
+}
+@media (min-width: 1360px) {
+  .design-card--app {
+    background-image: url("../assets/home/desktop/image-app-design.jpg");
+  }
+}
+.design-card--graphic {
+  background-image: url("../assets/home/mobile/image-graphic-design.jpg");
+}
+@media (min-width: 768px) {
+  .design-card--graphic {
+    background-image: url("../assets/home/tablet/image-graphic-design.jpg");
+  }
+}
+@media (min-width: 1360px) {
+  .design-card--graphic {
+    background-image: url("../assets/home/desktop/image-graphic-design.jpg");
+  }
 }
 
 .main-hero {
@@ -634,6 +730,21 @@ header {
 @media (min-width: 768px) {
   header {
     height: 9.6875rem;
+  }
+}
+
+.cards {
+  margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
+  display: grid;
+  gap: 24px;
+}
+@media (min-width: 1360px) {
+  .cards {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    height: 40rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
