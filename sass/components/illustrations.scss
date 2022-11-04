@@ -1,1 +1,70 @@
-// Have to overide the homepage h3 text-align on medium devices and set it back to center on large devices
+@use '../abstracts' as *;
+
+.home-illustrations {
+    @include mq(large) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.home-illustration {
+    margin-bottom: rem(80px);
+    @extend %flex;
+    @extend %flex-d-c;
+    @include mq(medium) {
+        flex-direction: row;
+    }
+    @include mq(large) {
+        max-width: rem(350px);
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    &__image {
+        width: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../assets/shared/desktop/bg-pattern-small-circle.svg");
+        @include mq(medium) {
+            margin-right: rem(40px);
+        }
+        @include mq(large) {
+            max-width: rem(202px);
+            margin-right: 0;
+        }
+    }
+
+    &__inner {
+        @include mq(medium) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        @include mq(large) {
+            align-items: center;
+        }
+    }
+    &__header {
+        margin-top: rem(48px);
+        margin-bottom: rem(32px);
+        @include mq(medium) {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        @include mq(large) {
+            margin-top:    rem(48px);
+            margin-bottom: rem(32px);
+        }
+    }
+    &__text {
+        @include mq(medium) {
+            text-align: left;
+        }
+        @include mq(large) {
+            text-align: center;
+        }
+    }
+}
+
