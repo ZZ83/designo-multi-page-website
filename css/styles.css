@@ -810,6 +810,20 @@ span {
   }
 }
 
+@media (min-width: 1360px) {
+  .background {
+    width: 62.875rem;
+    height: 37.125rem;
+    position: absolute;
+    z-index: -10;
+    background-color: hsl(210deg, 17%, 95%);
+  }
+  .background--475 {
+    top: 29.6875rem;
+    border-radius: 297px 297px 297px 0px;
+  }
+}
+
 header {
   height: 6rem;
   padding: 0 5%;
