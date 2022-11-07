@@ -580,8 +580,8 @@ span {
   }
 }
 .main-hero__header {
-  padding-top: 5.125rem;
-  padding-bottom: 1.875rem;
+  padding-top: 5rem;
+  padding-bottom: 1.75rem;
 }
 @media (min-width: 1360px) {
   .main-hero__header {
@@ -609,13 +609,18 @@ span {
 }
 .main-hero__image {
   margin: auto;
-  padding-top: 630px;
+  padding-top: 41.875rem;
   position: absolute;
   z-index: 2;
   top: -9999px;
   left: -9999px;
   right: -9999px;
   bottom: -9999px;
+}
+@media (min-width: 768px) {
+  .main-hero__image {
+    padding-top: 40.9375rem;
+  }
 }
 @media (min-width: 1360px) {
   .main-hero__image {

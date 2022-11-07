@@ -40,8 +40,8 @@
         }
     }
     &__header {
-        padding-top:    rem(82px);
-        padding-bottom: rem(30px);
+        padding-top:    rem(80px);
+        padding-bottom: rem(28px);
         @include mq(large) {
             padding: 0;
             text-align: left;
@@ -63,13 +63,17 @@
     }
     &__image {
         margin: auto;
-        padding-top: 630px;
+        padding-top: rem(670px);
         position: absolute;
         z-index: 2;
         top:    -9999px;
         left:   -9999px;
         right:  -9999px;
         bottom: -9999px;
+        @include mq(medium) {
+            padding-top: rem(655px);
+            
+        }
         @include mq(large) {
             margin-top:   rem(-40px);
             margin-right: rem(-75px);
