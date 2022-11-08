@@ -337,7 +337,7 @@ header, .primary-navigation__inner {
   justify-content: center;
 }
 
-.main-hero, .design-card {
+.design-card {
   border-radius: 15px;
 }
 
@@ -433,8 +433,18 @@ span {
 }
 
 .wrapper {
-  width: 90%;
   margin: 0 auto;
+  width: calc(100% - 3rem);
+}
+@media (min-width: 768px) {
+  .wrapper {
+    width: calc(100% - 5rem);
+  }
+}
+@media (min-width: 1360px) {
+  .wrapper {
+    width: calc(100% - 20.625rem);
+  }
 }
 
 .logo {
@@ -548,6 +558,7 @@ span {
 }
 @media (min-width: 768px) {
   .main-hero {
+    border-radius: 0.9375rem;
     background-position: top 7.5rem right -7.5rem;
   }
 }
@@ -628,6 +639,20 @@ span {
     margin-right: -4.6875rem;
     padding-top: 0;
     position: static;
+  }
+}
+
+.hero-wrapper {
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .hero-wrapper {
+    width: calc(100% - 5rem);
+  }
+}
+@media (min-width: 1360px) {
+  .hero-wrapper {
+    width: calc(100% - 20.625rem);
   }
 }
 
@@ -826,7 +851,6 @@ span {
 
 header {
   height: 6rem;
-  padding: 0 5%;
   background-color: white;
 }
 @media (min-width: 768px) {
