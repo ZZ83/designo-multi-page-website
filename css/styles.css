@@ -545,13 +545,26 @@ span {
   }
 }
 
+.hero-wrapper {
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .hero-wrapper {
+    width: calc(100% - 5rem);
+  }
+}
+@media (min-width: 1360px) {
+  .hero-wrapper {
+    width: calc(100% - 20.625rem);
+  }
+}
+
 .main-hero {
   height: 52.6875rem;
-  padding: 0 0.625rem;
+  padding: 0 1.5rem;
   overflow: hidden;
   background-color: hsl(11deg, 73%, 66%);
   position: relative;
-  z-index: 1;
   background-image: url(../assets/home/desktop/bg-pattern-hero-home.svg);
   background-repeat: no-repeat;
   background-position: top 6.5rem right -18.75rem;
@@ -572,7 +585,7 @@ span {
 }
 .main-hero__content {
   margin: 0 auto;
-  max-width: 20.4375rem;
+  max-width: 20.625rem;
   position: relative;
   z-index: 3;
 }
@@ -583,7 +596,6 @@ span {
 }
 @media (min-width: 1360px) {
   .main-hero__content {
-    max-width: 33.75rem;
     height: 21.875rem;
     margin: 9.0625rem 0 0 5.9375rem;
     align-items: flex-start;
@@ -592,7 +604,12 @@ span {
 }
 .main-hero__header {
   padding-top: 5rem;
-  padding-bottom: 1.75rem;
+  padding-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .main-hero__header {
+    padding-top: 3.75rem;
+  }
 }
 @media (min-width: 1360px) {
   .main-hero__header {
@@ -619,40 +636,26 @@ span {
   }
 }
 .main-hero__image {
-  margin: auto;
-  padding-top: 41.875rem;
+  padding-top: 42.125rem;
   position: absolute;
-  z-index: 2;
-  top: -9999px;
-  left: -9999px;
-  right: -9999px;
-  bottom: -9999px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 @media (min-width: 768px) {
   .main-hero__image {
-    padding-top: 40.9375rem;
+    padding-top: 39.875rem;
   }
 }
 @media (min-width: 1360px) {
   .main-hero__image {
-    margin-top: -2.5rem;
-    margin-right: -4.6875rem;
+    width: 29.3125rem;
+    height: 51.25rem;
+    margin-top: 1rem;
+    margin-left: auto;
     padding-top: 0;
     position: static;
-  }
-}
-
-.hero-wrapper {
-  margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .hero-wrapper {
-    width: calc(100% - 5rem);
-  }
-}
-@media (min-width: 1360px) {
-  .hero-wrapper {
-    width: calc(100% - 20.625rem);
+    transform: initial;
   }
 }
 

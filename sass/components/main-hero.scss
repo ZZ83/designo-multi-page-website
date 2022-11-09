@@ -1,0 +1,84 @@
+@use '../abstracts' as *;
+
+.main-hero {
+    height: rem(843px);
+    padding: 0 rem(24px);
+    overflow: hidden;
+    background-color: $peach;
+    position: relative;
+    background-image: url(../assets/home/desktop/bg-pattern-hero-home.svg);
+    background-repeat: no-repeat;
+    background-position: top rem(104px) right rem(-300px);
+    @include mq(medium) {
+        border-radius:  rem(15px);
+        background-position: top rem(120px) right rem(-120px);
+    }
+    @include mq(large) {
+        display: flex;
+        height: rem(640px);
+        padding: 0;
+        background-position: top right;
+    }
+    &__content {
+        margin: 0 auto;
+        max-width: rem(330px);
+        position: relative;
+        z-index: 3;
+        @extend %flex;
+        @extend %flex-d-c;
+        @extend %flex-ai-c;
+        @include mq(medium) {
+            max-width: rem(575px);
+        }
+        @include mq(large) {
+            height: rem(350px);
+            margin: rem(145px) 0 0 rem(95px);
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    }
+    &__header {
+        padding-top:    rem(80px);
+        padding-bottom: rem(24px);
+        @include mq(medium) {
+            padding-top: rem(60px);
+        }
+        @include mq(large) {
+            padding: 0;
+            text-align: left;
+        }
+    }
+    &__text{
+        color: $white;
+        font-weight: 400;
+        font-size: rem(15px);
+        line-height: rem(25px);
+        margin-bottom: rem(24px);
+        @include mq(medium) {
+            max-width: rem(445px);
+        }
+        @include mq(large) {
+            text-align: left;
+            margin-bottom: 0;
+        }
+    }
+    &__image {
+        padding-top: rem(674px);
+        position: absolute;
+        top:  50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include mq(medium) {
+            padding-top: rem(638px);
+        }
+        @include mq(large) {
+            width:  rem(469px);
+            height: rem(820px);
+            margin-top: 1rem;
+            margin-left: auto;
+            padding-top: 0;
+            position: static;
+            transform: initial;
+        }
+    }
+}
