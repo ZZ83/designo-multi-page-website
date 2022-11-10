@@ -1,1 +1,12 @@
 @use '../abstracts' as *;
+
+footer {
+    height: rem(815px);
+    background-color: $black;
+    @include mq(medium) {
+        height: rem(423px);
+    }
+    @include mq(large) {
+        height: rem(393px);
+    }
+}
