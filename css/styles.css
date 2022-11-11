@@ -337,7 +337,7 @@ header, .primary-navigation__inner {
   justify-content: center;
 }
 
-.design-card {
+.lets-talk, .design-card {
   border-radius: 15px;
 }
 
@@ -679,6 +679,23 @@ span {
   background-color: hsl(11deg, 73%, 66%);
 }
 
+.lets-talk {
+  margin-top: 6rem;
+  height: 23.6875rem;
+  background-color: hsl(11deg, 73%, 66%);
+}
+@media (min-width: 768px) {
+  .lets-talk {
+    margin-top: 4.1875rem;
+    height: 21.875rem;
+  }
+}
+@media (min-width: 1360px) {
+  .lets-talk {
+    margin-top: 10rem;
+    height: 18.25rem;
+  }
+}
 .lets-talk__header {
   font-size: 2rem;
 }
@@ -695,9 +712,6 @@ span {
   }
 }
 
-.home-illustration {
-  margin-bottom: 5rem;
-}
 @media (min-width: 768px) {
   .home-illustration {
     flex-direction: row;
@@ -863,6 +877,7 @@ header {
 }
 
 footer {
+  position: relative;
   height: 50.9375rem;
   background-color: hsl(270deg, 3%, 11%);
 }

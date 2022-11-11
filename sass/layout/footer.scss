@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 footer {
+    position: relative;
     height: rem(815px);
     background-color: $black;
     @include mq(medium) {
