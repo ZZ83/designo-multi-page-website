@@ -712,16 +712,22 @@ span {
   }
 }
 
+.home-illustration {
+  margin-bottom: 5rem;
+}
 @media (min-width: 768px) {
   .home-illustration {
+    margin-bottom: 1.5rem;
     flex-direction: row;
   }
 }
 @media (min-width: 1360px) {
   .home-illustration {
+    width: 32%;
     max-width: 21.875rem;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
   }
 }
 .home-illustration__image {
@@ -733,6 +739,7 @@ span {
 }
 @media (min-width: 768px) {
   .home-illustration__image {
+    max-width: 25.25rem;
     margin-right: 2.5rem;
   }
 }

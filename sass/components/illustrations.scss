@@ -10,15 +10,18 @@
 .home-illustration {
     @extend %flex;
     @extend %flex-d-c;
+    margin-bottom: rem(80px);  
     @include mq(medium) {
+        margin-bottom: rem(24px); 
         flex-direction: row;
     }
     @include mq(large) {
+        width: 32%;
         max-width: rem(350px);
         flex-direction: column;
         align-items: center;
+        margin-bottom: 0;
     }
-    
     &__image {
         width: 100%;
         background-size: 100%;
@@ -26,6 +29,7 @@
         background-position: center;
         background-image: url("../assets/shared/desktop/bg-pattern-small-circle.svg");
         @include mq(medium) {
+            max-width: rem(404px);
             margin-right: rem(40px);
         }
         @include mq(large) {
@@ -33,7 +37,6 @@
             margin-right: 0;
         }
     }
-
     &__inner {
         @include mq(medium) {
             display: flex;
