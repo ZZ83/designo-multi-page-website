@@ -354,6 +354,7 @@ header, .primary-navigation__inner {
 }
 
 body {
+  position: relative;
   margin: 0 auto;
   max-width: 90rem;
   font-family: "Jost", sans-serif;
@@ -870,6 +871,13 @@ span {
   .background--475 {
     top: 29.6875rem;
     border-radius: 297px 297px 297px 0px;
+  }
+  .background--1879 {
+    top: 117.4375rem;
+    right: 0;
+    opacity: 0.5;
+    border-radius: 297px 297px 297px 0px;
+    transform: rotate(-180deg);
   }
 }
 
