@@ -311,15 +311,15 @@ template {
 /********************** Functions **********************/
 /********************** Mixins **********************/
 /********************** PLACHOLDERS **********************/
-header, .primary-navigation__inner, .home-illustration, .main-hero__content, .design-card__link {
+header, .primary-navigation__inner, .home-illustration, .lets-talk, .main-hero__content, .design-card__link {
   display: flex;
 }
 
-header, .main-hero__content {
+header, .lets-talk, .main-hero__content {
   align-items: center;
 }
 
-header, .primary-navigation__inner {
+header, .primary-navigation__inner, .lets-talk {
   justify-content: space-between;
 }
 
@@ -327,7 +327,7 @@ header, .primary-navigation__inner {
   justify-content: center;
 }
 
-.primary-navigation__inner, .home-illustration, .main-hero__content, .design-card__link {
+.primary-navigation__inner, .home-illustration, .lets-talk, .main-hero__content, .design-card__link {
   flex-direction: column;
 }
 
@@ -408,10 +408,16 @@ h3 {
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
   text-align: center;
   font-weight: 400;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
 }
 
 a {
@@ -681,29 +687,40 @@ span {
 }
 
 .lets-talk {
-  position: relative;
-  z-index: 5;
+  height: 23.6875rem;
   margin-top: 6rem;
   margin-bottom: -11.875rem;
-  height: 23.6875rem;
+  padding: 4rem 1.5rem;
+  color: hsl(0deg, 0%, 100%);
   background-color: hsl(11deg, 73%, 66%);
+  position: relative;
+  z-index: 10;
 }
 @media (min-width: 768px) {
   .lets-talk {
+    height: 21.875rem;
     margin-top: 4.1875rem;
     margin-bottom: -5.375rem;
-    height: 21.875rem;
+    padding: 3.5625rem;
   }
 }
 @media (min-width: 1360px) {
   .lets-talk {
+    height: 18.25rem;
     margin-top: 10rem;
     margin-bottom: -4.5rem;
-    height: 18.25rem;
+    padding: 4.5rem 4.25rem;
+    flex-direction: row;
   }
+}
+.lets-talk__inner {
+  flex-grow: 2;
 }
 .lets-talk__header {
   font-size: 2rem;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
   .lets-talk__header {
@@ -711,6 +728,26 @@ span {
     line-height: 2.5rem;
   }
 }
+@media (min-width: 1360px) {
+  .lets-talk__header {
+    text-align: left;
+  }
+}
+.lets-talk__text {
+  max-width: 21.875rem;
+}
+@media (min-width: 768px) {
+  .lets-talk__text {
+    max-width: 29.375rem;
+  }
+}
+@media (min-width: 1360px) {
+  .lets-talk__text {
+    text-align: left;
+    max-width: 28.4375rem;
+  }
+}
+
 @media (min-width: 1360px) {
   .home-illustrations {
     display: flex;

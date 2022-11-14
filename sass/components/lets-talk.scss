@@ -1,31 +1,56 @@
 @use '../abstracts' as *;
 
 .lets-talk {
-    position: relative;
-    z-index: 5;
-    margin-top: rem(96px);
-    margin-bottom: rem(-190px);
     height: rem(379px);
+    margin-top:    rem(96px);
+    margin-bottom: rem(-190px);
+    padding: rem(64px) rem(24px);
+    color: $white;
     background-color: $peach;
+    position: relative;
+    z-index: 10;
     @extend %br-15;
+    @extend %flex;
+    @extend %flex-d-c;
+    @extend %flex-ai-c;
+    @extend %flex-jc-sb;
     @include mq(medium) {
-        margin-top: rem(67px);
-        margin-bottom: rem(-86px);
         height: rem(350px);
+        margin-top:    rem(67px);
+        margin-bottom: rem(-86px);
+        padding: rem(57px);
     }
     @include mq(large) {
-        margin-top: rem(160px);
-        margin-bottom: rem(-72px);
         height: rem(292px);
+        margin-top:    rem(160px);
+        margin-bottom: rem(-72px);
+        padding: rem(72px) rem(68px);
+        flex-direction: row;
+    }
+    &__inner {
+        flex-grow: 2;
     }
     &__header {
-        font-size:   rem(32px);
+        font-size: rem(32px);
+        text-transform: none;
+        letter-spacing: normal;
+        margin-bottom: 1rem;
         @include mq(medium) {
             font-size:   rem(40px);
             line-height: rem(40px);
         }
         @include mq(large) {
-            // may have to set text-align to left on large devices
+            text-align: left;
+        }
+    }
+    &__text {
+        max-width: rem(350px);
+        @include mq(medium) {
+            max-width: rem(470px);
+        }
+        @include mq(large) {
+            text-align: left;
+            max-width: rem(455px);
         }
     }
 }
