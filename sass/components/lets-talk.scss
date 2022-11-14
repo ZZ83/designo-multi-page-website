@@ -1,16 +1,21 @@
 @use '../abstracts' as *;
 
 .lets-talk {
+    position: relative;
+    z-index: 5;
     margin-top: rem(96px);
+    margin-bottom: rem(-190px);
     height: rem(379px);
     background-color: $peach;
     @extend %br-15;
     @include mq(medium) {
         margin-top: rem(67px);
+        margin-bottom: rem(-86px);
         height: rem(350px);
     }
     @include mq(large) {
         margin-top: rem(160px);
+        margin-bottom: rem(-72px);
         height: rem(292px);
     }
     &__header {
