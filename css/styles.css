@@ -695,6 +695,9 @@ span {
   background-color: hsl(11deg, 73%, 66%);
   position: relative;
   z-index: 10;
+  background-repeat: no-repeat;
+  background-position: center right -19.375rem;
+  background-image: url("../assets/shared/desktop/bg-pattern-call-to-action.svg");
 }
 @media (min-width: 768px) {
   .lets-talk {
@@ -702,6 +705,7 @@ span {
     margin-top: 4.1875rem;
     margin-bottom: -5.375rem;
     padding: 3.5625rem;
+    background-position: center right -10.625rem;
   }
 }
 @media (min-width: 1360px) {
@@ -711,6 +715,7 @@ span {
     margin-bottom: -4.5rem;
     padding: 4.5rem 4.25rem;
     flex-direction: row;
+    background-position: center right 0rem;
   }
 }
 .lets-talk__inner {

@@ -9,6 +9,9 @@
     background-color: $peach;
     position: relative;
     z-index: 10;
+    background-repeat: no-repeat;
+    background-position: center right rem(-310px);
+    background-image: url("../assets/shared/desktop/bg-pattern-call-to-action.svg");
     @extend %br-15;
     @extend %flex;
     @extend %flex-d-c;
@@ -19,6 +22,7 @@
         margin-top:    rem(67px);
         margin-bottom: rem(-86px);
         padding: rem(57px);
+        background-position: center right rem(-170px);
     }
     @include mq(large) {
         height: rem(292px);
@@ -26,6 +30,7 @@
         margin-bottom: rem(-72px);
         padding: rem(72px) rem(68px);
         flex-direction: row;
+        background-position: center right rem(0px);
     }
     &__inner {
         flex-grow: 2;
