@@ -1,49 +1,43 @@
 @use '../abstracts' as *;
 
 .secondary-navigation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @include mq(medium) {
-        
-        flex-direction: row;
-        justify-content: space-between;
-        border-bottom: 1px solid #979797;
+    &__inner {
+        @extend %flex;
+        @extend %flex-d-c;
+        @extend %flex-ai-c;
+        @include mq(medium) {
+            flex-direction: row;
+            border-bottom: 1px solid #979797;
+        }
     }
-
-
-    & > :first-child {
+    &__list {
+        padding-bottom: rem(32px); 
+        @include mq(medium) {
+            padding-bottom: rem(46px);
+        }
+    }
+    &__list:first-child {
         width: 100%;
         margin-bottom: rem(32px);
-        display: flex;
-        justify-content: center;
         border-bottom: 1px solid #979797;
-
+        @extend %flex;
+        @extend %flex-jc-c;
         @include mq(medium) {
             width: initial;
+            margin: rem(4px) auto 0 0;
             border: none;
-            margin: 0;
-            margin-right: auto;
         }
     }
-
-    & > :nth-last-child(-n+2) {
-
+    &__list:nth-last-child(-n+2) {
         @include mq(medium) {
             padding-left: 18px;
-           
         }
-        
     }
-
     &__link {
-        display: block;
         color: $white;
-        padding-bottom: rem(32px);
-        letter-spacing: rem(2px);
         font-size:   rem(14px);
         line-height: rem(14px);
+        letter-spacing: rem(2px);
         &:hover {
             text-decoration: underline;
             text-decoration-color: $white;
