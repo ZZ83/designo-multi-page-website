@@ -4,10 +4,13 @@ footer {
     position: relative;
     height: rem(815px);
     background-color: $black;
+    padding-top: rem(253px);
     @include mq(medium) {
         height: rem(423px);
+        padding-top: rem(166px);
     }
     @include mq(large) {
         height: rem(393px);
+        padding-top: rem(144px);
     }
 }

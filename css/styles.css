@@ -455,12 +455,12 @@ span {
 }
 
 .logo {
+  display: block;
   width: 12.625rem;
   height: 1.6875rem;
-  margin-top: 0.25rem;
 }
-.logo__image {
-  width: 100%;
+.logo--dark {
+  margin-top: 0.25rem;
 }
 
 .design-card {
@@ -889,6 +889,51 @@ span {
   text-decoration-color: hsl(264deg, 5%, 20%);
 }
 
+.secondary-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .secondary-navigation {
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #979797;
+  }
+}
+.secondary-navigation > :first-child {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #979797;
+}
+@media (min-width: 768px) {
+  .secondary-navigation > :first-child {
+    width: initial;
+    border: none;
+    margin: 0;
+    margin-right: auto;
+  }
+}
+@media (min-width: 768px) {
+  .secondary-navigation > :nth-last-child(-n+2) {
+    padding-left: 18px;
+  }
+}
+.secondary-navigation__link {
+  display: block;
+  color: hsl(0deg, 0%, 100%);
+  padding-bottom: 2rem;
+  letter-spacing: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+}
+.secondary-navigation__link:hover {
+  text-decoration: underline;
+  text-decoration-color: hsl(0deg, 0%, 100%);
+}
+
 .mobile-menu-icons {
   cursor: pointer;
   width: 1.5rem;
@@ -942,15 +987,18 @@ footer {
   position: relative;
   height: 50.9375rem;
   background-color: hsl(270deg, 3%, 11%);
+  padding-top: 15.8125rem;
 }
 @media (min-width: 768px) {
   footer {
     height: 26.4375rem;
+    padding-top: 10.375rem;
   }
 }
 @media (min-width: 1360px) {
   footer {
     height: 24.5625rem;
+    padding-top: 9rem;
   }
 }
 
