@@ -756,6 +756,12 @@ span {
 .icons {
   width: 11.5rem;
 }
+.icons__icon {
+  fill: hsl(11deg, 73%, 66%);
+}
+.icons__icon:hover {
+  fill: hsl(11deg, 100%, 80%);
+}
 
 @media (min-width: 1360px) {
   .home-illustrations {

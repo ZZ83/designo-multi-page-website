@@ -5,4 +5,10 @@
     @extend %flex;
     @extend %flex-ai-c;
     @extend %flex-jc-sb;
+    &__icon {
+        fill: $peach;
+    }
+    &__icon:hover {
+        fill: $lightPeach;
+    }
 }
