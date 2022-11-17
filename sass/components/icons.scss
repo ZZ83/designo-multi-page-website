@@ -1,0 +1,8 @@
+@use '../abstracts' as *;
+
+.icons {
+    width: rem(184px);
+    @extend %flex;
+    @extend %flex-ai-c;
+    @extend %flex-jc-sb;
+}
