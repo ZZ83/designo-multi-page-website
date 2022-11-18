@@ -993,11 +993,18 @@ span {
 }
 
 .info {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(210deg, 17%, 95%);
+  opacity: 0.5;
   text-align: center;
 }
 .info__header, .info__text {
   display: block;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+.info__header {
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 @media (min-width: 768px) {
   .info {

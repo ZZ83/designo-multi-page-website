@@ -13,13 +13,18 @@
 }
 
 .info {
-    color: $white;
-    // background-color: aqua;
+    color: $lightGray;
+    opacity: 0.5;
     text-align: center;
     &__header,
     &__text {
         display: block;
-        
+        font-size: 1rem;
+        line-height: rem(26px);
+    }
+    &__header {
+        letter-spacing: 1px;
+        font-weight: 500;
     }
     @include mq(medium) {
         text-align: left;
