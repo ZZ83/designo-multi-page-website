@@ -798,7 +798,6 @@ span {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../assets/shared/desktop/bg-pattern-small-circle.svg");
 }
 @media (min-width: 768px) {
   .home-illustration__image {
@@ -811,6 +810,15 @@ span {
     max-width: 12.625rem;
     margin-right: 0;
   }
+}
+.home-illustration__image--top {
+  background-image: url("../assets/shared/tablet/bg-pattern-small-circle-top.svg");
+}
+.home-illustration__image--bottom {
+  background-image: url("../assets/shared/tablet/bg-pattern-small-circle-bottom.svg");
+}
+.home-illustration__image--left {
+  background-image: url("../assets/shared/tablet/bg-pattern-small-circle-left.svg");
 }
 @media (min-width: 768px) {
   .home-illustration__inner {

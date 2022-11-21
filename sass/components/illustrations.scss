@@ -27,7 +27,6 @@
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url("../assets/shared/desktop/bg-pattern-small-circle.svg");
         @include mq(medium) {
             max-width: rem(404px);
             margin-right: rem(40px);
@@ -35,6 +34,15 @@
         @include mq(large) {
             max-width: rem(202px);
             margin-right: 0;
+        }
+        &--top {
+            background-image: url("../assets/shared/tablet/bg-pattern-small-circle-top.svg");
+        }
+        &--bottom {
+            background-image: url("../assets/shared/tablet/bg-pattern-small-circle-bottom.svg"); 
+        }
+        &--left {
+            background-image: url("../assets/shared/tablet/bg-pattern-small-circle-left.svg");
         }
     }
     &__inner {
