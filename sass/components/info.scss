@@ -1,21 +1,21 @@
 @use '../abstracts' as *;
 
-
-.filler {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // background-color: orange;
-    @include mq(medium) {
-        align-items: flex-end;
-        flex-direction: row;
-    }
-}
-
 .info {
+    margin-bottom: rem(40px);
     color: $lightGray;
     opacity: 0.5;
     text-align: center;
+    width: 100%;
+    height: rem(78px);
+    @include mq(medium) {
+        margin-bottom: 0;
+        width: rem(223px);
+        margin-right: rem(10px);
+    }
+    @include mq(large) {
+        width: rem(350px);
+        margin-right: rem(30px);
+    }
     &__header,
     &__text {
         display: block;

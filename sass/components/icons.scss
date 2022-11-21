@@ -11,4 +11,7 @@
     &__icon:hover {
         fill: $lightPeach;
     }
+    @include mq(medium) {
+        margin-left: auto;
+    }
 }
