@@ -1031,7 +1031,6 @@ span {
 
 header {
   height: 6rem;
-  background-color: white;
 }
 @media (min-width: 768px) {
   header {
