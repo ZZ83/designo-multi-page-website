@@ -454,15 +454,6 @@ span {
   }
 }
 
-.logo {
-  display: block;
-  width: 12.625rem;
-  height: 1.6875rem;
-}
-.logo--dark {
-  margin-top: 0.25rem;
-}
-
 .design-card {
   width: 100%;
   height: 15.625rem;
@@ -664,26 +655,6 @@ span {
     position: static;
     transform: initial;
   }
-}
-
-.btn {
-  width: 9.5rem;
-  height: 3.5rem;
-  text-transform: uppercase;
-  border-radius: 8px;
-  font-weight: 500;
-}
-.btn:hover {
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(11deg, 100%, 80%);
-}
-.btn--white {
-  color: hsl(270deg, 3%, 11%);
-  background-color: hsl(0deg, 0%, 100%);
-}
-.btn--peach {
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(11deg, 73%, 66%);
 }
 
 .lets-talk {
@@ -1027,6 +998,35 @@ span {
   .info {
     text-align: left;
   }
+}
+
+.logo {
+  display: block;
+  width: 12.625rem;
+  height: 1.6875rem;
+}
+.logo--dark {
+  margin-top: 0.25rem;
+}
+
+.btn {
+  width: 9.5rem;
+  height: 3.5rem;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-weight: 500;
+}
+.btn:hover {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(11deg, 100%, 80%);
+}
+.btn--white {
+  color: hsl(270deg, 3%, 11%);
+  background-color: hsl(0deg, 0%, 100%);
+}
+.btn--peach {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(11deg, 73%, 66%);
 }
 
 header {
