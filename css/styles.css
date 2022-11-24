@@ -311,7 +311,7 @@ template {
 /********************** Functions **********************/
 /********************** Mixins **********************/
 /********************** PLACHOLDERS **********************/
-header, .secondary-navigation__inner, .secondary-navigation__list:first-child, .primary-navigation__inner, .home-illustration, .icons, .lets-talk, .main-hero__content, .design-card__link {
+header, .primary-navigation__inner, .secondary-navigation__inner, .secondary-navigation__list:first-child, .home-illustration, .icons, .lets-talk, .main-hero__content, .design-card__link {
   display: flex;
 }
 
@@ -327,7 +327,7 @@ header, .primary-navigation__inner, .icons, .lets-talk {
   justify-content: center;
 }
 
-.secondary-navigation__inner, .primary-navigation__inner, .home-illustration, .lets-talk, .main-hero__content, .design-card__link {
+.primary-navigation__inner, .secondary-navigation__inner, .home-illustration, .lets-talk, .main-hero__content, .design-card__link {
   flex-direction: column;
 }
 
@@ -831,58 +831,6 @@ span {
   }
 }
 
-.primary-navigation {
-  height: 100%;
-  position: fixed;
-  top: -100%;
-  left: 0;
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.85);
-}
-.primary-navigation[data-visible=true] {
-  top: 6rem;
-}
-@media (min-width: 768px) {
-  .primary-navigation {
-    width: 23.125rem;
-    height: initial;
-    position: static;
-    background-color: transparent;
-  }
-}
-.primary-navigation__inner {
-  height: 14.6875rem;
-  padding: 3.125rem 5%;
-  background-color: hsl(270deg, 3%, 11%);
-}
-@media (min-width: 768px) {
-  .primary-navigation__inner {
-    padding: 0;
-    height: initial;
-    flex-direction: row;
-    background-color: initial;
-    justify-content: space-between;
-  }
-}
-.primary-navigation__link {
-  color: hsl(0deg, 0%, 100%);
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.5625rem;
-  letter-spacing: 0.125rem;
-}
-@media (min-width: 768px) {
-  .primary-navigation__link {
-    color: hsl(264deg, 5%, 20%);
-    font-size: 0.875rem;
-    line-height: 0.875rem;
-  }
-}
-.primary-navigation__link:hover {
-  text-decoration: underline;
-  text-decoration-color: hsl(264deg, 5%, 20%);
-}
-
 @media (min-width: 768px) {
   .secondary-navigation__inner {
     flex-direction: row;
@@ -1026,6 +974,58 @@ span {
 .btn--peach {
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(11deg, 73%, 66%);
+}
+
+.primary-navigation {
+  height: 100%;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.primary-navigation[data-visible=true] {
+  top: 6rem;
+}
+@media (min-width: 768px) {
+  .primary-navigation {
+    width: 23.125rem;
+    height: initial;
+    position: static;
+    background-color: transparent;
+  }
+}
+.primary-navigation__inner {
+  height: 14.6875rem;
+  padding: 3.125rem 5%;
+  background-color: hsl(270deg, 3%, 11%);
+}
+@media (min-width: 768px) {
+  .primary-navigation__inner {
+    padding: 0;
+    height: initial;
+    flex-direction: row;
+    background-color: initial;
+    justify-content: space-between;
+  }
+}
+.primary-navigation__link {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0.125rem;
+}
+@media (min-width: 768px) {
+  .primary-navigation__link {
+    color: hsl(264deg, 5%, 20%);
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+  }
+}
+.primary-navigation__link:hover {
+  text-decoration: underline;
+  text-decoration-color: hsl(264deg, 5%, 20%);
 }
 
 header {
