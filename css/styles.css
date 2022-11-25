@@ -311,15 +311,15 @@ template {
 /********************** Functions **********************/
 /********************** Mixins **********************/
 /********************** PLACHOLDERS **********************/
-header, .secondary-navigation__inner, .secondary-navigation__list:first-child, .lets-talk, .homepage-illustration, .design-card__link, .main-hero__content, .primary-navigation__inner, .icons {
+header, .icons, .secondary-navigation__inner, .secondary-navigation__list:first-child, .lets-talk, .homepage-illustration, .design-card__link, .main-hero__content, .primary-navigation__inner {
   display: flex;
 }
 
-header, .secondary-navigation__inner, .lets-talk, .main-hero__content, .icons {
+header, .icons, .secondary-navigation__inner, .lets-talk, .main-hero__content {
   align-items: center;
 }
 
-header, .lets-talk, .primary-navigation__inner, .icons {
+header, .icons, .lets-talk, .primary-navigation__inner {
   justify-content: space-between;
 }
 
@@ -465,21 +465,6 @@ span {
 @media (min-width: 1360px) {
   .hero-wrapper {
     width: calc(100% - 20.625rem);
-  }
-}
-
-.icons {
-  width: 11.5rem;
-}
-.icons__icon {
-  fill: hsl(11deg, 73%, 66%);
-}
-.icons__icon:hover {
-  fill: hsl(11deg, 100%, 80%);
-}
-@media (min-width: 768px) {
-  .icons {
-    margin-left: auto;
   }
 }
 
@@ -1033,6 +1018,21 @@ span {
     align-items: flex-end;
     flex-direction: row;
   }
+}
+
+.icons {
+  width: 11.5rem;
+}
+@media (min-width: 768px) {
+  .icons {
+    margin-left: auto;
+  }
+}
+.icons__icon {
+  fill: hsl(11deg, 73%, 66%);
+}
+.icons__icon:hover {
+  fill: hsl(11deg, 100%, 80%);
 }
 
 header {

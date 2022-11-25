@@ -5,13 +5,13 @@
     @extend %flex;
     @extend %flex-ai-c;
     @extend %flex-jc-sb;
+    @include mq(medium) {
+        margin-left: auto;
+    }
     &__icon {
         fill: $peach;
     }
     &__icon:hover {
         fill: $lightPeach;
-    }
-    @include mq(medium) {
-        margin-left: auto;
     }
 }
