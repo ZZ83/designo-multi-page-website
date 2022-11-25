@@ -310,6 +310,25 @@ template {
 /********************** Variables **********************/
 /********************** Functions **********************/
 /********************** Mixins **********************/
+/********************** HELPER CLASSES **********************/
+.wrapper {
+  margin: 0 auto;
+  width: calc(100% - 3rem);
+}
+.wrapper--hero {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    width: calc(100% - 5rem);
+  }
+}
+@media (min-width: 1360px) {
+  .wrapper {
+    width: calc(100% - 20.625rem);
+  }
+}
+
 /********************** PLACHOLDERS **********************/
 header, .icons, .secondary-navigation__inner, .secondary-navigation__list:first-child, .lets-talk, .homepage-illustration, .design-card__link, .main-hero__content, .primary-navigation__inner {
   display: flex;
@@ -437,35 +456,6 @@ span {
   font-size: 0.9375rem;
   letter-spacing: 0.3125rem;
   text-transform: uppercase;
-}
-
-.wrapper {
-  margin: 0 auto;
-  width: calc(100% - 3rem);
-}
-@media (min-width: 768px) {
-  .wrapper {
-    width: calc(100% - 5rem);
-  }
-}
-@media (min-width: 1360px) {
-  .wrapper {
-    width: calc(100% - 20.625rem);
-  }
-}
-
-.hero-wrapper {
-  margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .hero-wrapper {
-    width: calc(100% - 5rem);
-  }
-}
-@media (min-width: 1360px) {
-  .hero-wrapper {
-    width: calc(100% - 20.625rem);
-  }
 }
 
 @media (min-width: 1360px) {

@@ -85,14 +85,3 @@ span {
     letter-spacing: rem(5px);
     text-transform: uppercase;
 }
-
-.wrapper {
-    margin: 0 auto;
-    width: calc(100% - rem(48px));
-    @include mq(medium) {
-        width: calc(100% - rem(80px));
-    }
-    @include mq(large) {
-        width: calc(100% - rem(330px));
-    }
-}

@@ -41,6 +41,21 @@
         }
     }
 
+/********************** HELPER CLASSES **********************/
+.wrapper {
+    margin: 0 auto;
+    width: calc(100% - rem(48px));
+    &--hero {
+        width: 100%;
+    }
+    @include mq(medium) {
+        width: calc(100% - rem(80px));
+    }
+    @include mq(large) {
+        width: calc(100% - rem(330px));
+    }
+}
+
 /********************** PLACHOLDERS **********************/
     // Flexbox 
     %flex {
