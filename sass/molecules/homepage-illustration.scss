@@ -1,6 +1,6 @@
 @use '../abstracts' as *;
 
-.home-illustrations {
+.homepage-illustration {
     @extend %flex;
     @extend %flex-d-c;
     margin-bottom: rem(80px);  

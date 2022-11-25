@@ -311,7 +311,7 @@ template {
 /********************** Functions **********************/
 /********************** Mixins **********************/
 /********************** PLACHOLDERS **********************/
-header, .secondary-navigation__inner, .secondary-navigation__list:first-child, .lets-talk, .home-illustrations, .design-card__link, .main-hero__content, .primary-navigation__inner, .icons {
+header, .secondary-navigation__inner, .secondary-navigation__list:first-child, .lets-talk, .homepage-illustration, .design-card__link, .main-hero__content, .primary-navigation__inner, .icons {
   display: flex;
 }
 
@@ -327,7 +327,7 @@ header, .lets-talk, .primary-navigation__inner, .icons {
   justify-content: center;
 }
 
-.secondary-navigation__inner, .lets-talk, .home-illustrations, .design-card__link, .main-hero__content, .primary-navigation__inner {
+.secondary-navigation__inner, .lets-talk, .homepage-illustration, .design-card__link, .main-hero__content, .primary-navigation__inner {
   flex-direction: column;
 }
 
@@ -826,17 +826,17 @@ span {
   }
 }
 
-.home-illustrations {
+.homepage-illustration {
   margin-bottom: 5rem;
 }
 @media (min-width: 768px) {
-  .home-illustrations {
+  .homepage-illustration {
     margin-bottom: 1.5rem;
     flex-direction: row;
   }
 }
 @media (min-width: 1360px) {
-  .home-illustrations {
+  .homepage-illustration {
     width: 32%;
     max-width: 21.875rem;
     flex-direction: column;
@@ -844,35 +844,35 @@ span {
     margin-bottom: 0;
   }
 }
-.home-illustrations__image {
+.homepage-illustration__image {
   width: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 @media (min-width: 768px) {
-  .home-illustrations__image {
+  .homepage-illustration__image {
     max-width: 25.25rem;
     margin-right: 2.5rem;
   }
 }
 @media (min-width: 1360px) {
-  .home-illustrations__image {
+  .homepage-illustration__image {
     max-width: 12.625rem;
     margin-right: 0;
   }
 }
-.home-illustrations__image--top {
+.homepage-illustration__image--top {
   background-image: url("../assets/shared/tablet/bg-pattern-small-circle-top.svg");
 }
-.home-illustrations__image--bottom {
+.homepage-illustration__image--bottom {
   background-image: url("../assets/shared/tablet/bg-pattern-small-circle-bottom.svg");
 }
-.home-illustrations__image--left {
+.homepage-illustration__image--left {
   background-image: url("../assets/shared/tablet/bg-pattern-small-circle-left.svg");
 }
 @media (min-width: 768px) {
-  .home-illustrations__inner {
+  .homepage-illustration__inner {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -880,33 +880,33 @@ span {
   }
 }
 @media (min-width: 1360px) {
-  .home-illustrations__inner {
+  .homepage-illustration__inner {
     align-items: center;
   }
 }
-.home-illustrations__header {
+.homepage-illustration__header {
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
-  .home-illustrations__header {
+  .homepage-illustration__header {
     margin-top: 0;
     margin-bottom: 1rem;
   }
 }
 @media (min-width: 1360px) {
-  .home-illustrations__header {
+  .homepage-illustration__header {
     margin-top: 3rem;
     margin-bottom: 2rem;
   }
 }
 @media (min-width: 768px) {
-  .home-illustrations__text {
+  .homepage-illustration__text {
     text-align: left;
   }
 }
 @media (min-width: 1360px) {
-  .home-illustrations__text {
+  .homepage-illustration__text {
     text-align: center;
   }
 }
@@ -1060,7 +1060,7 @@ header {
 }
 
 @media (min-width: 1360px) {
-  .home-illustrations-section {
+  .homepage-illustrations-section {
     display: flex;
     justify-content: space-between;
   }

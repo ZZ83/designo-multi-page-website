@@ -1,6 +1,6 @@
 @use '../abstracts' as *;
 
-.home-illustrations-section {
+.homepage-illustrations-section {
     @include mq(large) {
         display: flex;
         justify-content: space-between;
