@@ -1,12 +1,5 @@
 @use '../abstracts' as *;
 
-.home-illustrations {
-    @include mq(large) {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
 .home-illustration {
     @extend %flex;
     @extend %flex-d-c;

@@ -311,7 +311,7 @@ template {
 /********************** Functions **********************/
 /********************** Mixins **********************/
 /********************** PLACHOLDERS **********************/
-header, .secondary-navigation__inner, .secondary-navigation__list:first-child, .main-hero__content, .primary-navigation__inner, .home-illustration, .icons, .lets-talk, .design-card__link {
+header, .secondary-navigation__inner, .secondary-navigation__list:first-child, .design-card__link, .main-hero__content, .primary-navigation__inner, .home-illustration, .icons, .lets-talk {
   display: flex;
 }
 
@@ -327,7 +327,7 @@ header, .primary-navigation__inner, .icons, .lets-talk {
   justify-content: center;
 }
 
-.secondary-navigation__inner, .main-hero__content, .primary-navigation__inner, .home-illustration, .lets-talk, .design-card__link {
+.secondary-navigation__inner, .design-card__link, .main-hero__content, .primary-navigation__inner, .home-illustration, .lets-talk {
   flex-direction: column;
 }
 
@@ -337,7 +337,7 @@ header, .primary-navigation__inner, .icons, .lets-talk {
   justify-content: center;
 }
 
-.lets-talk, .design-card {
+.design-card, .lets-talk {
   border-radius: 15px;
 }
 
@@ -454,95 +454,6 @@ span {
   }
 }
 
-.design-card {
-  width: 100%;
-  height: 15.625rem;
-  text-align: center;
-  color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-.design-card:hover {
-  background-blend-mode: screen;
-  background-color: rgb(231, 129, 107);
-}
-@media (min-width: 768px) {
-  .design-card {
-    height: 12.5rem;
-  }
-}
-@media (min-width: 1360px) {
-  .design-card {
-    height: 19.25rem;
-  }
-}
-.design-card__link {
-  color: inherit;
-  width: 100%;
-  height: 100%;
-}
-.design-card__header {
-  margin-bottom: 2rem;
-}
-.design-card__text::after {
-  display: inline-block;
-  width: 0.75rem;
-  height: 0.75rem;
-  padding-left: 0.9375rem;
-  content: url("../assets/shared/desktop/icon-right-arrow.svg");
-}
-.design-card--home {
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-@media (min-width: 1360px) {
-  .design-card--home {
-    height: 100%;
-  }
-}
-.design-card--web {
-  background-image: url("../assets/home/mobile/image-web-design.jpg");
-}
-@media (min-width: 768px) {
-  .design-card--web {
-    background-image: url("../assets/home/tablet/image-web-design.jpg");
-  }
-}
-@media (min-width: 1360px) {
-  .design-card--web {
-    background-image: url("../assets/home/desktop/image-web-design-large.jpg");
-  }
-}
-.design-card--app {
-  background-image: url("../assets/home/mobile/image-app-design.jpg");
-}
-@media (min-width: 768px) {
-  .design-card--app {
-    background-image: url("../assets/home/tablet/image-app-design.jpg");
-  }
-}
-@media (min-width: 1360px) {
-  .design-card--app {
-    background-image: url("../assets/home/desktop/image-app-design.jpg");
-  }
-}
-.design-card--graphic {
-  background-image: url("../assets/home/mobile/image-graphic-design.jpg");
-}
-@media (min-width: 768px) {
-  .design-card--graphic {
-    background-image: url("../assets/home/tablet/image-graphic-design.jpg");
-  }
-}
-@media (min-width: 1360px) {
-  .design-card--graphic {
-    background-image: url("../assets/home/desktop/image-graphic-design.jpg");
-  }
-}
-
 .hero-wrapper {
   margin: 0 auto;
 }
@@ -636,13 +547,6 @@ span {
 @media (min-width: 768px) {
   .icons {
     margin-left: auto;
-  }
-}
-
-@media (min-width: 1360px) {
-  .home-illustrations {
-    display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -985,6 +889,95 @@ span {
   }
 }
 
+.design-card {
+  width: 100%;
+  height: 15.625rem;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.design-card:hover {
+  background-blend-mode: screen;
+  background-color: rgb(231, 129, 107);
+}
+@media (min-width: 768px) {
+  .design-card {
+    height: 12.5rem;
+  }
+}
+@media (min-width: 1360px) {
+  .design-card {
+    height: 19.25rem;
+  }
+}
+.design-card__link {
+  color: inherit;
+  width: 100%;
+  height: 100%;
+}
+.design-card__header {
+  margin-bottom: 2rem;
+}
+.design-card__text::after {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  padding-left: 0.9375rem;
+  content: url("../assets/shared/desktop/icon-right-arrow.svg");
+}
+.design-card--home {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+@media (min-width: 1360px) {
+  .design-card--home {
+    height: 100%;
+  }
+}
+.design-card--web {
+  background-image: url("../assets/home/mobile/image-web-design.jpg");
+}
+@media (min-width: 768px) {
+  .design-card--web {
+    background-image: url("../assets/home/tablet/image-web-design.jpg");
+  }
+}
+@media (min-width: 1360px) {
+  .design-card--web {
+    background-image: url("../assets/home/desktop/image-web-design-large.jpg");
+  }
+}
+.design-card--app {
+  background-image: url("../assets/home/mobile/image-app-design.jpg");
+}
+@media (min-width: 768px) {
+  .design-card--app {
+    background-image: url("../assets/home/tablet/image-app-design.jpg");
+  }
+}
+@media (min-width: 1360px) {
+  .design-card--app {
+    background-image: url("../assets/home/desktop/image-app-design.jpg");
+  }
+}
+.design-card--graphic {
+  background-image: url("../assets/home/mobile/image-graphic-design.jpg");
+}
+@media (min-width: 768px) {
+  .design-card--graphic {
+    background-image: url("../assets/home/tablet/image-graphic-design.jpg");
+  }
+}
+@media (min-width: 1360px) {
+  .design-card--graphic {
+    background-image: url("../assets/home/desktop/image-graphic-design.jpg");
+  }
+}
+
 @media (min-width: 768px) {
   .secondary-navigation__inner {
     flex-direction: row;
@@ -1049,6 +1042,13 @@ header {
     margin-bottom: 10rem;
     height: 40rem;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1360px) {
+  .home-illustrations-section {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
