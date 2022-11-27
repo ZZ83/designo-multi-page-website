@@ -458,27 +458,6 @@ span {
   text-transform: uppercase;
 }
 
-@media (min-width: 1360px) {
-  .shape {
-    width: 62.875rem;
-    height: 37.125rem;
-    position: absolute;
-    z-index: -10;
-    background-color: hsl(210deg, 17%, 95%);
-  }
-  .shape--475 {
-    top: 29.6875rem;
-    border-radius: 297px 297px 297px 0px;
-  }
-  .shape--1879 {
-    top: 117.4375rem;
-    right: 0;
-    opacity: 0.5;
-    border-radius: 297px 297px 297px 0px;
-    transform: rotate(-180deg);
-  }
-}
-
 .logo {
   display: block;
   width: 12.625rem;
@@ -1023,6 +1002,27 @@ span {
 }
 .icons__icon:hover {
   fill: hsl(11deg, 100%, 80%);
+}
+
+@media (min-width: 1360px) {
+  .shape {
+    width: 62.875rem;
+    height: 37.125rem;
+    position: absolute;
+    z-index: -10;
+    background-color: hsl(210deg, 17%, 95%);
+  }
+  .shape--475 {
+    top: 29.6875rem;
+    border-radius: 297px 297px 297px 0px;
+  }
+  .shape--1879 {
+    top: 117.4375rem;
+    right: 0;
+    opacity: 0.5;
+    border-radius: 297px 297px 297px 0px;
+    transform: rotate(-180deg);
+  }
 }
 
 header {
