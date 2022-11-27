@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+.hero {
+    height: rem(320px);
+    background-image: url(../assets/shared/tablet/bg-pattern-small-circle-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: rem(292px);
+    @include mq(medium) {
+        height: rem(252px);
+    }
+}
+

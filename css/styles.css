@@ -317,6 +317,12 @@ template {
 }
 .wrapper--hero {
   width: 100%;
+  background-color: hsl(11deg, 73%, 66%);
+}
+@media (min-width: 768px) {
+  .wrapper--hero {
+    border-radius: 0.9375rem;
+  }
 }
 @media (min-width: 768px) {
   .wrapper {
@@ -559,7 +565,6 @@ span {
   height: 52.6875rem;
   padding: 0 1.5rem;
   overflow: hidden;
-  background-color: hsl(11deg, 73%, 66%);
   position: relative;
   background-image: url(../assets/home/desktop/bg-pattern-hero-home.svg);
   background-repeat: no-repeat;
@@ -567,7 +572,6 @@ span {
 }
 @media (min-width: 768px) {
   .main-hero {
-    border-radius: 0.9375rem;
     background-position: top 7.5rem right -7.5rem;
   }
 }
@@ -652,6 +656,19 @@ span {
     padding-top: 0;
     position: static;
     transform: initial;
+  }
+}
+
+.hero {
+  height: 20rem;
+  background-image: url(../assets/shared/tablet/bg-pattern-small-circle-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 18.25rem;
+}
+@media (min-width: 768px) {
+  .hero {
+    height: 15.75rem;
   }
 }
 

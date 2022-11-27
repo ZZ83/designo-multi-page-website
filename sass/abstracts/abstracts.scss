@@ -47,6 +47,10 @@
     width: calc(100% - rem(48px));
     &--hero {
         width: 100%;
+        background-color: $peach;
+        @include mq(medium) {
+            border-radius:  rem(15px);
+        }
     }
     @include mq(medium) {
         width: calc(100% - rem(80px));
