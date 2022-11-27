@@ -1,6 +1,6 @@
 @use '../abstracts' as *;
 
-.background {
+.shape {
     @include mq(large) {
         width:  rem(1006px);
         height: rem(594px);
