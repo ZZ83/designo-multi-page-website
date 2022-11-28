@@ -660,6 +660,7 @@ span {
 }
 
 .hero {
+  color: white;
   height: 20rem;
   background-image: url(../assets/shared/tablet/bg-pattern-small-circle-bottom.svg);
   background-repeat: no-repeat;
@@ -670,6 +671,20 @@ span {
   .hero {
     height: 15.75rem;
   }
+}
+.hero__header {
+  padding-top: 6.5625rem;
+  padding-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .hero__header {
+    padding-top: 3.9375rem;
+  }
+}
+.hero__text {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 24.0625rem;
 }
 
 .design-card {
