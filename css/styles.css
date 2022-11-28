@@ -660,12 +660,11 @@ span {
 }
 
 .hero {
-  color: white;
+  color: hsl(0deg, 0%, 100%);
   height: 20rem;
-  background-image: url(../assets/shared/tablet/bg-pattern-small-circle-bottom.svg);
+  background-image: url(../assets/web-design/desktop/bg-pattern-intro-web.svg);
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: 18.25rem;
 }
 @media (min-width: 768px) {
   .hero {

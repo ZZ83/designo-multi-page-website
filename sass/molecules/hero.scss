@@ -1,12 +1,11 @@
 @use '../abstracts' as *;
 
 .hero {
-    color: white;
+    color: $white;
     height: rem(320px);
-    background-image: url(../assets/shared/tablet/bg-pattern-small-circle-bottom.svg);
+    background-image: url(../assets/web-design/desktop/bg-pattern-intro-web.svg);
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: rem(292px);
     @include mq(medium) {
         height: rem(252px);
     }
