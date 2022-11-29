@@ -669,6 +669,7 @@ span {
 @media (min-width: 768px) {
   .hero {
     height: 15.75rem;
+    background-position: center left -1.25rem;
   }
 }
 .hero__header {

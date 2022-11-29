@@ -8,6 +8,7 @@
     background-position: top right;
     @include mq(medium) {
         height: rem(252px);
+        background-position: center left rem(-20px);
     }
     &__header {
         padding-top: rem(105px);
