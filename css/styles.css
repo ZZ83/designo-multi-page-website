@@ -687,14 +687,23 @@ span {
   max-width: 24.0625rem;
 }
 @media (min-width: 1360px) {
+  .hero--app, .hero--graphic {
+    background-position: center left -3.75rem;
+  }
+}
+@media (min-width: 1360px) {
   .hero--web {
     background-position: center right;
   }
 }
 @media (min-width: 1360px) {
   .hero--app {
-    background-position: center left -3.75rem;
     background-image: url(../assets/app-design/desktop/bg-pattern-intro-app.svg);
+  }
+}
+@media (min-width: 1360px) {
+  .hero--graphic {
+    background-image: url(../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg);
   }
 }
 
