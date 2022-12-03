@@ -686,6 +686,17 @@ span {
   width: 90%;
   max-width: 24.0625rem;
 }
+@media (min-width: 1360px) {
+  .hero--web {
+    background-position: center right;
+  }
+}
+@media (min-width: 1360px) {
+  .hero--app {
+    background-position: center left -3.75rem;
+    background-image: url(../assets/app-design/desktop/bg-pattern-intro-app.svg);
+  }
+}
 
 .design-card {
   width: 100%;

@@ -22,5 +22,16 @@
         width: 90%;
         max-width: rem(385px);
     }
+    &--web {
+        @include mq(large) {
+            background-position: center right;
+        }
+    }
+    &--app {
+        @include mq(large) {
+            background-position: center left rem(-60px);
+            background-image: url(../assets/app-design/desktop/bg-pattern-intro-app.svg);
+        }
+    }
 }
 
