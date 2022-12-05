@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.projects-section {
+    margin-top:    rem(96px);
+    margin-bottom: rem(96px);
+    background-color: red;
+    @include mq(medium) {
+        margin-top:    rem(120px);
+        margin-bottom: rem(120px);
+    }
+    @include mq(large) {
+        margin-top:    rem(160px);
+        margin-bottom: rem(160px);
+    }
+}
