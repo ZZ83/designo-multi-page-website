@@ -1,0 +1,61 @@
+@use '../abstracts' as *;
+
+.project-card {
+    &__image {
+        display: block;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+    &__inner {
+        cursor: pointer;
+        border-radius: 0 0 15px 15px;
+        background-color: #FDF3F0;
+        height: rem(158px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        &:hover {
+            background-color: $peach;
+            h3,
+            p {
+                color: $white;
+            }
+        }
+    }
+    &__header {
+        color: $peach;
+        padding-bottom: rem(16px);
+    }
+    &__text {
+        color: $darkGray;
+        font-size: 1rem;
+        line-height: rem(26px);
+    }
+    @include mq(medium) {
+        display: flex;
+        &__image {
+            width: 50%;
+            border-radius: 15px 0 0 15px;
+        }
+        &__inner {
+            border-radius: 0 15px 15px 0;
+            height: initial;
+            width: 50%;
+        }
+    }
+    @include mq(large) {  
+         height: rem(478px);
+         flex-direction: column;
+         &__image {
+            width: 100%;
+            height: rem(320px);
+            border-radius: 15px 15px 0 0;
+        }
+        &__inner {
+            border-radius: 0 0 15px 15px;
+            height: rem(158px);
+            width: 100%;
+        }
+    }
+}

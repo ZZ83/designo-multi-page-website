@@ -6,42 +6,35 @@
     background-image: url(../assets/web-design/desktop/bg-pattern-intro-web.svg);
     background-repeat: no-repeat;
     background-position: top right;
-    @include mq(medium) {
-        height: rem(252px);
-        background-position: center left rem(-20px);
-    }
     &__header {
         padding-top: rem(105px);
         padding-bottom: rem(24px);
-        @include mq(medium) {
-            padding-top: rem(63px);
-        }
     }
     &__text {
         margin: 0 auto;
         width: 90%;
         max-width: rem(385px);
     }
-    &--app,
-    &--graphic {
-        @include mq(large) {
+    @include mq(medium) {
+        height: rem(252px);
+        background-position: center left rem(-20px);
+        &__header {
+            padding-top: rem(63px);
+        }
+    }
+    @include mq(large) {
+        &--app,
+        &--graphic {
             background-position: center left rem(-60px);
         }
-    }
-    &--web {
-        @include mq(large) {
+        &--web {
             background-position: center right;
         }
-    }
-    &--app {
-        @include mq(large) {
+        &--app {
             background-image: url(../assets/app-design/desktop/bg-pattern-intro-app.svg);
         }
-    }
-    &--graphic {
-        @include mq(large) {
+        &--graphic {
             background-image: url(../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg);
         }
     }
 }
-
