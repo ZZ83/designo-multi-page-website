@@ -1148,12 +1148,27 @@ header {
   display: grid;
   gap: 24px;
 }
+.design-cards-section--projects {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+@media (min-width: 768px) {
+  .design-cards-section--projects {
+    margin-top: 7.5rem;
+    margin-bottom: 7.5rem;
+  }
+}
 @media (min-width: 1360px) {
   .design-cards-section {
     margin-top: 10rem;
     margin-bottom: 10rem;
     height: 40rem;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .design-cards-section--projects {
+    height: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
   }
 }
 

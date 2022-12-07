@@ -5,10 +5,25 @@
     margin-bottom: rem(120px);
     display: grid;
     gap: 24px;
+    &--projects {
+        margin-top:    rem(96px);
+        margin-bottom: rem(96px); 
+    }
+    @include mq(medium) {
+        &--projects {
+            margin-top:    rem(120px);
+            margin-bottom: rem(120px);
+        }
+    }
     @include mq(large) {
         margin-top:    rem(160px);
         margin-bottom: rem(160px);
         height: rem(640px);
         grid-template-columns: repeat(2, 1fr);
+        &--projects {
+            height: auto;
+            margin-top:    rem(160px);
+            margin-bottom: rem(160px);
+        }
     }
 }
