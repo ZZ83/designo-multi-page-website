@@ -1,0 +1,16 @@
+@use '../abstracts' as *;
+
+.location-section {
+    display: grid;
+    gap: rem(40px);
+    grid-template-columns: 1fr;
+    @include mq(medium) {
+        gap: rem(120px);
+        margin: auto;
+        width: calc(100% - rem(80px));
+    }
+    @include mq(large) {
+        gap: rem(32px);
+        width: calc(100% - rem(330px));
+    }
+}
