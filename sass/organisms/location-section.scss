@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 .location-section {
+    width: 100%;
     display: grid;
     gap: rem(40px);
     grid-template-columns: 1fr;
