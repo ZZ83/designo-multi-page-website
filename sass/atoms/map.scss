@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+
+.map {
+    width: 100%;
+    display: block;
+    @include mq(medium) {
+        border-radius: 15px;
+    }
+    @include mq(large) {
+        height: rem(326px);
+    }
+}

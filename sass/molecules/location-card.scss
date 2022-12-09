@@ -1,0 +1,44 @@
+@use '../abstracts' as *;
+
+.location-card {
+    height: rem(394px);
+    background-color: #FDF3F0;
+    padding: rem(80px) rem(24px);
+    &__header {
+        color: $peach;
+        font-size: rem(32px);
+        text-transform: capitalize;
+        margin-bottom: rem(24px);
+        letter-spacing: normal;
+    }
+    &__inner {
+        display: grid;
+        gap: rem(24px);
+        margin: auto;
+        max-width: rem(540px);
+    }
+    @include mq(medium) {
+        height: rem(326px);
+        border-radius: 15px;
+        padding: rem(88px) rem(75px);
+        
+        &__header {
+            font-size: rem(40px);
+            text-align: left;
+        }
+        &__inner {
+            display: flex;
+            gap: rem(24px);
+            margin: initial;
+        }
+    }
+    @include mq(large) {
+        padding: rem(88px) rem(95px);
+        &__inner {
+            justify-content: space-between;
+        }
+        &--switch {
+            order: -1;
+        }
+    }
+}

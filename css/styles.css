@@ -509,6 +509,21 @@ span {
   background-color: hsl(11deg, 73%, 66%);
 }
 
+.map {
+  width: 100%;
+  display: block;
+}
+@media (min-width: 768px) {
+  .map {
+    border-radius: 15px;
+  }
+}
+@media (min-width: 1360px) {
+  .map {
+    height: 20.375rem;
+  }
+}
+
 .primary-navigation {
   height: 100%;
   position: fixed;
@@ -850,38 +865,65 @@ span {
   }
 }
 
-.location__map {
-  width: 100%;
-  display: block;
-}
-.location__card {
-  height: 24.625rem;
-  background-color: hsl(11deg, 73%, 66%);
-}
 @media (min-width: 768px) {
   .location {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 1.875rem;
-  }
-  .location__map, .location__card {
-    border-radius: 15px;
-  }
-  .location__card {
-    height: 20.375rem;
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 1360px) {
   .location {
-    grid-template-columns: 1fr 2fr;
+    gap: 2.71%;
+    grid-template-columns: 31.53% 65.76%;
   }
   .location--switch {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 65.76% 31.53%;
   }
-  .location__map {
-    height: 100%;
+}
+
+.location-card {
+  height: 24.625rem;
+  background-color: #FDF3F0;
+  padding: 5rem 1.5rem;
+}
+.location-card__header {
+  color: hsl(11deg, 73%, 66%);
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  letter-spacing: normal;
+}
+.location-card__inner {
+  display: grid;
+  gap: 1.5rem;
+  margin: auto;
+  max-width: 33.75rem;
+}
+@media (min-width: 768px) {
+  .location-card {
+    height: 20.375rem;
+    border-radius: 15px;
+    padding: 5.5rem 4.6875rem;
   }
-  .location__card--switch {
+  .location-card__header {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  .location-card__inner {
+    display: flex;
+    gap: 1.5rem;
+    margin: initial;
+  }
+}
+@media (min-width: 1360px) {
+  .location-card {
+    padding: 5.5rem 5.9375rem;
+  }
+  .location-card__inner {
+    justify-content: space-between;
+  }
+  .location-card--switch {
     order: -1;
   }
 }
@@ -1105,6 +1147,7 @@ span {
 }
 @media (min-width: 768px) {
   .info {
+    text-align: left;
     margin-bottom: 0;
     width: 13.9375rem;
     margin-right: 0.625rem;
@@ -1123,11 +1166,16 @@ span {
 }
 .info__header {
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 700;
+}
+.info--location {
+  opacity: 1;
+  color: hsl(264deg, 5%, 20%);
+  margin: 0;
 }
 @media (min-width: 768px) {
-  .info {
-    text-align: left;
+  .info--location {
+    width: 15.9375rem;
   }
 }
 

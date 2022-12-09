@@ -1,36 +1,18 @@
 @use '../abstracts' as *;
 
 .location {
-    &__map {
-        width: 100%;
-        display: block;
-    }
-    &__card {
-        height: rem(394px);
-        background-color: $peach;
-    }
     @include mq(medium) {
         display: grid;
+        gap: rem(30px);
         grid-template-columns: 1fr;
-        gap: rem(30px) ;
-        &__map,
-        &__card {
-            border-radius: 15px;
-        }
-        &__card {
-            height: rem(326px);
-        } 
     }
     @include mq(large) {
-        grid-template-columns: 1fr 2fr;
+        gap: 2.71%;
+        grid-template-columns: 31.53% 65.76%;
         &--switch {
-            grid-template-columns: 2fr 1fr;
-        }
-        &__map {
-            height: 100%;
-        }
-        &__card--switch {
-            order: -1;
+            grid-template-columns: 65.76% 31.53%;
         }
     }
 }
+
+

@@ -8,6 +8,7 @@
     width: 100%;
     height: rem(78px);
     @include mq(medium) {
+        text-align: left;
         margin-bottom: 0;
         width: rem(223px);
         margin-right: rem(10px);
@@ -24,9 +25,14 @@
     }
     &__header {
         letter-spacing: 1px;
-        font-weight: 500;
+        font-weight: 700;
     }
-    @include mq(medium) {
-        text-align: left;
+    &--location {
+        opacity: 1;
+        color: $darkGray;
+        margin: 0;
+        @include mq(medium) {
+            width: rem(255px);
+        }
     }
 }
