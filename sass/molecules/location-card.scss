@@ -4,6 +4,9 @@
     height: rem(394px);
     background-color: #FDF3F0;
     padding: rem(80px) rem(24px);
+    background-repeat: no-repeat;
+    background-image: url("../assets/locations/mobile/bg-mobile.png");
+    background-position: top left;
     &__header {
         color: $peach;
         font-size: rem(32px);
@@ -21,7 +24,8 @@
         height: rem(326px);
         border-radius: 15px;
         padding: rem(88px) rem(75px);
-        
+        background-image: url("../assets/locations/tablet/bg-tablet.png");
+        background-position: bottom left;
         &__header {
             font-size: rem(40px);
             text-align: left;

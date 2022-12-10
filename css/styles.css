@@ -886,6 +886,9 @@ span {
   height: 24.625rem;
   background-color: #FDF3F0;
   padding: 5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-image: url("../assets/locations/mobile/bg-mobile.png");
+  background-position: top left;
 }
 .location-card__header {
   color: hsl(11deg, 73%, 66%);
@@ -905,6 +908,8 @@ span {
     height: 20.375rem;
     border-radius: 15px;
     padding: 5.5rem 4.6875rem;
+    background-image: url("../assets/locations/tablet/bg-tablet.png");
+    background-position: bottom left;
   }
   .location-card__header {
     font-size: 2.5rem;
