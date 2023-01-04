@@ -13,4 +13,11 @@
         height: rem(393px);
         padding-top: rem(144px);
     }
+    &--contact {
+        padding: rem(54px) 0;
+        height: initial;
+        @include mq(medium) {
+            padding: rem(72px) 0;
+        }    
+    }
 }
