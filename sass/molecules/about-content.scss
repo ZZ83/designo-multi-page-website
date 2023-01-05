@@ -1,44 +1,74 @@
 @use '../abstracts' as *;
 
-.about-content {
+
+.about-us-content {
     padding: rem(80px) rem(24px);
+    background-size: rem(292px);
+    background-repeat: no-repeat;
+    background-position: top rem(-146px) right;
+    background-image: url(../assets/about/desktop/bg-pattern-hero-about-desktop.svg);
     @include mq(medium) {
         padding: rem(64px) rem(58px);
+        background-size: rem(640px);
+        background-position: top rem(-430px) left rem(-122px);
     }
     @include mq(large) {
         width: 57.4%;
         padding: rem(135px) rem(80px) rem(135px) rem(95px);
+        background-position: bottom left;
     }
-    &__header {
-        margin-bottom: rem(24px);
-        @include mq(medium) {
-            margin-bottom: rem(32px);
-        }
+    &__header,
+    &__text {
         @include mq(large) {
             text-align: left;
         }
+    }
+    &__header {
+        margin-bottom: rem(24px);
+    }
+    &__text {
+        @include mq(medium) {
+            max-width: rem(720px);
+        }
+    }
+}
+
+
+
+
+
+
+
+.about-content {
+    color: $black;
+    background-color: #FDF3F0;
+    background-image: url(../assets/about/mobile/test.svg);
+        background-repeat: no-repeat;
+        background-position:  top left;
+        @include mq(medium) {
+            background-position: bottom rem(44px) right rem(11px);
+        }
+        @include mq(large) {
+            width: 57.4%;
+            background-position:  bottom left rem(-146px);
+            padding: rem(154px) rem(94px);
+        }
+    &__header,
+    &__text {
+        @include mq(large) {
+            text-align: left;
+        }
+    }
+    &__header {
+        color: $peach;
+        margin-bottom: rem(24px);
+        text-transform: none;
+        font-size:   rem(32px);
+        line-height: rem(36px);
     }
     &__text {
         max-width: rem(550px);
         margin: auto;
-        @include mq(medium) {
-            max-width: rem(720px);
-        }
-        @include mq(large) {
-            text-align: left;
-        }
-    }
-    &--about-us {
-        background-image: url(../assets/about/desktop/bg-pattern-hero-about-desktop.svg);
-        background-repeat: no-repeat;
-        background-position: top rem(-146px) right;
-        background-size: rem(292px);
-        @include mq(medium) {
-            background-size: rem(640px);
-            background-position: top rem(-430px) left rem(-122px);
-        }
-        @include mq(large) {
-            background-position: bottom left;
-        }
+        padding-bottom: rem(24px);
     }
 }

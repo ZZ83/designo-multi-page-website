@@ -1231,6 +1231,9 @@ span {
     flex-direction: row-reverse;
   }
 }
+.about-card--world {
+  flex-direction: row;
+}
 .about-card__image {
   width: 100%;
   height: 100%;
@@ -1247,63 +1250,76 @@ span {
   }
 }
 
-.about-content {
+.about-us-content {
   padding: 5rem 1.5rem;
-}
-@media (min-width: 768px) {
-  .about-content {
-    padding: 4rem 3.625rem;
-  }
-}
-@media (min-width: 1360px) {
-  .about-content {
-    width: 57.4%;
-    padding: 8.4375rem 5rem 8.4375rem 5.9375rem;
-  }
-}
-.about-content__header {
-  margin-bottom: 1.5rem;
-}
-@media (min-width: 768px) {
-  .about-content__header {
-    margin-bottom: 2rem;
-  }
-}
-@media (min-width: 1360px) {
-  .about-content__header {
-    text-align: left;
-  }
-}
-.about-content__text {
-  max-width: 34.375rem;
-  margin: auto;
-}
-@media (min-width: 768px) {
-  .about-content__text {
-    max-width: 45rem;
-  }
-}
-@media (min-width: 1360px) {
-  .about-content__text {
-    text-align: left;
-  }
-}
-.about-content--about-us {
-  background-image: url(../assets/about/desktop/bg-pattern-hero-about-desktop.svg);
+  background-size: 18.25rem;
   background-repeat: no-repeat;
   background-position: top -9.125rem right;
-  background-size: 18.25rem;
+  background-image: url(../assets/about/desktop/bg-pattern-hero-about-desktop.svg);
 }
 @media (min-width: 768px) {
-  .about-content--about-us {
+  .about-us-content {
+    padding: 4rem 3.625rem;
     background-size: 40rem;
     background-position: top -26.875rem left -7.625rem;
   }
 }
 @media (min-width: 1360px) {
-  .about-content--about-us {
+  .about-us-content {
+    width: 57.4%;
+    padding: 8.4375rem 5rem 8.4375rem 5.9375rem;
     background-position: bottom left;
   }
+}
+@media (min-width: 1360px) {
+  .about-us-content__header, .about-us-content__text {
+    text-align: left;
+  }
+}
+.about-us-content__header {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .about-us-content__text {
+    max-width: 45rem;
+  }
+}
+
+.about-content {
+  color: hsl(270deg, 3%, 11%);
+  background-color: #FDF3F0;
+  background-image: url(../assets/about/mobile/test.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+@media (min-width: 768px) {
+  .about-content {
+    background-position: bottom 2.75rem right 0.6875rem;
+  }
+}
+@media (min-width: 1360px) {
+  .about-content {
+    width: 57.4%;
+    background-position: bottom left -9.125rem;
+    padding: 9.625rem 5.875rem;
+  }
+}
+@media (min-width: 1360px) {
+  .about-content__header, .about-content__text {
+    text-align: left;
+  }
+}
+.about-content__header {
+  color: hsl(11deg, 73%, 66%);
+  margin-bottom: 1.5rem;
+  text-transform: none;
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+.about-content__text {
+  max-width: 34.375rem;
+  margin: auto;
+  padding-bottom: 1.5rem;
 }
 
 header {
