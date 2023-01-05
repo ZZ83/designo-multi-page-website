@@ -1085,7 +1085,12 @@ span {
   }
 }
 .lets-talk--about {
-  margin-top: 0;
+  margin-top: 7.5rem;
+}
+@media (min-width: 768px) {
+  .lets-talk--about {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 768px) {
