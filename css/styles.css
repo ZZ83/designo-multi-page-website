@@ -1293,7 +1293,7 @@ span {
 .about-content__text {
   margin: auto;
   padding-bottom: 1.5rem;
-  max-width: 34.375rem;
+  max-width: 35.75rem;
 }
 .about-content__text:last-child {
   padding: 0;
@@ -1306,6 +1306,8 @@ span {
 @media (min-width: 1360px) {
   .about-content--real {
     border-radius: 15px 0 0 15px;
+    background-image: url(../assets/shared/desktop/bg-pattern-two-circles.svg);
+    background-position: bottom left;
   }
 }
 

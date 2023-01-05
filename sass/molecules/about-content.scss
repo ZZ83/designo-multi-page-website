@@ -34,7 +34,7 @@
     &__text {
         margin: auto;
         padding-bottom: rem(24px);
-        max-width: rem(550px);
+        max-width: rem(572px);
     }
     &__text:last-child {
         padding: 0;
@@ -45,6 +45,8 @@
         }
         @include mq(large) {
             border-radius: 15px 0 0 15px; 
+            background-image: url(../assets/shared/desktop/bg-pattern-two-circles.svg);
+            background-position:  bottom left;
         }
     }
 }
