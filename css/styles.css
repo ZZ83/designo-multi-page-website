@@ -1462,4 +1462,35 @@ header {
   }
 }
 
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 7.5rem;
+  }
+}
+@media (min-width: 1360px) {
+  main {
+    gap: 10rem;
+  }
+}
+
+.countries-section {
+  width: 21.875rem;
+  height: 74.25rem;
+  background-color: gray;
+  margin: 7.5rem auto;
+}
+@media (min-width: 768px) {
+  .countries-section {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1360px) {
+  .countries-section {
+    width: calc(100% - 20.625rem);
+    height: 22.75rem;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
