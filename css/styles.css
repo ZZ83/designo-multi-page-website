@@ -336,11 +336,11 @@ template {
 }
 
 /********************** PLACHOLDERS **********************/
-header, .icons, .secondary-navigation__inner, .secondary-navigation__list:first-child, .lets-talk, .homepage-illustration, .design-card__link, .main-hero__content, .primary-navigation__inner {
+header, .country, .icons, .secondary-navigation__inner, .secondary-navigation__list:first-child, .lets-talk, .homepage-illustration, .design-card__link, .main-hero__content, .primary-navigation__inner {
   display: flex;
 }
 
-header, .icons, .secondary-navigation__inner, .lets-talk, .main-hero__content {
+header, .country, .icons, .secondary-navigation__inner, .lets-talk, .main-hero__content {
   align-items: center;
 }
 
@@ -352,7 +352,7 @@ header, .icons, .lets-talk, .primary-navigation__inner {
   justify-content: center;
 }
 
-.secondary-navigation__inner, .lets-talk, .homepage-illustration, .design-card__link, .main-hero__content, .primary-navigation__inner {
+.country, .secondary-navigation__inner, .lets-talk, .homepage-illustration, .design-card__link, .main-hero__content, .primary-navigation__inner {
   flex-direction: column;
 }
 
@@ -1348,6 +1348,27 @@ span {
   }
 }
 
+.country {
+  width: 21.875rem;
+}
+.country__header {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.country__image {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.country__image--top {
+  background-image: url("../assets/shared/tablet/bg-pattern-small-circle-top.svg");
+}
+.country__image--bottom {
+  background-image: url("../assets/shared/tablet/bg-pattern-small-circle-bottom.svg");
+}
+.country__image--left {
+  background-image: url("../assets/shared/tablet/bg-pattern-small-circle-left.svg");
+}
+
 header {
   height: 6rem;
 }
@@ -1467,19 +1488,23 @@ header {
 
 .countries-section {
   width: 21.875rem;
-  height: 74.25rem;
-  background-color: gray;
   margin: 7.5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 @media (min-width: 768px) {
   .countries-section {
     margin: 0 auto;
+    gap: 3.625rem;
   }
 }
 @media (min-width: 1360px) {
   .countries-section {
     width: calc(100% - 20.625rem);
     height: 22.75rem;
+    flex-direction: row;
+    gap: 1.875rem;
   }
 }
 

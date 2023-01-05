@@ -2,14 +2,18 @@
 
 .countries-section {
     width: rem(350px);
-    height: rem(1188px);
-    background-color: gray;
     margin: rem(120px) auto;
+    display: flex;
+    flex-direction: column;
+    gap: rem(48px);
     @include mq(medium) {
        margin: 0 auto;
+       gap: rem(58px);
     }
     @include mq(large) {
         width: calc(100% - rem(330px));
         height: rem(364px);
+        flex-direction: row;
+        gap: rem(30px);
     }
 }
