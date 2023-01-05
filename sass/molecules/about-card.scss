@@ -2,8 +2,6 @@
 
 .about-card {
     color: $white;
-    background-color: $peach;
-
     @include mq(large) {
         display: flex;
         flex-direction: row-reverse;
@@ -17,36 +15,6 @@
         }
         @include mq(large) {
             border-radius: 0 15px 15px 0;
-        }
-    }
-    &__inner {
-        padding: rem(80px) rem(24px);
-        @include mq(medium) {
-            padding: rem(64px) rem(58px);
-        }
-        @include mq(large) {
-            width: 57.4%;
-            padding: rem(135px) rem(80px) rem(135px) rem(95px);
-        }
-    }
-    &__header {
-        margin-bottom: rem(24px);
-        @include mq(medium) {
-            margin-bottom: rem(32px);
-        }
-        @include mq(large) {
-            text-align: left;
-        }
-    }
-
-    &__text {
-        max-width: rem(550px);
-        margin: auto;
-        @include mq(medium) {
-            max-width: rem(720px);
-        }
-        @include mq(large) {
-            text-align: left;
         }
     }
 }
