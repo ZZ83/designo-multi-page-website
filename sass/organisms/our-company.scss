@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+
+.our-company {
+    @include mq(medium) {
+        display: flex;
+        flex-direction: column;
+        gap: rem(120px);
+    }
+    @include mq(large) {
+        gap: rem(160px);
+    }
+}
