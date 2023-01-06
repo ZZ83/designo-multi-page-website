@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 .countries-section {
-    width: rem(350px);
+    max-width: rem(350px);
     margin: rem(120px) auto;
     display: flex;
     flex-direction: column;
@@ -12,9 +12,16 @@
     }
     @include mq(large) {
         width: calc(100% - rem(330px));
+        max-width: initial;
         height: rem(364px);
         flex-direction: row;
         justify-content: space-between;
         gap: rem(30px);
+    }
+    &--contact {
+        margin: rem(120px) auto;
+        @include mq(large) {
+            margin: rem(160px) auto;
+        }
     }
 }

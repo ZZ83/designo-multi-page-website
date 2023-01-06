@@ -1,7 +1,9 @@
 @use '../abstracts' as *;
 
 .shape {
+    display: none;
     @include mq(large) {
+        display: initial;
         position: absolute;
         z-index: -10;
         &--281 {
@@ -10,8 +12,12 @@
         &--475 {
             top: rem(475px);
         }
+        &--161 {
+            right: 0;
+            bottom: rem(161px);
+        }
         &--1777 {
-            top:   rem(1777px);
+            top: rem(1777px);
             right: rem(-396px);
         }
         &--1879 {

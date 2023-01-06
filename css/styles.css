@@ -1157,8 +1157,12 @@ span {
   fill: hsl(11deg, 100%, 80%);
 }
 
+.shape {
+  display: none;
+}
 @media (min-width: 1360px) {
   .shape {
+    display: initial;
     position: absolute;
     z-index: -10;
   }
@@ -1167,6 +1171,10 @@ span {
   }
   .shape--475 {
     top: 29.6875rem;
+  }
+  .shape--161 {
+    right: 0;
+    bottom: 10.0625rem;
   }
   .shape--1777 {
     top: 111.0625rem;
@@ -1322,6 +1330,20 @@ span {
   background-image: url("../assets/shared/tablet/bg-pattern-small-circle-left.svg");
 }
 
+.contact {
+  height: 47.75rem;
+}
+@media (min-width: 768px) {
+  .contact {
+    height: 44.4375rem;
+  }
+}
+@media (min-width: 1360px) {
+  .contact {
+    height: 30rem;
+  }
+}
+
 header {
   height: 6rem;
 }
@@ -1455,7 +1477,7 @@ header {
 }
 
 .countries-section {
-  width: 21.875rem;
+  max-width: 21.875rem;
   margin: 7.5rem auto;
   display: flex;
   flex-direction: column;
@@ -1470,10 +1492,19 @@ header {
 @media (min-width: 1360px) {
   .countries-section {
     width: calc(100% - 20.625rem);
+    max-width: initial;
     height: 22.75rem;
     flex-direction: row;
     justify-content: space-between;
     gap: 1.875rem;
+  }
+}
+.countries-section--contact {
+  margin: 7.5rem auto;
+}
+@media (min-width: 1360px) {
+  .countries-section--contact {
+    margin: 10rem auto;
   }
 }
 

@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+.contact {
+    height: rem(764px);
+    @include mq(medium) {
+        height: rem(711px);
+    }
+    @include mq(large) {
+        height: rem(480px);
+    }
+}
