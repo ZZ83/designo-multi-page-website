@@ -1,8 +1,21 @@
 @use '../abstracts' as *;
 
 .homepage-illustrations-section {
+    width:  rem(327px);
+    margin: auto;
+    gap: rem(80px);
+    @extend %flex;
+    @extend %flex-d-c;
+    @include mq(medium) {
+        width: calc(100% - rem(80px));
+        max-width: rem(790px);
+        gap: rem(32px);
+    }
     @include mq(large) {
-        display: flex;
+        width: calc(100% - rem(330px));
+        max-width: initial;
+        gap: rem(30px);
+        flex-direction: row;
         justify-content: space-between;
     }
 }

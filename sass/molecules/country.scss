@@ -1,7 +1,6 @@
 @use '../abstracts' as *;
 
 .country {
-    width:  rem(350px);
     @extend %flex;
     @extend %flex-d-c;
     @extend %flex-ai-c;
