@@ -1,13 +1,39 @@
 @use '../abstracts' as *;
 
+// .shape {
+//     @include mq(large) {
+//         width:  rem(1006px);
+//         height: rem(594px);
+//         position: absolute;
+//         z-index: -10;
+//         background-color: $lightGray;
+//         border-radius: 297px 297px 297px 0px;
+//         &--281 {
+//             top: rem(281px);
+//         }
+//         &--475 {
+//             top: rem(475px);
+//         }
+//         &--1879 {
+//             top: rem(1879px);
+//             right: 0;
+//             opacity: 0.5;
+//             transform: rotate(-180deg);
+//         }
+//         &--1777 {
+//             top: rem(1777px);
+//             right: rem(-396px);
+//             opacity: 0.5;
+//             transform: rotate(-180deg);
+//         }
+//     }
+// }
+
+
 .shape {
     @include mq(large) {
-        width:  rem(1006px);
-        height: rem(594px);
         position: absolute;
         z-index: -10;
-        background-color: $lightGray;
-        border-radius: 297px 297px 297px 0px;
         &--281 {
             top: rem(281px);
         }
@@ -17,8 +43,11 @@
         &--1879 {
             top: rem(1879px);
             right: 0;
-            opacity: 0.5;
             transform: rotate(-180deg);
+        }
+        &--1777 {
+            top:   rem(1777px);
+            right: rem(-396px);
         }
     }
 }

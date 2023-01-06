@@ -1159,12 +1159,8 @@ span {
 
 @media (min-width: 1360px) {
   .shape {
-    width: 62.875rem;
-    height: 37.125rem;
     position: absolute;
     z-index: -10;
-    background-color: hsl(210deg, 17%, 95%);
-    border-radius: 297px 297px 297px 0px;
   }
   .shape--281 {
     top: 17.5625rem;
@@ -1175,8 +1171,11 @@ span {
   .shape--1879 {
     top: 117.4375rem;
     right: 0;
-    opacity: 0.5;
     transform: rotate(-180deg);
+  }
+  .shape--1777 {
+    top: 111.0625rem;
+    right: -24.75rem;
   }
 }
 
@@ -1473,6 +1472,7 @@ header {
     width: calc(100% - 20.625rem);
     height: 22.75rem;
     flex-direction: row;
+    justify-content: space-between;
     gap: 1.875rem;
   }
 }
