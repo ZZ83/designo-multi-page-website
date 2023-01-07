@@ -2,13 +2,17 @@
 
 .contact-section {
     padding: rem(72px) rem(24px);
+    max-width: rem(535px);
+    margin: auto;
     @include mq(medium) {
         padding-left:  rem(58px);
         padding-right: rem(58px);
+        max-width: rem(685px);
     }
     @include mq(large) {
         display: flex;
         gap: rem(95px);
         padding: rem(55px) rem(95px);
+        max-width: initial;
     }
 }
