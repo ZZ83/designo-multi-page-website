@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.contact-section {
+    padding: rem(72px) rem(24px);
+    @include mq(medium) {
+        padding-left:  rem(58px);
+        padding-right: rem(58px);
+    }
+    @include mq(large) {
+        display: flex;
+        gap: rem(95px);
+        padding: rem(55px) rem(95px);
+    }
+}

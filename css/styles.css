@@ -1330,23 +1330,6 @@ span {
   background-image: url("../assets/shared/tablet/bg-pattern-small-circle-left.svg");
 }
 
-.contact-section {
-  padding: 4.5rem 1.5rem;
-}
-@media (min-width: 768px) {
-  .contact-section {
-    padding-left: 3.625rem;
-    padding-right: 3.625rem;
-  }
-}
-@media (min-width: 1360px) {
-  .contact-section {
-    display: flex;
-    gap: 5.9375rem;
-    padding: 3.4375rem 5.9375rem;
-  }
-}
-
 .contact {
   color: hsl(0deg, 0%, 100%);
 }
@@ -1379,11 +1362,16 @@ span {
   flex-direction: column;
   margin-top: 3rem;
 }
+@media (min-width: 768px) {
+  .form {
+    margin-top: 2.5rem;
+  }
+}
 @media (min-width: 1360px) {
   .form {
     width: 100%;
     max-width: 23.75rem;
-    margin-top: 3.4375rem;
+    margin: 0;
   }
 }
 .form__input {
@@ -1595,6 +1583,23 @@ header {
 @media (min-width: 1360px) {
   .our-company {
     gap: 10rem;
+  }
+}
+
+.contact-section {
+  padding: 4.5rem 1.5rem;
+}
+@media (min-width: 768px) {
+  .contact-section {
+    padding-left: 3.625rem;
+    padding-right: 3.625rem;
+  }
+}
+@media (min-width: 1360px) {
+  .contact-section {
+    display: flex;
+    gap: 5.9375rem;
+    padding: 3.4375rem 5.9375rem;
   }
 }
 
