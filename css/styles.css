@@ -1431,6 +1431,23 @@ span {
   }
 }
 
+.contact-bg-img {
+  background-repeat: no-repeat;
+  background-position: top left -5.75rem;
+  background-image: url("../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
+}
+@media (min-width: 768px) {
+  .contact-bg-img {
+    background-image: url("../assets/contact/desktop/bg-pattern-hero-desktop.svg");
+    background-position: top -5.1875rem left -7.625rem;
+  }
+}
+@media (min-width: 1360px) {
+  .contact-bg-img {
+    background-position: bottom left;
+  }
+}
+
 header {
   height: 6rem;
 }

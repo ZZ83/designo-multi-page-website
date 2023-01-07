@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.contact-bg-img {
+    background-repeat: no-repeat;
+    background-position: top left rem(-92px);
+    background-image: url("../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
+    @include mq(medium) {
+        background-image: url("../assets/contact/desktop/bg-pattern-hero-desktop.svg");
+        background-position: top rem(-83px) left rem(-122px);
+    }
+    @include mq(large) {
+        background-position: bottom left;
+    }
+}
