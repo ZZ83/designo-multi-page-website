@@ -1,11 +1,85 @@
 @use '../abstracts' as *;
 
-.contact {
-    height: rem(764px);
+
+.contact-section {
+    padding: rem(72px) rem(24px);
     @include mq(medium) {
-        height: rem(711px);
+        padding-left:  rem(58px);
+        padding-right: rem(58px);
     }
     @include mq(large) {
-        height: rem(480px);
+        display: flex;
+        gap: rem(95px);
+        padding: rem(55px) rem(95px);
+    }
+}
+
+.contact {
+    color: $white;
+    @include mq(large) {
+        max-width: rem(445px);
+    }
+    &__header,
+    &__text {
+        @include mq(medium) {
+            text-align: left;
+        }
+    }
+    &__header {
+        margin-bottom: rem(24px);
+        @include mq(medium) {
+            margin-bottom: rem(32px);
+        }
+        @include mq(large) {
+            margin-top: rem(80px);
+        }
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: rem(48px);
+    // background-color: orange;
+    @include mq(large) {
+        width: 100%;
+        max-width: rem(380px);
+        margin-top: rem(55px);
+    }
+
+
+    &__input {
+        
+        border: none;
+        background: none;
+        height: rem(38px);
+        margin-bottom: rem(25px);
+        border-bottom: 1px solid white;
+        &::placeholder {
+            color: white;
+            opacity: 0.5;
+        }
+    }
+
+
+    textarea {
+        border: none;
+        background: none;
+        height: rem(102px);
+        border-bottom: 1px solid white;
+        margin-bottom: rem(40px);
+        @include mq(medium) {
+            margin-bottom: rem(24px);
+        }
+    } 
+    
+    &__btn {
+        cursor: pointer;
+        border: none;
+        margin: auto;
+        @include mq(medium) {
+            margin-left: auto;
+            margin-right: initial;
+        }
     }
 }
