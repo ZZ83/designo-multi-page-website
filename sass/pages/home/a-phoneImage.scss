@@ -1,0 +1,21 @@
+@use '../../abstracts' as *;
+
+.a-phoneImage {
+    padding-top: rem(674px);
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include mq(medium) {
+        padding-top: rem(638px);
+    }
+    @include mq(large) {
+        width:  rem(469px);
+        height: rem(820px);
+        margin-top: 1rem;
+        margin-left: auto;
+        padding-top: 0;
+        position: static;
+        transform: initial;
+    }
+}
