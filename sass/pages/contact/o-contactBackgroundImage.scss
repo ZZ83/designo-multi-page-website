@@ -1,6 +1,6 @@
-@use '../abstracts' as *;
+@use '../../abstracts' as *;
 
-.contact-bg-img {
+.o-contactBackgroundImage {
     background-repeat: no-repeat;
     background-position: top left rem(-92px);
     background-image: url("../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");

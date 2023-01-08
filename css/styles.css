@@ -336,11 +336,11 @@ template {
 }
 
 /********************** PLACHOLDERS **********************/
-.o-traitsSection, .traits, .main-hero, header, .form, .country, .icons, .secondary-navigation__inner, .secondary-navigation__list:first-child, .lets-talk, .design-card__link, .primary-navigation__inner {
+.contactForm, .o-traitsSection, .trait, .main-hero, header, .country, .icons, .secondary-navigation__inner, .secondary-navigation__list:first-child, .lets-talk, .design-card__link, .primary-navigation__inner {
   display: flex;
 }
 
-.traits, .main-hero, header, .country, .icons, .secondary-navigation__inner, .lets-talk {
+.trait, .main-hero, header, .country, .icons, .secondary-navigation__inner, .lets-talk {
   align-items: center;
 }
 
@@ -352,7 +352,7 @@ header, .icons, .lets-talk, .primary-navigation__inner {
   justify-content: center;
 }
 
-.o-traitsSection, .traits, .main-hero, .form, .country, .secondary-navigation__inner, .lets-talk, .design-card__link, .primary-navigation__inner {
+.contactForm, .o-traitsSection, .trait, .main-hero, .country, .secondary-navigation__inner, .lets-talk, .design-card__link, .primary-navigation__inner {
   flex-direction: column;
 }
 
@@ -1221,109 +1221,6 @@ span {
   background-image: url("../assets/shared/tablet/bg-pattern-small-circle-left.svg");
 }
 
-.contact {
-  color: hsl(0deg, 0%, 100%);
-}
-@media (min-width: 1360px) {
-  .contact {
-    max-width: 27.8125rem;
-  }
-}
-@media (min-width: 768px) {
-  .contact__header, .contact__text {
-    text-align: left;
-  }
-}
-.contact__header {
-  margin-bottom: 1.5rem;
-}
-@media (min-width: 768px) {
-  .contact__header {
-    margin-bottom: 2rem;
-  }
-}
-@media (min-width: 1360px) {
-  .contact__header {
-    margin-top: 5rem;
-  }
-}
-
-.form {
-  margin-top: 3rem;
-}
-@media (min-width: 768px) {
-  .form {
-    margin-top: 2.5rem;
-  }
-}
-@media (min-width: 1360px) {
-  .form {
-    width: 100%;
-    max-width: 23.75rem;
-    margin: 0;
-  }
-}
-.form__input, .form__textarea {
-  font-size: 0.9375rem;
-  line-height: 1.625rem;
-  color: hsl(0deg, 0%, 100%);
-  cursor: pointer;
-  border: none;
-  background: none;
-  border-bottom: 1px solid hsl(0deg, 0%, 100%);
-  padding-left: 0.875rem;
-  padding-bottom: 0.75rem;
-}
-@media (min-width: 768px) {
-  .form__input, .form__textarea {
-    padding-left: 1.5rem;
-  }
-}
-@media (min-width: 1360px) {
-  .form__input, .form__textarea {
-    padding-left: 1rem;
-  }
-}
-.form__input:focus, .form__textarea:focus {
-  outline: none;
-  opacity: 1;
-  border-bottom: 2px solid hsl(0deg, 0%, 100%);
-}
-.form__input::placeholder, .form__textarea::placeholder {
-  color: hsl(0deg, 0%, 100%);
-  opacity: 0.5;
-}
-.form__input {
-  height: 2.375rem;
-  margin-bottom: 1.5625rem;
-}
-.form__textarea {
-  height: 6.375rem;
-  margin-bottom: 2.5rem;
-}
-@media (min-width: 768px) {
-  .form__textarea {
-    margin-bottom: 1.5rem;
-  }
-}
-
-.contact-bg-img {
-  background-repeat: no-repeat;
-  background-position: top left -5.75rem;
-  background-image: url("../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
-}
-@media (min-width: 768px) {
-  .contact-bg-img {
-    background-image: url("../assets/contact/desktop/bg-pattern-hero-desktop.svg");
-    background-position: top -5.1875rem left -7.625rem;
-  }
-}
-@media (min-width: 1360px) {
-  .contact-bg-img {
-    background-position: bottom left;
-  }
-}
-
 header {
   height: 6rem;
 }
@@ -1479,27 +1376,6 @@ header {
   }
 }
 
-.contact-section {
-  padding: 4.5rem 1.5rem;
-  max-width: 33.4375rem;
-  margin: auto;
-}
-@media (min-width: 768px) {
-  .contact-section {
-    padding-left: 3.625rem;
-    padding-right: 3.625rem;
-    max-width: 42.8125rem;
-  }
-}
-@media (min-width: 1360px) {
-  .contact-section {
-    display: flex;
-    gap: 5.9375rem;
-    padding: 3.4375rem 5.9375rem;
-    max-width: initial;
-  }
-}
-
 .a-phoneImage {
   padding-top: 42.125rem;
   position: absolute;
@@ -1577,24 +1453,24 @@ header {
   }
 }
 
-.traits__header {
+.trait__header {
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
 @media (min-width: 768px) and (max-width: 1359px) {
-  .traits {
+  .trait {
     flex-direction: row;
     justify-content: space-between;
   }
-  .traits__text {
+  .trait__text {
     text-align: left;
   }
-  .traits__header {
+  .trait__header {
     text-align: left;
     margin-top: 0;
     margin-bottom: 1rem;
   }
-  .traits__inner {
+  .trait__inner {
     width: 27.4375rem;
   }
 }
@@ -1641,6 +1517,129 @@ header {
     gap: 1.875rem;
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+.m-contactContent {
+  color: hsl(0deg, 0%, 100%);
+}
+@media (min-width: 1360px) {
+  .m-contactContent {
+    max-width: 27.8125rem;
+  }
+}
+@media (min-width: 768px) {
+  .m-contactContent__header, .m-contactContent__text {
+    text-align: left;
+  }
+}
+.m-contactContent__header {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .m-contactContent__header {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1360px) {
+  .m-contactContent__header {
+    margin-top: 5rem;
+  }
+}
+
+.contactForm {
+  margin-top: 3rem;
+}
+@media (min-width: 768px) {
+  .contactForm {
+    margin-top: 2.5rem;
+  }
+}
+@media (min-width: 1360px) {
+  .contactForm {
+    width: 100%;
+    max-width: 23.75rem;
+    margin: 0;
+  }
+}
+.contactForm__input, .contactForm__textarea {
+  font-size: 0.9375rem;
+  line-height: 1.625rem;
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+  border: none;
+  background: none;
+  border-bottom: 1px solid hsl(0deg, 0%, 100%);
+  padding-left: 0.875rem;
+  padding-bottom: 0.75rem;
+}
+@media (min-width: 768px) {
+  .contactForm__input, .contactForm__textarea {
+    padding-left: 1.5rem;
+  }
+}
+@media (min-width: 1360px) {
+  .contactForm__input, .contactForm__textarea {
+    padding-left: 1rem;
+  }
+}
+.contactForm__input:focus, .contactForm__textarea:focus {
+  outline: none;
+  opacity: 1;
+  border-bottom: 2px solid hsl(0deg, 0%, 100%);
+}
+.contactForm__input::placeholder, .contactForm__textarea::placeholder {
+  color: hsl(0deg, 0%, 100%);
+  opacity: 0.5;
+}
+.contactForm__input {
+  height: 2.375rem;
+  margin-bottom: 1.5625rem;
+}
+.contactForm__textarea {
+  height: 6.375rem;
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 768px) {
+  .contactForm__textarea {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.o-contactBackgroundImage {
+  background-repeat: no-repeat;
+  background-position: top left -5.75rem;
+  background-image: url("../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
+}
+@media (min-width: 768px) {
+  .o-contactBackgroundImage {
+    background-image: url("../assets/contact/desktop/bg-pattern-hero-desktop.svg");
+    background-position: top -5.1875rem left -7.625rem;
+  }
+}
+@media (min-width: 1360px) {
+  .o-contactBackgroundImage {
+    background-position: bottom left;
+  }
+}
+
+.o-contactSection {
+  padding: 4.5rem 1.5rem;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .o-contactSection {
+    padding-left: 3.625rem;
+    padding-right: 3.625rem;
+    max-width: 42.8125rem;
+  }
+}
+@media (min-width: 1360px) {
+  .o-contactSection {
+    display: flex;
+    gap: 5.9375rem;
+    padding: 3.4375rem 5.9375rem;
+    max-width: initial;
   }
 }
 

@@ -1,6 +1,6 @@
-@use '../abstracts' as *;
+@use '../../abstracts' as *;
 
-.contact {
+.m-contactContent {
     color: $white;
     @include mq(large) {
         max-width: rem(445px);

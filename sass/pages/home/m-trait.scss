@@ -1,6 +1,6 @@
 @use '../../abstracts' as *;
 
-.traits {
+.trait {
     @extend %flex;
     @extend %flex-d-c;
     @extend %flex-ai-c;

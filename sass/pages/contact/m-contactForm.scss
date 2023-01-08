@@ -1,6 +1,6 @@
-@use '../abstracts' as *;
+@use '../../abstracts' as *;
 
-.form {
+.contactForm {
     margin-top: rem(48px);
     @extend %flex;
     @extend %flex-d-c;

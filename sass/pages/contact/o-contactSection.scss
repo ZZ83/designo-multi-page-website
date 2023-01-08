@@ -1,8 +1,7 @@
-@use '../abstracts' as *;
+@use '../../abstracts' as *;
 
-.contact-section {
+.o-contactSection {
     padding: rem(72px) rem(24px);
-    max-width: rem(535px);
     margin: auto;
     @include mq(medium) {
         padding-left:  rem(58px);
