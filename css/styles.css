@@ -492,9 +492,9 @@ span {
 .btn {
   width: 9.5rem;
   height: 3.5rem;
-  text-transform: uppercase;
-  border-radius: 8px;
   font-weight: 500;
+  border-radius: 8px;
+  text-transform: uppercase;
 }
 .btn:hover {
   color: hsl(0deg, 0%, 100%);
@@ -509,19 +509,14 @@ span {
   background-color: hsl(11deg, 73%, 66%);
 }
 .btn--submit {
-  cursor: pointer;
   border: none;
   margin: auto;
-  padding: 0;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .btn--submit {
-    margin-left: auto;
     margin-right: initial;
   }
-}
-.btn--submit:hover {
-  border: none;
 }
 
 .map {

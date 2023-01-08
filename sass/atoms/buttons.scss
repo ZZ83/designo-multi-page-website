@@ -3,9 +3,9 @@
 .btn {
     width: rem(152px);
     height: rem(56px);
-    text-transform: uppercase;
-    border-radius: 8px;
     font-weight: 500;
+    border-radius: 8px;
+    text-transform: uppercase;
     @extend %flex-center;
     &:hover {
         color: $white;
@@ -20,16 +20,11 @@
         background-color: $peach;
     }
     &--submit {
-        cursor: pointer;
         border: none;
         margin: auto;
-        padding: 0;
+        cursor: pointer;
         @include mq(medium) {
-            margin-left: auto;
             margin-right: initial;
-        }
-        &:hover {
-            border: none;
         }
     }
 }
