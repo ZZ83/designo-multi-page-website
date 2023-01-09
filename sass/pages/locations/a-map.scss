@@ -1,6 +1,6 @@
-@use '../abstracts' as *;
+@use '../../abstracts' as *;
 
-.map {
+.a-map {
     width: 100%;
     display: block;
     @include mq(medium) {

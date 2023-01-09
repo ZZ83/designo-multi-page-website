@@ -1,6 +1,6 @@
-@use '../abstracts' as *;
+@use '../../abstracts' as *;
 
-.location-card {
+.m-locationCard {
     height: rem(394px);
     background-color: #FDF3F0;
     padding: rem(80px) rem(24px);
@@ -41,7 +41,7 @@
         &__inner {
             justify-content: space-between;
         }
-        &--switch {
+        &.-switch {
             order: -1;
         }
     }

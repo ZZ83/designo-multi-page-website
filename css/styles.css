@@ -520,21 +520,6 @@ span {
   }
 }
 
-.map {
-  width: 100%;
-  display: block;
-}
-@media (min-width: 768px) {
-  .map {
-    border-radius: 15px;
-  }
-}
-@media (min-width: 1360px) {
-  .map {
-    height: 20.375rem;
-  }
-}
-
 .illustration {
   background-repeat: no-repeat;
   background-position: center;
@@ -789,74 +774,6 @@ span {
     border-radius: 0 0 15px 15px;
     height: 9.875rem;
     width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  .location {
-    display: grid;
-    gap: 1.875rem;
-    grid-template-columns: 1fr;
-  }
-}
-@media (min-width: 1360px) {
-  .location {
-    gap: 2.71%;
-    grid-template-columns: 31.53% 65.76%;
-  }
-  .location--switch {
-    grid-template-columns: 65.76% 31.53%;
-  }
-}
-
-.location-card {
-  height: 24.625rem;
-  background-color: #FDF3F0;
-  padding: 5rem 1.5rem;
-  background-repeat: no-repeat;
-  background-image: url("../assets/locations/mobile/bg-mobile.png");
-  background-position: top left;
-}
-.location-card__header {
-  color: hsl(11deg, 73%, 66%);
-  font-size: 2rem;
-  text-transform: capitalize;
-  margin-bottom: 1.5rem;
-  letter-spacing: normal;
-}
-.location-card__inner {
-  display: grid;
-  gap: 1.5rem;
-  margin: auto;
-  max-width: 33.75rem;
-}
-@media (min-width: 768px) {
-  .location-card {
-    height: 20.375rem;
-    border-radius: 15px;
-    padding: 5.5rem 4.6875rem;
-    background-image: url("../assets/locations/tablet/bg-tablet.png");
-    background-position: bottom left;
-  }
-  .location-card__header {
-    font-size: 2.5rem;
-    text-align: left;
-  }
-  .location-card__inner {
-    display: flex;
-    gap: 1.5rem;
-    margin: initial;
-  }
-}
-@media (min-width: 1360px) {
-  .location-card {
-    padding: 5.5rem 5.9375rem;
-  }
-  .location-card__inner {
-    justify-content: space-between;
-  }
-  .location-card--switch {
-    order: -1;
   }
 }
 
@@ -1284,26 +1201,6 @@ header {
   }
 }
 
-.location-section {
-  width: 100%;
-  display: grid;
-  gap: 2.5rem;
-  grid-template-columns: 1fr;
-}
-@media (min-width: 768px) {
-  .location-section {
-    gap: 7.5rem;
-    margin: auto;
-    width: calc(100% - 5rem);
-  }
-}
-@media (min-width: 1360px) {
-  .location-section {
-    gap: 2rem;
-    width: calc(100% - 20.625rem);
-  }
-}
-
 .footer {
   position: relative;
   height: 50.9375rem;
@@ -1518,6 +1415,109 @@ header {
     gap: 1.875rem;
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+.a-map {
+  width: 100%;
+  display: block;
+}
+@media (min-width: 768px) {
+  .a-map {
+    border-radius: 15px;
+  }
+}
+@media (min-width: 1360px) {
+  .a-map {
+    height: 20.375rem;
+  }
+}
+
+.m-locationCard {
+  height: 24.625rem;
+  background-color: #FDF3F0;
+  padding: 5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-image: url("../assets/locations/mobile/bg-mobile.png");
+  background-position: top left;
+}
+.m-locationCard__header {
+  color: hsl(11deg, 73%, 66%);
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  letter-spacing: normal;
+}
+.m-locationCard__inner {
+  display: grid;
+  gap: 1.5rem;
+  margin: auto;
+  max-width: 33.75rem;
+}
+@media (min-width: 768px) {
+  .m-locationCard {
+    height: 20.375rem;
+    border-radius: 15px;
+    padding: 5.5rem 4.6875rem;
+    background-image: url("../assets/locations/tablet/bg-tablet.png");
+    background-position: bottom left;
+  }
+  .m-locationCard__header {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  .m-locationCard__inner {
+    display: flex;
+    gap: 1.5rem;
+    margin: initial;
+  }
+}
+@media (min-width: 1360px) {
+  .m-locationCard {
+    padding: 5.5rem 5.9375rem;
+  }
+  .m-locationCard__inner {
+    justify-content: space-between;
+  }
+  .m-locationCard.-switch {
+    order: -1;
+  }
+}
+
+@media (min-width: 768px) {
+  .o-location {
+    display: grid;
+    gap: 1.875rem;
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 1360px) {
+  .o-location {
+    gap: 2.71%;
+    grid-template-columns: 31.53% 65.76%;
+  }
+  .o-location.-switch {
+    grid-template-columns: 65.76% 31.53%;
+  }
+}
+
+.o-locationSection {
+  width: 100%;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .o-locationSection {
+    gap: 7.5rem;
+    margin: auto;
+    width: calc(100% - 5rem);
+  }
+}
+@media (min-width: 1360px) {
+  .o-locationSection {
+    gap: 2rem;
+    width: calc(100% - 20.625rem);
   }
 }
 

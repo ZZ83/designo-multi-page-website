@@ -1,6 +1,6 @@
-@use '../abstracts' as *;
+@use '../../abstracts' as *;
 
-.location {
+.o-location {
     @include mq(medium) {
         display: grid;
         gap: rem(30px);
@@ -9,10 +9,8 @@
     @include mq(large) {
         gap: 2.71%;
         grid-template-columns: 31.53% 65.76%;
-        &--switch {
+        &.-switch {
             grid-template-columns: 65.76% 31.53%;
         }
     }
 }
-
-
