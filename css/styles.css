@@ -715,68 +715,6 @@ span {
   }
 }
 
-.project-card__image {
-  display: block;
-  width: 100%;
-  border-radius: 15px 15px 0 0;
-}
-.project-card__inner {
-  cursor: pointer;
-  border-radius: 0 0 15px 15px;
-  background-color: #FDF3F0;
-  height: 9.875rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.project-card__inner:hover {
-  background-color: hsl(11deg, 73%, 66%);
-}
-.project-card__inner:hover h3,
-.project-card__inner:hover p {
-  color: hsl(0deg, 0%, 100%);
-}
-.project-card__header {
-  color: hsl(11deg, 73%, 66%);
-  padding-bottom: 1rem;
-}
-.project-card__text {
-  color: hsl(264deg, 5%, 20%);
-  font-size: 1rem;
-  line-height: 1.625rem;
-}
-@media (min-width: 768px) {
-  .project-card {
-    display: flex;
-  }
-  .project-card__image {
-    width: 50%;
-    border-radius: 15px 0 0 15px;
-  }
-  .project-card__inner {
-    border-radius: 0 15px 15px 0;
-    height: initial;
-    width: 50%;
-  }
-}
-@media (min-width: 1360px) {
-  .project-card {
-    height: 29.875rem;
-    flex-direction: column;
-  }
-  .project-card__image {
-    width: 100%;
-    height: 20rem;
-    border-radius: 15px 15px 0 0;
-  }
-  .project-card__inner {
-    border-radius: 0 0 15px 15px;
-    height: 9.875rem;
-    width: 100%;
-  }
-}
-
 .lets-talk {
   height: 23.6875rem;
   margin-top: 6rem;
@@ -1053,29 +991,6 @@ header {
   }
 }
 
-.projects-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2.5rem;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-}
-@media (min-width: 768px) {
-  .projects-section {
-    gap: 2rem;
-    margin-top: 7.5rem;
-    margin-bottom: 7.5rem;
-  }
-}
-@media (min-width: 1360px) {
-  .projects-section {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem 1.875rem;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-  }
-}
-
 .footer {
   position: relative;
   height: 50.9375rem;
@@ -1277,6 +1192,91 @@ header {
     gap: 1.875rem;
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+.m-projectCard__image {
+  display: block;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.m-projectCard__inner {
+  cursor: pointer;
+  border-radius: 0 0 15px 15px;
+  background-color: #FDF3F0;
+  height: 9.875rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.m-projectCard__inner:hover {
+  background-color: hsl(11deg, 73%, 66%);
+}
+.m-projectCard__inner:hover h3,
+.m-projectCard__inner:hover p {
+  color: hsl(0deg, 0%, 100%);
+}
+.m-projectCard__header {
+  color: hsl(11deg, 73%, 66%);
+  padding-bottom: 1rem;
+}
+.m-projectCard__text {
+  color: hsl(264deg, 5%, 20%);
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+@media (min-width: 768px) {
+  .m-projectCard {
+    display: flex;
+  }
+  .m-projectCard__image {
+    width: 50%;
+    border-radius: 15px 0 0 15px;
+  }
+  .m-projectCard__inner {
+    border-radius: 0 15px 15px 0;
+    height: initial;
+    width: 50%;
+  }
+}
+@media (min-width: 1360px) {
+  .m-projectCard {
+    height: 29.875rem;
+    flex-direction: column;
+  }
+  .m-projectCard__image {
+    width: 100%;
+    height: 20rem;
+    border-radius: 15px 15px 0 0;
+  }
+  .m-projectCard__inner {
+    border-radius: 0 0 15px 15px;
+    height: 9.875rem;
+    width: 100%;
+  }
+}
+
+.o-projectsSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+@media (min-width: 768px) {
+  .o-projectsSection {
+    gap: 2rem;
+    margin-top: 7.5rem;
+    margin-bottom: 7.5rem;
+  }
+}
+@media (min-width: 1360px) {
+  .o-projectsSection {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 1.875rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
   }
 }
 
