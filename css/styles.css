@@ -380,6 +380,7 @@ header, .icons, .lets-talk, .primary-navigation__inner {
 
 body {
   position: relative;
+  overflow-x: hidden;
   margin: 0 auto;
   max-width: 90rem;
   font-family: "Jost", sans-serif;
