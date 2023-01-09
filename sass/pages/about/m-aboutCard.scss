@@ -1,6 +1,6 @@
-@use '../abstracts' as *;
+@use '../../abstracts' as *;
 
-.about-card {
+.m-aboutCard {
     background-color: transparent;
     @include mq(large) {
         display: flex;
@@ -19,7 +19,7 @@
             }
         }
     }
-    &--reverse {
+    &.-reverse {
         flex-direction: row-reverse;
     }
 }

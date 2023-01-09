@@ -1,6 +1,6 @@
-@use '../abstracts' as *;
+@use '../../abstracts' as *;
 
-.our-company {
+.o-ourCompany {
     @include mq(medium) {
         display: flex;
         flex-direction: column;

@@ -1,4 +1,4 @@
-@use '../abstracts' as *;
+@use '../../abstracts' as *;
 
 .about-content {
     color: $black;
@@ -51,7 +51,7 @@
     }
 }
 
-.about-us-content {
+.m-aboutUsContent {
     color: $white;
     background-color: $peach;
     padding: rem(80px) rem(24px);
