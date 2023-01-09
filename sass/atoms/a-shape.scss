@@ -1,26 +1,26 @@
 @use '../abstracts' as *;
 
-.shape {
+.a-shape {
     display: none;
     @include mq(large) {
         display: initial;
         position: absolute;
         z-index: -10;
-        &--281 {
+        &.-top281 {
             top: rem(281px);
         }
-        &--475 {
+        &.-top475 {
             top: rem(475px);
         }
-        &--161 {
+        &.-top161 {
             right: 0;
             bottom: rem(161px);
         }
-        &--1777 {
+        &.-top1777 {
             top: rem(1777px);
             right: rem(-396px);
         }
-        &--1879 {
+        &.-top1879 {
             top: rem(1879px);
             right: 0;
             transform: rotate(-180deg);

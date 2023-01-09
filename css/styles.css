@@ -534,6 +534,36 @@ span {
   background-image: url("../assets/shared/tablet/bg-pattern-small-circle-left.svg");
 }
 
+.a-shape {
+  display: none;
+}
+@media (min-width: 1360px) {
+  .a-shape {
+    display: initial;
+    position: absolute;
+    z-index: -10;
+  }
+  .a-shape.-top281 {
+    top: 17.5625rem;
+  }
+  .a-shape.-top475 {
+    top: 29.6875rem;
+  }
+  .a-shape.-top161 {
+    right: 0;
+    bottom: 10.0625rem;
+  }
+  .a-shape.-top1777 {
+    top: 111.0625rem;
+    right: -24.75rem;
+  }
+  .a-shape.-top1879 {
+    top: 117.4375rem;
+    right: 0;
+    transform: rotate(-180deg);
+  }
+}
+
 .primary-navigation {
   height: 100%;
   position: fixed;
@@ -902,36 +932,6 @@ span {
 }
 .icons__icon:hover {
   fill: hsl(11deg, 100%, 80%);
-}
-
-.shape {
-  display: none;
-}
-@media (min-width: 1360px) {
-  .shape {
-    display: initial;
-    position: absolute;
-    z-index: -10;
-  }
-  .shape--281 {
-    top: 17.5625rem;
-  }
-  .shape--475 {
-    top: 29.6875rem;
-  }
-  .shape--161 {
-    right: 0;
-    bottom: 10.0625rem;
-  }
-  .shape--1777 {
-    top: 111.0625rem;
-    right: -24.75rem;
-  }
-  .shape--1879 {
-    top: 117.4375rem;
-    right: 0;
-    transform: rotate(-180deg);
-  }
 }
 
 .country__header {
