@@ -13,20 +13,19 @@ This is a solution to the [Designo agency website challenge on Frontend Mentor](
 
 ## Screenshot
 
-![](./screenshot.jpg)
+![](./assets/designo.jpg)
 
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Website](https://zz83.github.io/designo-multi-page-website/)
 
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
+- HTML 
 - CSS custom properties
 - Flexbox
 - CSS Grid
