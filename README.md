@@ -13,7 +13,7 @@ This is a solution to the [Designo agency website challenge on Frontend Mentor](
 
 ## Screenshot
 
-![](./assets/designo.png)
+<!-- ![](./assets/designo.png) -->
 
 
 ## Links
