@@ -1,0 +1,9 @@
+@use '../00-abstracts' as *;
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    text-transform: uppercase;
+}

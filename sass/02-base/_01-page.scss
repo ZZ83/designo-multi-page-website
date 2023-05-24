@@ -1,0 +1,19 @@
+/*------------------------------------*\
+  #PAGE
+\*------------------------------------*/
+
+/**
+ * Page-level styling (e.g. HTML and BODY elements).
+ */
+@use '../00-abstracts' as *;
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    margin: 0 auto;
+    max-width: rem(1440px);
+    font-family: 'Jost', sans-serif;
+    @include mq(medium) {
+        overflow-y: scroll;
+    }
+}

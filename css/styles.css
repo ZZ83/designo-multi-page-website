@@ -428,6 +428,12 @@ header, .icons, .lets-talk, .primary-navigation__inner {
   width: 100%;
 }
 
+/*------------------------------------*\
+  #PAGE
+\*------------------------------------*/
+/**
+ * Page-level styling (e.g. HTML and BODY elements).
+ */
 body {
   position: relative;
   overflow-x: hidden;
@@ -437,7 +443,7 @@ body {
 }
 @media (min-width: 768px) {
   body {
-    overflow-y: scroll !important;
+    overflow-y: scroll;
   }
 }
 
@@ -496,8 +502,11 @@ p {
   }
 }
 
-a {
-  text-decoration: none;
+span {
+  font-weight: 500;
+  font-size: 0.9375rem;
+  letter-spacing: 0.3125rem;
+  text-transform: uppercase;
 }
 
 ul {
@@ -508,11 +517,8 @@ li {
   text-transform: uppercase;
 }
 
-span {
-  font-weight: 500;
-  font-size: 0.9375rem;
-  letter-spacing: 0.3125rem;
-  text-transform: uppercase;
+a {
+  text-decoration: none;
 }
 
 .a-logo {
