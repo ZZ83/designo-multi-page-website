@@ -1,6 +1,6 @@
+const body      = document.querySelector('body');
 const mainNav   = document.querySelector('.primary-navigation');
 const navToggle = document.querySelector('.mobile-menu-icons');
-const body = document.querySelector('body');
 
 navToggle.addEventListener('click', () => {
     const vis = mainNav.getAttribute("data-visible");
@@ -15,4 +15,3 @@ navToggle.addEventListener('click', () => {
         body.style.overflowY = "scroll"
     }
 })
-
