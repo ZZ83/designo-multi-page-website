@@ -1187,13 +1187,24 @@ header {
   }
 }
 
+@media (min-width: 1360px) {
+  .trait {
+    max-width: 21.875rem;
+  }
+}
 .trait__header {
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
+@media (min-width: 768px) {
+  .trait__header {
+    margin: 0;
+  }
+}
 @media (min-width: 1360px) {
-  .trait {
-    max-width: 21.875rem;
+  .trait__header {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1359px) {
@@ -1538,7 +1549,7 @@ header {
   }
 }
 
-#empty {
+.emptyFormsWrapper {
   position: absolute;
   right: 0;
 }
@@ -1561,7 +1572,7 @@ header {
   width: 12.5rem;
   right: 0;
   text-decoration: underline;
-  text-decoration-color: white;
+  text-decoration-color: hsl(0deg, 0%, 100%);
 }
 .empty--email {
   top: 3.9375rem;
@@ -1580,7 +1591,7 @@ header {
   line-height: 26px;
   letter-spacing: normal;
   text-transform: none;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
 }
 
 .o-contactBackgroundImage {
