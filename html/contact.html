@@ -36,13 +36,38 @@
 						<h1 class="m-contactContent__header">Contact Us</h1>
 						<p  class="m-contactContent__text">Ready to take it to the next level? Let’s talk about your project or idea and find out how we can help your business grow. If you are looking for unique digital experiences that’s relatable to your users, drop us a line.</p>
 					</div>
-					<!--CONTACT FORM -->
-					<form class="contactForm" target="_blank" action="https://formsubmit.co/4fc0682cccd28818a8b793780742d9fa" method="POST">
-						<input    class="contactForm__input" type="text" name="name"  placeholder="Name" required/>  
-						<input    class="contactForm__input" type="text" name="email" placeholder="Email Address" required/>
-						<input    class="contactForm__input" type="tel"  name="phone" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-						<textarea class="contactForm__textarea" name="text"  placeholder="Your Message" required></textarea>
-						<button class="btn btn--white btn--submit">Send Message</button>
+					<!-- CONTACT FORM -->
+					<form id="form" class="contactForm" target="_blank" action="" method="POST">
+						<input id="name"  class="contactForm__input" type="text" name="name"  placeholder="Name"          required/>
+						<input id="email" class="contactForm__input" type="text" name="email" placeholder="Email Address" required/>
+						<!-- EMAIL ERROR MESSAGE -->
+						<div id="error" class="empty">
+							<span class="empty__message">Please use a valid email address</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#FFF"/><path fill="#E7816B" d="M11 14v2H9v-2h2zm0-9v7H9V5h2z"/></g></svg>
+						</div>
+						<input id="phone" class="contactForm__input" type="tel"  name="phone" placeholder="Phone (Optional)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+						<!-- PHONE ERROR MESSAGE -->
+						<div id="phoneFormat" class="empty">
+							<span class="empty__message">Format 525-333-5215</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#FFF"/><path fill="#E7816B" d="M11 14v2H9v-2h2zm0-9v7H9V5h2z"/></g></svg>
+						</div>
+						<textarea id="message" class="contactForm__textarea" name="text"  placeholder="Your Message" required></textarea>
+						<button id="submitButton" class="btn btn--white btn--submit">Send Message</button>
+						<!-- EMPTY FIELD ERROR MESSAGE -->
+						<div id="empty">
+							<div class="empty">
+								<span class="empty__message">Can't be empty</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#FFF"/><path fill="#E7816B" d="M11 14v2H9v-2h2zm0-9v7H9V5h2z"/></g></svg>
+							</div>
+							<div class="empty">
+								<span class="empty__message">Can't be empty</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#FFF"/><path fill="#E7816B" d="M11 14v2H9v-2h2zm0-9v7H9V5h2z"/></g></svg>
+							</div>
+							<div class="empty">
+								<span class="empty__message">Can't be empty</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#FFF"/><path fill="#E7816B" d="M11 14v2H9v-2h2zm0-9v7H9V5h2z"/></g></svg>
+							</div>
+						</div>
 					</form>
 				</section>
 			</div>
@@ -105,5 +130,6 @@
 		<!-- ABSOLUTE POSITIONED SHAPE ON BODY -->
 		<svg class="a-shape -top161"  width="1006" height="594" xmlns="http://www.w3.org/2000/svg"><path d="M297 0h412c164.029 0 297 132.971 297 297S873.029 594 709 594H0V297C0 132.971 132.971 0 297 0z" fill="#F1F3F5" fill-rule="evenodd" opacity=".502"/></svg>
 		<script src="../script.js"></script>
+		<script src="../script-form.js"></script>
 	</body>
 </html>

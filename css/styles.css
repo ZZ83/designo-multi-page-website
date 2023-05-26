@@ -437,12 +437,6 @@ header, .icons, .lets-talk, .primary-navigation__inner {
   width: 100%;
 }
 
-/*------------------------------------*\
-  #PAGE
-\*------------------------------------*/
-/**
- * Page-level styling (e.g. HTML and BODY elements).
- */
 body {
   position: relative;
   overflow-x: hidden;
@@ -1481,6 +1475,7 @@ header {
 }
 
 .contactForm {
+  position: relative;
   margin-top: 3rem;
 }
 @media (min-width: 768px) {
@@ -1526,8 +1521,12 @@ header {
   opacity: 0.5;
 }
 .contactForm__input {
+  position: relative;
   height: 2.375rem;
   margin-bottom: 1.5625rem;
+}
+.contactForm__input::after {
+  content: "Remember this";
 }
 .contactForm__textarea {
   height: 6.375rem;
@@ -1537,6 +1536,51 @@ header {
   .contactForm__textarea {
     margin-bottom: 1.5rem;
   }
+}
+
+#empty {
+  position: absolute;
+  right: 0;
+}
+
+.empty {
+  width: 6.5rem;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  right: 0.5rem;
+}
+.empty--name, .empty--email, .empty--phone, .empty--message, .empty--error {
+  display: flex;
+}
+.empty--error, .empty--phone {
+  position: relative;
+  margin-top: -1.25rem;
+  margin-left: auto;
+  width: 12.5rem;
+  right: 0;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+.empty--email {
+  top: 3.9375rem;
+}
+.empty--phone {
+  width: 9.0625rem;
+}
+.empty--message {
+  top: 11.8125rem;
+}
+.empty__message {
+  font-family: "Jost";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
+  letter-spacing: normal;
+  text-transform: none;
+  color: white;
 }
 
 .o-contactBackgroundImage {

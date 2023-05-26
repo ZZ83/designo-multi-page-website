@@ -1,6 +1,7 @@
 @use '../../00-abstracts' as *;
 
 .contactForm {
+    position: relative;
     margin-top: rem(48px);
     @extend %flex;
     @extend %flex-d-c;
@@ -40,8 +41,12 @@
         }
     }
     &__input {
+        position: relative;
         height: rem(38px);
         margin-bottom: rem(25px);
+        &::after { 
+            content: "Remember this";
+        }
     }
     &__textarea {
         height: rem(102px);

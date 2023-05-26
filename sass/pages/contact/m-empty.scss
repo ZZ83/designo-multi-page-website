@@ -1,0 +1,51 @@
+@use '../../00-abstracts' as *;
+
+#empty {
+    position: absolute;
+    right: 0;
+}
+.empty {
+    width: rem(104px);
+    display: none;
+    align-items: center; 
+    justify-content: space-between;
+    position: absolute;
+    right: rem(8px);
+    &--name,
+    &--email,
+    &--phone,
+    &--message,
+    &--error {
+        display: flex;
+    }
+    &--error,
+    &--phone {
+        position: relative;
+        margin-top: rem(-20px);
+        margin-left: auto;
+        width: rem(200px);
+        right: 0;
+        text-decoration: underline;
+        text-decoration-color: white;
+    }
+    &--email {
+        top: rem(63px);
+    }
+    &--phone {
+        width: rem(145px);
+    }
+    &--message {
+        top: rem(189px);
+    }
+    &__message {
+        font-family: 'Jost';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 26px;
+        letter-spacing: normal;
+        text-transform: none;
+        color: white;
+    }
+}
+
