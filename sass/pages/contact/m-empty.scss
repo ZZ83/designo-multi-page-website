@@ -1,4 +1,4 @@
-@use '../../00-abstracts' as *;
+@use '../../00-tools' as *;
 
 .emptyFormsWrapper {
     position: absolute;
@@ -49,4 +49,3 @@
         color: $white;
     }
 }
-
