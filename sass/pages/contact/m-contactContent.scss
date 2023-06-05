@@ -1,7 +1,6 @@
 @use '../../00-tools' as *;
 
 .m-contactContent {
-    color:var(--primary);
     @include mq(large) {
         max-width: rem(445px);
     }

@@ -43,10 +43,10 @@
             color: var(--tertiary-light);
             font-size:   rem(14px);
             line-height: rem(14px);
-        }
-        &:hover {
-            text-decoration: underline;
-            text-decoration-color: var(--tertiary-light);
+            &:hover {
+                text-decoration: underline;
+                text-decoration-color: var(--tertiary-light);
+            }
         }
     }
 }

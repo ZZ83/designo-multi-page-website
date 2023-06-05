@@ -1,6 +1,7 @@
 @use '../../00-tools' as *;
 
 .trait {
+    color: var(--tertiary-light);
     @extend %flex;
     @extend %flex-d-c;
     @extend %flex-ai-c;

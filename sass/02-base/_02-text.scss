@@ -10,7 +10,6 @@ h3 {
 }
 
 h1 {
-    color: var(--primary);
     font-size:   rem(32px);
     line-height: rem(36px);
     @include mq(medium) {
@@ -32,6 +31,7 @@ h2 {
 }
 
 h3 {
+    color: var(--tertiary-light);
     text-transform: uppercase;
     font-size:      rem(20px);
     line-height:    rem(26px);

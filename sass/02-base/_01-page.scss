@@ -6,6 +6,7 @@ body {
     margin: 0 auto;
     max-width: rem(1440px);
     font-family: 'Jost', sans-serif;
+    color: var(--primary);
     @include mq(medium) {
         overflow-y: scroll;
     }
