@@ -365,15 +365,6 @@ html {
   box-sizing: inherit;
 }
 
-:root {
-  --primary: hsl(0, 0%, 100%);
-  --primary-dark: hsl(210, 17%, 95%);
-  --secondary: hsl(11, 73%, 66%);
-  --secondary-light: hsl(11, 100%, 80%);
-  --tertiary: hsl(270, 3%, 11%);
-  --tertiary-light: hsl(264, 5%, 20%);
-}
-
 .contactForm, .o-traitsSection, .trait, .main-hero, header, .country, .icons, .secondary-navigation__inner, .secondary-navigation__list:first-child, .lets-talk, .design-card__link, .primary-navigation__inner {
   display: flex;
 }
@@ -408,13 +399,45 @@ header, .icons, .lets-talk, .primary-navigation__inner {
   width: 100%;
 }
 
+:root {
+  /*----- COLORS -----*/
+  --primary: hsl(0, 0%, 100%);
+  --primary-dark: hsl(210, 17%, 95%);
+  --secondary: hsl(11, 73%, 66%);
+  --secondary-light: hsl(11, 100%, 80%);
+  --tertiary: hsl(270, 3%, 11%);
+  --tertiary-light: hsl(264, 5%, 20%);
+  /*----- FONT SIZE -----*/
+  --fs-h1: 2rem;
+  --fs-h2: 1.75rem;
+  --fs-p: 0.938rem;
+  /*----- LINE HEIGHT -----*/
+  --lh-h1: 2.25rem;
+  --lh-p: 1.563rem;
+  /*----- LETTER SPACING -----*/
+  --ls-h2: 0.088rem;
+}
+@media (min-width: 768px) {
+  :root {
+    /*----- FONT SIZE -----*/
+    --fs-h1: 3rem;
+    --fs-h2: 2.5rem;
+    --fs-p: 1rem;
+    /*----- FONT SIZE -----*/
+    --lh-h1: 3rem;
+    --lh-p: 1.625rem;
+    /*----- LETTER SPACING -----*/
+    --ls-h2: 0.125rem;
+  }
+}
+
 body {
   position: relative;
-  overflow-x: hidden;
-  margin: 0 auto;
   max-width: 90rem;
+  margin: 0 auto;
   font-family: "Jost", sans-serif;
   color: var(--primary);
+  overflow-x: hidden;
 }
 @media (min-width: 768px) {
   body {
@@ -424,64 +447,43 @@ body {
 
 h1,
 h2,
-h3 {
-  margin: 0;
-  padding: 0;
+h3,
+p {
   font-weight: 500;
   text-align: center;
 }
 
 h1 {
-  font-size: 2rem;
-  line-height: 2.25rem;
-}
-@media (min-width: 768px) {
-  h1 {
-    font-size: 3rem;
-    line-height: 3rem;
-  }
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
 }
 
 h2 {
+  font-size: var(--fs-h2);
   text-transform: uppercase;
-  font-size: 1.75rem;
-  line-height: 2.25rem;
-  letter-spacing: 0.0875rem;
-}
-@media (min-width: 768px) {
-  h2 {
-    font-size: 2.5rem;
-    line-height: 3rem;
-    letter-spacing: 0.125rem;
-  }
+  line-height: var(--lh-h1);
+  letter-spacing: var(--ls-h2);
 }
 
 h3 {
+  font-size: 1.25rem;
   color: var(--tertiary-light);
   text-transform: uppercase;
-  font-size: 1.25rem;
   line-height: 1.625rem;
   letter-spacing: 0.3125rem;
 }
 
 p {
-  font-size: 0.9375rem;
-  line-height: 1.5625rem;
-  text-align: center;
   font-weight: 400;
-}
-@media (min-width: 768px) {
-  p {
-    font-size: 1rem;
-    line-height: 1.625rem;
-  }
+  font-size: var(--fs-p);
+  line-height: var(--lh-p);
 }
 
 span {
   font-weight: 500;
   font-size: 0.9375rem;
-  letter-spacing: 0.3125rem;
   text-transform: uppercase;
+  letter-spacing: 0.3125rem;
 }
 
 ul {

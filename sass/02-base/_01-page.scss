@@ -2,11 +2,11 @@
 
 body {
     position: relative;
-    overflow-x: hidden;
-    margin: 0 auto;
     max-width: rem(1440px);
+    margin: 0 auto;
     font-family: 'Jost', sans-serif;
     color: var(--primary);
+    overflow-x: hidden;
     @include mq(medium) {
         overflow-y: scroll;
     }

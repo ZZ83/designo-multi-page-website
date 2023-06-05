@@ -1,8 +1,33 @@
+@use '../00-tools' as *;
+
 :root {
+    /*----- COLORS -----*/
     --primary:         hsl(0,   0%, 100%);
     --primary-dark:    hsl(210, 17%, 95%);
     --secondary:       hsl(11, 73%,  66%);
     --secondary-light: hsl(11, 100%, 80%);
     --tertiary:        hsl(270, 3%,  11%);
     --tertiary-light:  hsl(264, 5%,  20%);
+
+    /*----- FONT SIZE -----*/
+    --fs-h1:  2rem;
+    --fs-h2:  1.75rem;
+    --fs-p:   0.938rem;
+    /*----- LINE HEIGHT -----*/
+    --lh-h1:  2.25rem;
+    --lh-p:   1.563rem;
+    /*----- LETTER SPACING -----*/
+    --ls-h2:  0.088rem;
+
+    @include mq(medium) {
+        /*----- FONT SIZE -----*/
+        --fs-h1:  3rem;
+        --fs-h2:  2.5rem;
+        --fs-p:   1rem;
+        /*----- FONT SIZE -----*/
+        --lh-h1:  3rem;
+        --lh-p:   1.625rem;
+        /*----- LETTER SPACING -----*/
+        --ls-h2:  0.125rem;
+    }
 }
