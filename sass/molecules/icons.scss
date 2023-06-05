@@ -12,6 +12,6 @@
         fill: var(--secondary);
     }
     &__icon:hover {
-        fill: $lightPeach;
+        fill: var(--secondary-light);
     }
 }

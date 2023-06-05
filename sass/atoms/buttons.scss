@@ -9,7 +9,7 @@
     @extend %flex-center;
     &:hover {
         color: $white;
-        background-color: $lightPeach;
+        background-color: var(--secondary-light);
     }
     &--white {
         color: $black;

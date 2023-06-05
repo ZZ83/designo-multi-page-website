@@ -555,7 +555,7 @@ a {
 }
 .btn:hover {
   color: hsl(0deg, 0%, 100%);
-  background-color: hsl(11deg, 100%, 80%);
+  background-color: var(--secondary-light);
 }
 .btn--white {
   color: hsl(270deg, 3%, 11%);
@@ -987,7 +987,7 @@ a {
   fill: var(--secondary);
 }
 .icons__icon:hover {
-  fill: hsl(11deg, 100%, 80%);
+  fill: var(--secondary-light);
 }
 
 .country__header {
