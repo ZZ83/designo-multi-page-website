@@ -503,7 +503,7 @@ a {
 }
 .wrapper--hero {
   width: 100%;
-  background-color: hsl(11deg, 73%, 66%);
+  background-color: var(--secondary);
 }
 @media (min-width: 768px) {
   .wrapper--hero {
@@ -563,7 +563,7 @@ a {
 }
 .btn--peach {
   color: hsl(0deg, 0%, 100%);
-  background-color: hsl(11deg, 73%, 66%);
+  background-color: var(--secondary);
 }
 .btn--submit {
   border: none;
@@ -807,7 +807,7 @@ a {
   margin-bottom: -11.875rem;
   padding: 4rem 1.5rem;
   color: hsl(0deg, 0%, 100%);
-  background-color: hsl(11deg, 73%, 66%);
+  background-color: var(--secondary);
   position: relative;
   z-index: 10;
   background-repeat: no-repeat;
@@ -984,7 +984,7 @@ a {
   }
 }
 .icons__icon {
-  fill: hsl(11deg, 73%, 66%);
+  fill: var(--secondary);
 }
 .icons__icon:hover {
   fill: hsl(11deg, 100%, 80%);
@@ -1283,14 +1283,14 @@ header {
   justify-content: center;
 }
 .m-projectCard__inner:hover {
-  background-color: hsl(11deg, 73%, 66%);
+  background-color: var(--secondary);
 }
 .m-projectCard__inner:hover h3,
 .m-projectCard__inner:hover p {
   color: hsl(0deg, 0%, 100%);
 }
 .m-projectCard__header {
-  color: hsl(11deg, 73%, 66%);
+  color: var(--secondary);
   padding-bottom: 1rem;
 }
 .m-projectCard__text {
@@ -1376,7 +1376,7 @@ header {
   background-position: top left;
 }
 .m-locationCard__header {
-  color: hsl(11deg, 73%, 66%);
+  color: var(--secondary);
   font-size: 2rem;
   text-transform: capitalize;
   margin-bottom: 1.5rem;
@@ -1687,7 +1687,7 @@ header {
   }
 }
 .about-content__header {
-  color: hsl(11deg, 73%, 66%);
+  color: var(--secondary);
   margin-bottom: 1.5rem;
   text-transform: none;
   font-size: 2rem;
@@ -1716,7 +1716,7 @@ header {
 
 .m-aboutUsContent {
   color: hsl(0deg, 0%, 100%);
-  background-color: hsl(11deg, 73%, 66%);
+  background-color: var(--secondary);
   padding: 5rem 1.5rem;
   background-size: 18.25rem;
   background-repeat: no-repeat;

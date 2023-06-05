@@ -16,7 +16,7 @@
         flex-direction: column;
         justify-content: center;
         &:hover {
-            background-color: $peach;
+            background-color: var(--secondary);
             h3,
             p {
                 color: $white;
@@ -24,7 +24,7 @@
         }
     }
     &__header {
-        color: $peach;
+        color: var(--secondary);
         padding-bottom: rem(16px);
     }
     &__text {

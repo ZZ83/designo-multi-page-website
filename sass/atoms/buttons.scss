@@ -17,7 +17,7 @@
     }
     &--peach {
         color: $white;
-        background-color: $peach;
+        background-color: var(--secondary);
     }
     &--submit {
         border: none;

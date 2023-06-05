@@ -8,7 +8,7 @@
     background-image: url("../assets/locations/mobile/bg-mobile.png");
     background-position: top left;
     &__header {
-        color: $peach;
+        color: var(--secondary);
         font-size: rem(32px);
         text-transform: capitalize;
         margin-bottom: rem(24px);
