@@ -1,0 +1,8 @@
+///*----------------------------------*\
+//  #FUNCTIONS
+//\*----------------------------------*/
+
+// Convert any px value into its rem equivalent.
+@function rem($size) {
+    @return calc($size / 16px * 1rem);
+}

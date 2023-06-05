@@ -1,0 +1,19 @@
+@use '../00-tools' as *;
+
+.wrapper {
+    margin: 0 auto;
+    width: calc(100% - rem(48px));
+    &--hero {
+        width: 100%;
+        background-color: $peach;
+        @include mq(medium) {
+            border-radius:  15px;
+        }
+    }
+    @include mq(medium) {
+        width: calc(100% - rem(80px));
+    }
+    @include mq(large) {
+        width: calc(100% - rem(330px));
+    }
+}

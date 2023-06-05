@@ -375,34 +375,7 @@ html {
 }
 
 /********************** Variables **********************/
-/********************** Functions **********************/
-/********************** Mixins **********************/
-/********************** HELPER CLASSES **********************/
-.wrapper {
-  margin: 0 auto;
-  width: calc(100% - 3rem);
-}
-.wrapper--hero {
-  width: 100%;
-  background-color: hsl(11deg, 73%, 66%);
-}
-@media (min-width: 768px) {
-  .wrapper--hero {
-    border-radius: 15px;
-  }
-}
-@media (min-width: 768px) {
-  .wrapper {
-    width: calc(100% - 5rem);
-  }
-}
-@media (min-width: 1360px) {
-  .wrapper {
-    width: calc(100% - 20.625rem);
-  }
-}
-
-/********************** PLACHOLDERS **********************/
+/********************** Variables **********************/
 .contactForm, .o-traitsSection, .trait, .main-hero, header, .country, .icons, .secondary-navigation__inner, .secondary-navigation__list:first-child, .lets-talk, .design-card__link, .primary-navigation__inner {
   display: flex;
 }
@@ -522,6 +495,30 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: calc(100% - 3rem);
+}
+.wrapper--hero {
+  width: 100%;
+  background-color: hsl(11deg, 73%, 66%);
+}
+@media (min-width: 768px) {
+  .wrapper--hero {
+    border-radius: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper {
+    width: calc(100% - 5rem);
+  }
+}
+@media (min-width: 1360px) {
+  .wrapper {
+    width: calc(100% - 20.625rem);
+  }
 }
 
 .a-logo {
