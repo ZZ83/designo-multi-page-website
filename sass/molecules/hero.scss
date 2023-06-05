@@ -1,7 +1,7 @@
 @use '../00-tools' as *;
 
 .hero {
-    color: $white;
+    color: var(--primary);
     height: rem(320px);
     background-image: url(../assets/web-design/desktop/bg-pattern-intro-web.svg);
     background-repeat: no-repeat;

@@ -35,13 +35,13 @@
         }
     }
     &__link {
-        color: $white;
+        color: var(--primary);
         font-size:   rem(14px);
         line-height: rem(14px);
         letter-spacing: rem(2px);
         &:hover {
             text-decoration: underline;
-            text-decoration-color: $white;
+            text-decoration-color: var(--primary);
         }
     }   
 }

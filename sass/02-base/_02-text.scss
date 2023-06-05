@@ -10,7 +10,7 @@ h3 {
 }
 
 h1 {
-    color: $white;
+    color: var(--primary);
     font-size:   rem(32px);
     line-height: rem(36px);
     @include mq(medium) {

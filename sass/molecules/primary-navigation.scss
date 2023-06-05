@@ -34,7 +34,7 @@
         }
     }
     &__link {
-        color: $white;
+        color: var(--primary);
         font-weight: 400;
         font-size: rem(24px);
         line-height: rem(25px);

@@ -17,11 +17,11 @@
     &__textarea {
         font-size: rem(15px);
         line-height: rem(26px);
-        color: $white;
+        color: var(--primary);
         cursor: pointer;
         border: none;
         background: none;
-        border-bottom: 1px solid $white;
+        border-bottom: 1px solid var(--primary);
         padding-left: rem(14px);
         padding-bottom: rem(12px);
         @include mq(medium) {
@@ -33,10 +33,10 @@
         &:focus {
             outline: none;
             opacity: 1;
-            border-bottom: 2px solid $white;
+            border-bottom: 2px solid var(--primary);
         }
         &::placeholder {
-            color: $white;
+            color: var(--primary);
             opacity: 0.5;
         }
     }

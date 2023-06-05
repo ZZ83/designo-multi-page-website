@@ -5,7 +5,7 @@
     margin-top:    rem(96px);
     margin-bottom: rem(-190px);
     padding: rem(64px) rem(24px);
-    color: $white;
+    color: var(--primary);
     background-color: var(--secondary);
     position: relative;
     z-index: 10;

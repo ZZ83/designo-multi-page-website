@@ -8,15 +8,15 @@
     text-transform: uppercase;
     @extend %flex-center;
     &:hover {
-        color: $white;
+        color: var(--primary);
         background-color: var(--secondary-light);
     }
     &--white {
         color: $black;
-        background-color: $white;
+        background-color: var(--primary);
     }
     &--peach {
-        color: $white;
+        color: var(--primary);
         background-color: var(--secondary);
     }
     &--submit {

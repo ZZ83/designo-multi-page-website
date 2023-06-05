@@ -27,7 +27,7 @@
         width: rem(200px);
         right: 0;
         text-decoration: underline;
-        text-decoration-color: $white;
+        text-decoration-color: var(--primary);
     }
     &--email {
         top: rem(63px);
@@ -46,6 +46,6 @@
         line-height: 26px;
         letter-spacing: normal;
         text-transform: none;
-        color: $white;
+        color: var(--primary);
     }
 }

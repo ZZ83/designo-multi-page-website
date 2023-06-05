@@ -433,7 +433,7 @@ h3 {
 }
 
 h1 {
-  color: hsl(0deg, 0%, 100%);
+  color: var(--primary);
   font-size: 2rem;
   line-height: 2.25rem;
 }
@@ -554,15 +554,15 @@ a {
   text-transform: uppercase;
 }
 .btn:hover {
-  color: hsl(0deg, 0%, 100%);
+  color: var(--primary);
   background-color: var(--secondary-light);
 }
 .btn--white {
   color: hsl(270deg, 3%, 11%);
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: var(--primary);
 }
 .btn--peach {
-  color: hsl(0deg, 0%, 100%);
+  color: var(--primary);
   background-color: var(--secondary);
 }
 .btn--submit {
@@ -654,7 +654,7 @@ a {
   }
 }
 .primary-navigation__link {
-  color: hsl(0deg, 0%, 100%);
+  color: var(--primary);
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.5625rem;
@@ -673,7 +673,7 @@ a {
 }
 
 .hero {
-  color: hsl(0deg, 0%, 100%);
+  color: var(--primary);
   height: 20rem;
   background-image: url(../assets/web-design/desktop/bg-pattern-intro-web.svg);
   background-repeat: no-repeat;
@@ -716,7 +716,7 @@ a {
   width: 100%;
   height: 15.625rem;
   text-align: center;
-  color: white;
+  color: var(--primary);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -806,7 +806,7 @@ a {
   margin-top: 6rem;
   margin-bottom: -11.875rem;
   padding: 4rem 1.5rem;
-  color: hsl(0deg, 0%, 100%);
+  color: var(--primary);
   background-color: var(--secondary);
   position: relative;
   z-index: 10;
@@ -909,14 +909,14 @@ a {
   }
 }
 .secondary-navigation__link {
-  color: hsl(0deg, 0%, 100%);
+  color: var(--primary);
   font-size: 0.875rem;
   line-height: 0.875rem;
   letter-spacing: 0.125rem;
 }
 .secondary-navigation__link:hover {
   text-decoration: underline;
-  text-decoration-color: hsl(0deg, 0%, 100%);
+  text-decoration-color: var(--primary);
 }
 
 .footer-content {
@@ -935,7 +935,7 @@ a {
 
 .info {
   margin-bottom: 2.5rem;
-  color: hsl(210deg, 17%, 95%);
+  color: var(--primary-dark);
   opacity: 0.5;
   text-align: center;
   width: 100%;
@@ -1166,7 +1166,7 @@ header {
   }
 }
 .main-hero__text {
-  color: hsl(0deg, 0%, 100%);
+  color: var(--primary);
   font-weight: 400;
   font-size: 0.9375rem;
   line-height: 1.5625rem;
@@ -1287,7 +1287,7 @@ header {
 }
 .m-projectCard__inner:hover h3,
 .m-projectCard__inner:hover p {
-  color: hsl(0deg, 0%, 100%);
+  color: var(--primary);
 }
 .m-projectCard__header {
   color: var(--secondary);
@@ -1456,7 +1456,7 @@ header {
 }
 
 .m-contactContent {
-  color: hsl(0deg, 0%, 100%);
+  color: var(--primary);
 }
 @media (min-width: 1360px) {
   .m-contactContent {
@@ -1501,11 +1501,11 @@ header {
 .contactForm__input, .contactForm__textarea {
   font-size: 0.9375rem;
   line-height: 1.625rem;
-  color: hsl(0deg, 0%, 100%);
+  color: var(--primary);
   cursor: pointer;
   border: none;
   background: none;
-  border-bottom: 1px solid hsl(0deg, 0%, 100%);
+  border-bottom: 1px solid var(--primary);
   padding-left: 0.875rem;
   padding-bottom: 0.75rem;
 }
@@ -1522,10 +1522,10 @@ header {
 .contactForm__input:focus, .contactForm__textarea:focus {
   outline: none;
   opacity: 1;
-  border-bottom: 2px solid hsl(0deg, 0%, 100%);
+  border-bottom: 2px solid var(--primary);
 }
 .contactForm__input::placeholder, .contactForm__textarea::placeholder {
-  color: hsl(0deg, 0%, 100%);
+  color: var(--primary);
   opacity: 0.5;
 }
 .contactForm__input {
@@ -1569,7 +1569,7 @@ header {
   width: 12.5rem;
   right: 0;
   text-decoration: underline;
-  text-decoration-color: hsl(0deg, 0%, 100%);
+  text-decoration-color: var(--primary);
 }
 .empty--email {
   top: 3.9375rem;
@@ -1588,7 +1588,7 @@ header {
   line-height: 26px;
   letter-spacing: normal;
   text-transform: none;
-  color: hsl(0deg, 0%, 100%);
+  color: var(--primary);
 }
 
 .o-contactBackgroundImage {
@@ -1715,7 +1715,7 @@ header {
 }
 
 .m-aboutUsContent {
-  color: hsl(0deg, 0%, 100%);
+  color: var(--primary);
   background-color: var(--secondary);
   padding: 5rem 1.5rem;
   background-size: 18.25rem;
