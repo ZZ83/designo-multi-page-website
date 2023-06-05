@@ -1,7 +1,7 @@
 @use '../../00-tools' as *;
 
 .about-content {
-    color: $black;
+    color: var(--tertiary);
     background-color: #FDF3F0;
     background-image: url(../assets/about/mobile/test.svg);
     background-repeat: no-repeat;

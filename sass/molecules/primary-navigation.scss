@@ -20,7 +20,7 @@
     &__inner {
         height: rem(235px);
         padding: rem(50px) 5%;
-        background-color: $black;
+        background-color: var(--tertiary);
         @extend %width-100;
         @extend %flex;
         @extend %flex-d-c;

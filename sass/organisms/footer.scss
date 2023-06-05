@@ -3,7 +3,7 @@
 .footer {
     position: relative;
     height: rem(815px);
-    background-color: $black;
+    background-color: var(--tertiary);
     padding-top: rem(253px);
     @include mq(medium) {
         height: rem(423px);

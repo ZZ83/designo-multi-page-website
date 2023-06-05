@@ -375,7 +375,6 @@ html {
 }
 
 /********************** Variables **********************/
-/********************** Variables **********************/
 .contactForm, .o-traitsSection, .trait, .main-hero, header, .country, .icons, .secondary-navigation__inner, .secondary-navigation__list:first-child, .lets-talk, .design-card__link, .primary-navigation__inner {
   display: flex;
 }
@@ -558,7 +557,7 @@ a {
   background-color: var(--secondary-light);
 }
 .btn--white {
-  color: hsl(270deg, 3%, 11%);
+  color: var(--tertiary);
   background-color: var(--primary);
 }
 .btn--peach {
@@ -642,7 +641,7 @@ a {
 .primary-navigation__inner {
   height: 14.6875rem;
   padding: 3.125rem 5%;
-  background-color: hsl(270deg, 3%, 11%);
+  background-color: var(--tertiary);
 }
 @media (min-width: 768px) {
   .primary-navigation__inner {
@@ -1050,7 +1049,7 @@ header {
 .footer {
   position: relative;
   height: 50.9375rem;
-  background-color: hsl(270deg, 3%, 11%);
+  background-color: var(--tertiary);
   padding-top: 15.8125rem;
 }
 @media (min-width: 768px) {
@@ -1659,7 +1658,7 @@ header {
 }
 
 .about-content {
-  color: hsl(270deg, 3%, 11%);
+  color: var(--tertiary);
   background-color: #FDF3F0;
   background-image: url(../assets/about/mobile/test.svg);
   background-repeat: no-repeat;
