@@ -28,7 +28,7 @@
         padding-bottom: rem(16px);
     }
     &__text {
-        color: $darkGray;
+        color: var(--tertiary-light);
         font-size: 1rem;
         line-height: rem(26px);
     }

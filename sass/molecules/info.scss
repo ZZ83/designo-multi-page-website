@@ -29,7 +29,7 @@
     }
     &--location {
         opacity: 1;
-        color: $darkGray;
+        color: var(--tertiary-light);
         margin: 0;
         @include mq(medium) {
             width: rem(255px);

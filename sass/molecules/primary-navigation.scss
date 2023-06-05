@@ -40,13 +40,13 @@
         line-height: rem(25px);
         letter-spacing: rem(2px);
         @include mq(medium) {
-            color: $darkGray;
+            color: var(--tertiary-light);
             font-size:   rem(14px);
             line-height: rem(14px);
         }
         &:hover {
             text-decoration: underline;
-            text-decoration-color: $darkGray;
+            text-decoration-color: var(--tertiary-light);
         }
     }
 }

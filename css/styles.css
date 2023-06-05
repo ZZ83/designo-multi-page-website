@@ -374,7 +374,6 @@ html {
   --tertiary-light: hsl(264, 5%, 20%);
 }
 
-/********************** Variables **********************/
 .contactForm, .o-traitsSection, .trait, .main-hero, header, .country, .icons, .secondary-navigation__inner, .secondary-navigation__list:first-child, .lets-talk, .design-card__link, .primary-navigation__inner {
   display: flex;
 }
@@ -661,14 +660,14 @@ a {
 }
 @media (min-width: 768px) {
   .primary-navigation__link {
-    color: hsl(264deg, 5%, 20%);
+    color: var(--tertiary-light);
     font-size: 0.875rem;
     line-height: 0.875rem;
   }
 }
 .primary-navigation__link:hover {
   text-decoration: underline;
-  text-decoration-color: hsl(264deg, 5%, 20%);
+  text-decoration-color: var(--tertiary-light);
 }
 
 .hero {
@@ -965,7 +964,7 @@ a {
 }
 .info--location {
   opacity: 1;
-  color: hsl(264deg, 5%, 20%);
+  color: var(--tertiary-light);
   margin: 0;
 }
 @media (min-width: 768px) {
@@ -1293,7 +1292,7 @@ header {
   padding-bottom: 1rem;
 }
 .m-projectCard__text {
-  color: hsl(264deg, 5%, 20%);
+  color: var(--tertiary-light);
   font-size: 1rem;
   line-height: 1.625rem;
 }
