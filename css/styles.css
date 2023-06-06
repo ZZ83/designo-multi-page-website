@@ -365,15 +365,15 @@ html {
   box-sizing: inherit;
 }
 
-.contactForm, .o-traitsSection, .trait, .main-hero, .lets-talk, .c-socialIcons, .c-primaryNavigation__inner, .c-footerNavigation, .c-footerNavigation__list:first-child, .c-designCard__link, .c-country, header {
+.contactForm, .o-traitsSection, .trait, .main-hero, .c-socialIcons, .c-primaryNavigation__inner, .c-letsTalk, .c-footerNavigation, .c-footerNavigation__list:first-child, .c-designCard__link, .c-country, header {
   display: flex;
 }
 
-.trait, .main-hero, .lets-talk, .c-socialIcons, .c-footerNavigation, .c-country, header {
+.trait, .main-hero, .c-socialIcons, .c-letsTalk, .c-footerNavigation, .c-country, header {
   align-items: center;
 }
 
-.lets-talk, .c-socialIcons, .c-primaryNavigation__inner, header {
+.c-socialIcons, .c-primaryNavigation__inner, .c-letsTalk, header {
   justify-content: space-between;
 }
 
@@ -381,7 +381,7 @@ html {
   justify-content: center;
 }
 
-.contactForm, .o-traitsSection, .trait, .main-hero, .lets-talk, .c-primaryNavigation__inner, .c-footerNavigation, .c-designCard__link, .c-country {
+.contactForm, .o-traitsSection, .trait, .main-hero, .c-primaryNavigation__inner, .c-letsTalk, .c-footerNavigation, .c-designCard__link, .c-country {
   flex-direction: column;
 }
 
@@ -391,7 +391,7 @@ html {
   justify-content: center;
 }
 
-.lets-talk, .c-designCard {
+.c-letsTalk, .c-designCard {
   border-radius: 15px;
 }
 
@@ -887,6 +887,84 @@ header {
   }
 }
 
+.c-letsTalk {
+  height: 23.6875rem;
+  margin-top: 6rem;
+  margin-bottom: -11.875rem;
+  padding: 4rem 1.5rem;
+  background-color: var(--secondary);
+  position: relative;
+  z-index: 10;
+  background-repeat: no-repeat;
+  background-position: center right -19.375rem;
+  background-image: url("../assets/shared/desktop/bg-pattern-call-to-action.svg");
+}
+@media (min-width: 768px) {
+  .c-letsTalk {
+    height: 21.875rem;
+    margin-top: 4.1875rem;
+    margin-bottom: -5.375rem;
+    padding: 3.5625rem;
+    background-position: center right -10.625rem;
+  }
+}
+@media (min-width: 1360px) {
+  .c-letsTalk {
+    height: 18.25rem;
+    margin-top: 10rem;
+    margin-bottom: -4.5rem;
+    padding: 4.5rem 4.25rem;
+    flex-direction: row;
+    background-position: center right 0rem;
+  }
+}
+
+.c-letsTalk__inner {
+  flex-grow: 2;
+}
+
+.c-letsTalk__header {
+  font-size: 2rem;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .c-letsTalk__header {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 1360px) {
+  .c-letsTalk__header {
+    text-align: left;
+  }
+}
+
+.c-letsTalk__text {
+  max-width: 21.875rem;
+}
+@media (min-width: 768px) {
+  .c-letsTalk__text {
+    max-width: 29.375rem;
+  }
+}
+@media (min-width: 1360px) {
+  .c-letsTalk__text {
+    text-align: left;
+    max-width: 28.4375rem;
+  }
+}
+
+.c-letsTalk.-about {
+  margin-top: 7.5rem;
+}
+@media (min-width: 768px) {
+  .c-letsTalk.-about {
+    margin-top: 0;
+  }
+}
+
 .c-primaryNavigation {
   height: 100%;
   position: fixed;
@@ -957,80 +1035,6 @@ header {
 }
 .c-socialIcons__icon:hover {
   fill: var(--secondary-light);
-}
-
-.lets-talk {
-  height: 23.6875rem;
-  margin-top: 6rem;
-  margin-bottom: -11.875rem;
-  padding: 4rem 1.5rem;
-  background-color: var(--secondary);
-  position: relative;
-  z-index: 10;
-  background-repeat: no-repeat;
-  background-position: center right -19.375rem;
-  background-image: url("../assets/shared/desktop/bg-pattern-call-to-action.svg");
-}
-@media (min-width: 768px) {
-  .lets-talk {
-    height: 21.875rem;
-    margin-top: 4.1875rem;
-    margin-bottom: -5.375rem;
-    padding: 3.5625rem;
-    background-position: center right -10.625rem;
-  }
-}
-@media (min-width: 1360px) {
-  .lets-talk {
-    height: 18.25rem;
-    margin-top: 10rem;
-    margin-bottom: -4.5rem;
-    padding: 4.5rem 4.25rem;
-    flex-direction: row;
-    background-position: center right 0rem;
-  }
-}
-.lets-talk__inner {
-  flex-grow: 2;
-}
-.lets-talk__header {
-  font-size: 2rem;
-  text-transform: none;
-  letter-spacing: normal;
-  margin-bottom: 1rem;
-}
-@media (min-width: 768px) {
-  .lets-talk__header {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-  }
-}
-@media (min-width: 1360px) {
-  .lets-talk__header {
-    text-align: left;
-  }
-}
-.lets-talk__text {
-  max-width: 21.875rem;
-}
-@media (min-width: 768px) {
-  .lets-talk__text {
-    max-width: 29.375rem;
-  }
-}
-@media (min-width: 1360px) {
-  .lets-talk__text {
-    text-align: left;
-    max-width: 28.4375rem;
-  }
-}
-.lets-talk--about {
-  margin-top: 7.5rem;
-}
-@media (min-width: 768px) {
-  .lets-talk--about {
-    margin-top: 0;
-  }
 }
 
 .f-btn {
