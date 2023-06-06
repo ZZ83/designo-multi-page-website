@@ -11,6 +11,9 @@
         max-width: rem(790px);
         gap: rem(32px);
     }
+    @media (min-width: 768px) and (max-width: 1359px) {
+        margin-bottom: rem(-53px);
+    }
     @include mq(large) {
         width: calc(100% - rem(330px));
         max-width: initial;

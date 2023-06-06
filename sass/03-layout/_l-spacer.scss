@@ -1,0 +1,19 @@
+@use '../00-tools' as *;
+
+.l-spacer {
+    display: grid;
+    gap: rem(120px);
+    @include mq(large) {
+        gap: rem(160px);
+    }
+}
+
+.l-spacer.-design {
+    gap: rem(96px);
+    @include mq(medium) {
+        gap: rem(120px);
+    }
+    @include mq(large) {
+        gap: rem(160px);
+    }
+}

@@ -13,7 +13,7 @@
 
 .wrapper--hero {
     background-color: var(--secondary);
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         width: 100%;
     }
     @include mq(medium) {

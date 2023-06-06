@@ -4,17 +4,11 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: rem(40px);
-    margin-top:    rem(96px);
-    margin-bottom: rem(96px);
     @include mq(medium) {
         gap: rem(32px);
-        margin-top:    rem(120px);
-        margin-bottom: rem(120px);
     }
     @include mq(large) {
         grid-template-columns: repeat(3, 1fr);
         gap: rem(32px) rem(30px);
-        margin-top:    rem(160px);
-        margin-bottom: rem(160px);
     }
 }
