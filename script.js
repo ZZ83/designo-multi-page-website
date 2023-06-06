@@ -1,6 +1,6 @@
 const body      = document.querySelector('body');
 const mainNav   = document.querySelector('.primary-navigation');
-const navToggle = document.querySelector('.mobile-menu-icons');
+const navToggle = document.querySelector('.f-mobileNavIcons');
 
 navToggle.addEventListener('click', () => {
     const vis = mainNav.getAttribute("data-visible");

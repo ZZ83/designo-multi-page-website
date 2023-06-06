@@ -1020,7 +1020,7 @@ header {
   margin-top: 0.25rem;
 }
 
-.mobile-menu-icons {
+.f-mobileNavIcons {
   cursor: pointer;
   width: 1.5rem;
   height: 1.25rem;
@@ -1029,11 +1029,11 @@ header {
   background-image: url(../assets/shared/mobile/icon-hamburger.svg);
   background-repeat: no-repeat;
 }
-.mobile-menu-icons[aria-expanded=true] {
+.f-mobileNavIcons[aria-expanded=true] {
   background-image: url(../assets/shared/mobile/icon-close.svg);
 }
 @media (min-width: 768px) {
-  .mobile-menu-icons {
+  .f-mobileNavIcons {
     display: none;
   }
 }
