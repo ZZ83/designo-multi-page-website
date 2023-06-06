@@ -1,6 +1,6 @@
 @use '../00-tools' as *;
 
-.info {
+.c-info {
     margin-bottom: rem(40px);
     color: var(--primary-dark);
     opacity: 0.5;
@@ -17,22 +17,25 @@
         width: rem(350px);
         margin-right: rem(30px);
     }
-    &__header,
-    &__text {
+}
+
+    .c-info__header,
+    .c-info__text {
         display: block;
         font-size: 1rem;
         line-height: rem(26px);
     }
-    &__header {
+
+    .c-info__header {
         letter-spacing: 1px;
         font-weight: 700;
     }
-    &--location {
-        opacity: 1;
-        color: var(--tertiary-light);
-        margin: 0;
-        @include mq(medium) {
-            width: rem(255px);
-        }
+
+.c-info.-location {
+    margin: 0;
+    opacity: 1;
+    color: var(--tertiary-light);
+    @include mq(medium) {
+        width: rem(255px);
     }
 }
