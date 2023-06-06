@@ -1,6 +1,6 @@
 @use '../00-tools' as *;
 
-.icons {
+.c-socialIcons {
     width: rem(184px);
     @extend %flex;
     @extend %flex-ai-c;

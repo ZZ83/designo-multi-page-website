@@ -365,15 +365,15 @@ html {
   box-sizing: inherit;
 }
 
-.contactForm, .o-traitsSection, .trait, .main-hero, .c-country, .icons, .secondary-navigation__inner, .secondary-navigation__list:first-child, .lets-talk, .design-card__link, .primary-navigation__inner, header {
+.contactForm, .o-traitsSection, .trait, .main-hero, .secondary-navigation__inner, .secondary-navigation__list:first-child, .lets-talk, .design-card__link, .c-socialIcons, .c-country, .primary-navigation__inner, header {
   display: flex;
 }
 
-.trait, .main-hero, .c-country, .icons, .secondary-navigation__inner, .lets-talk, header {
+.trait, .main-hero, .secondary-navigation__inner, .lets-talk, .c-socialIcons, .c-country, header {
   align-items: center;
 }
 
-.icons, .lets-talk, .primary-navigation__inner, header {
+.lets-talk, .c-socialIcons, .primary-navigation__inner, header {
   justify-content: space-between;
 }
 
@@ -381,7 +381,7 @@ html {
   justify-content: center;
 }
 
-.contactForm, .o-traitsSection, .trait, .main-hero, .c-country, .secondary-navigation__inner, .lets-talk, .design-card__link, .primary-navigation__inner {
+.contactForm, .o-traitsSection, .trait, .main-hero, .secondary-navigation__inner, .lets-talk, .design-card__link, .c-country, .primary-navigation__inner {
   flex-direction: column;
 }
 
@@ -678,6 +678,11 @@ header {
   }
 }
 
+.c-country__header {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
 .c-hero {
   height: 20rem;
   background-image: url(../assets/web-design/desktop/bg-pattern-intro-web.svg);
@@ -730,6 +735,21 @@ header {
   .c-hero.-graphic {
     background-image: url(../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg);
   }
+}
+
+.c-socialIcons {
+  width: 11.5rem;
+}
+@media (min-width: 768px) {
+  .c-socialIcons {
+    margin-left: auto;
+  }
+}
+.c-socialIcons__icon {
+  fill: var(--secondary);
+}
+.c-socialIcons__icon:hover {
+  fill: var(--secondary-light);
 }
 
 .design-card {
@@ -991,26 +1011,6 @@ header {
   .info--location {
     width: 15.9375rem;
   }
-}
-
-.icons {
-  width: 11.5rem;
-}
-@media (min-width: 768px) {
-  .icons {
-    margin-left: auto;
-  }
-}
-.icons__icon {
-  fill: var(--secondary);
-}
-.icons__icon:hover {
-  fill: var(--secondary-light);
-}
-
-.c-country__header {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
 }
 
 .f-btn {
