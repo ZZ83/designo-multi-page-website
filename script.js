@@ -1,5 +1,5 @@
 const body      = document.querySelector('body');
-const mainNav   = document.querySelector('.primary-navigation');
+const mainNav   = document.querySelector('.c-primaryNavigation');
 const navToggle = document.querySelector('.f-mobileNavIcons');
 
 navToggle.addEventListener('click', () => {

@@ -1,6 +1,6 @@
 @use '../00-tools' as *;
 
-.primary-navigation {
+.c-primaryNavigation {
     height: 100%;
     position: fixed;
     top: -100%;
@@ -17,7 +17,9 @@
         position: static;
         background-color: transparent;
     }
-    &__inner {
+}
+
+    .c-primaryNavigation__inner {
         height: rem(235px);
         padding: rem(50px) 5%;
         background-color: var(--tertiary);
@@ -33,7 +35,8 @@
             justify-content: space-between;
         }
     }
-    &__link {
+
+    .c-primaryNavigation__link {
         color: var(--primary);
         font-weight: 400;
         font-size: rem(24px);
@@ -43,10 +46,12 @@
             color: var(--tertiary-light);
             font-size:   rem(14px);
             line-height: rem(14px);
-            &:hover {
-                text-decoration: underline;
-                text-decoration-color: var(--tertiary-light);
-            }
         }
     }
-}
+
+    .c-primaryNavigation__link:hover {
+        @include mq(medium) {
+            text-decoration: underline;
+            text-decoration-color: var(--tertiary-light);
+        }
+    }
