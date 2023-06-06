@@ -1,0 +1,18 @@
+@use '../00-tools' as *;
+
+.f-illustrationBackground {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.f-illustrationBackground.-top {
+    background-image: url("../assets/shared/tablet/bg-pattern-small-circle-top.svg");
+}
+
+.f-illustrationBackground.-bottom {
+    background-image: url("../assets/shared/tablet/bg-pattern-small-circle-bottom.svg"); 
+}
+
+.f-illustrationBackground.-left {
+    background-image: url("../assets/shared/tablet/bg-pattern-small-circle-left.svg");
+}

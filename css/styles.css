@@ -1012,19 +1012,6 @@ header {
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
-.country__image {
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.country__image--top {
-  background-image: url("../assets/shared/tablet/bg-pattern-small-circle-top.svg");
-}
-.country__image--bottom {
-  background-image: url("../assets/shared/tablet/bg-pattern-small-circle-bottom.svg");
-}
-.country__image--left {
-  background-image: url("../assets/shared/tablet/bg-pattern-small-circle-left.svg");
-}
 
 .f-logo {
   display: block;
@@ -1086,17 +1073,20 @@ header {
   }
 }
 
-.illustration {
+.f-illustrationBackground {
   background-repeat: no-repeat;
   background-position: center;
 }
-.illustration.-top {
+
+.f-illustrationBackground.-top {
   background-image: url("../assets/shared/tablet/bg-pattern-small-circle-top.svg");
 }
-.illustration.-bottom {
+
+.f-illustrationBackground.-bottom {
   background-image: url("../assets/shared/tablet/bg-pattern-small-circle-bottom.svg");
 }
-.illustration.-left {
+
+.f-illustrationBackground.-left {
   background-image: url("../assets/shared/tablet/bg-pattern-small-circle-left.svg");
 }
 

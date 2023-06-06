@@ -8,17 +8,4 @@
         margin-top:    rem(48px);
         margin-bottom: rem(32px);
     }
-    &__image {
-        background-repeat: no-repeat;
-        background-position: center;
-        &--top {
-            background-image: url("../assets/shared/tablet/bg-pattern-small-circle-top.svg");
-        }
-        &--bottom {
-            background-image: url("../assets/shared/tablet/bg-pattern-small-circle-bottom.svg"); 
-        }
-        &--left {
-            background-image: url("../assets/shared/tablet/bg-pattern-small-circle-left.svg");
-        }
-    }
 }
