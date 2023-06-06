@@ -1,8 +1,8 @@
 @use '01-resets'     as *;
 @use '02-base'       as *;
-@use '03-fragments'  as *;
+@use '03-layout'     as *;
 @use '04-components' as *;
-@use '05-layout'     as *;
+@use '05-fragments'  as *;
 
 @use 'pages/home';
 @use 'pages/design';

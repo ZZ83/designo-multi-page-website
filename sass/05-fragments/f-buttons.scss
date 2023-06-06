@@ -1,0 +1,37 @@
+@use '../00-tools' as *;
+
+.f-btn {
+    width: rem(152px);
+    height: rem(56px);
+    font-weight: 500;
+    border-radius: 8px;
+    text-transform: uppercase;
+    @extend %flex-center;
+}
+
+.f-btn.-primary,
+.f-btn.-secondary {
+    &:hover {
+        color: var(--primary);
+        background-color: var(--secondary-light);
+    }
+}
+
+.f-btn.-primary {
+    color: var(--tertiary);
+    background-color: var(--primary);
+}
+
+.f-btn.-secondary {
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+
+.f-btn.-submit {
+    border: none;
+    margin: auto;
+    cursor: pointer;
+    @include mq(medium) {
+        margin-right: initial;
+    }
+}
