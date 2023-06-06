@@ -1,6 +1,6 @@
 @use '../00-tools' as *;
 
-.hero {
+.c-hero {
     height: rem(320px);
     background-image: url(../assets/web-design/desktop/bg-pattern-intro-web.svg);
     background-repeat: no-repeat;
@@ -11,36 +11,40 @@
     }
 }
 
-    .hero__header {
+    .c-hero__header {
         padding-top: rem(105px);
         padding-bottom: rem(24px);
         @include mq(medium) {
             padding-top: rem(63px);
         }
     }
-    .hero__text {
+
+    .c-hero__text {
         margin: 0 auto;
         width: 90%;
         max-width: rem(385px);
     }
 
-.hero--app,
-.hero--graphic {
+.c-hero.-app,
+.c-hero.-graphic {
     @include mq(large) {
         background-position: center left rem(-60px);
     }
 }
-.hero--web {
+
+.c-hero.-web {
     @include mq(large) {
         background-position: center right;
     }
 }
-.hero--app {
+
+.c-hero.-app {
     @include mq(large) {
         background-image: url(../assets/app-design/desktop/bg-pattern-intro-app.svg);
     }
 }
-.hero--graphic {
+
+.c-hero.-graphic {
     @include mq(large) {
         background-image: url(../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg);
     }

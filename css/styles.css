@@ -365,11 +365,11 @@ html {
   box-sizing: inherit;
 }
 
-.contactForm, .o-traitsSection, .trait, .main-hero, .country, .icons, .secondary-navigation__inner, .secondary-navigation__list:first-child, .lets-talk, .design-card__link, .primary-navigation__inner, header {
+.contactForm, .o-traitsSection, .trait, .main-hero, .c-country, .icons, .secondary-navigation__inner, .secondary-navigation__list:first-child, .lets-talk, .design-card__link, .primary-navigation__inner, header {
   display: flex;
 }
 
-.trait, .main-hero, .country, .icons, .secondary-navigation__inner, .lets-talk, header {
+.trait, .main-hero, .c-country, .icons, .secondary-navigation__inner, .lets-talk, header {
   align-items: center;
 }
 
@@ -381,7 +381,7 @@ html {
   justify-content: center;
 }
 
-.contactForm, .o-traitsSection, .trait, .main-hero, .country, .secondary-navigation__inner, .lets-talk, .design-card__link, .primary-navigation__inner {
+.contactForm, .o-traitsSection, .trait, .main-hero, .c-country, .secondary-navigation__inner, .lets-talk, .design-card__link, .primary-navigation__inner {
   flex-direction: column;
 }
 
@@ -678,56 +678,56 @@ header {
   }
 }
 
-.hero {
+.c-hero {
   height: 20rem;
   background-image: url(../assets/web-design/desktop/bg-pattern-intro-web.svg);
   background-repeat: no-repeat;
   background-position: top right;
 }
 @media (min-width: 768px) {
-  .hero {
+  .c-hero {
     height: 15.75rem;
     background-position: center left -1.25rem;
   }
 }
 
-.hero__header {
+.c-hero__header {
   padding-top: 6.5625rem;
   padding-bottom: 1.5rem;
 }
 @media (min-width: 768px) {
-  .hero__header {
+  .c-hero__header {
     padding-top: 3.9375rem;
   }
 }
 
-.hero__text {
+.c-hero__text {
   margin: 0 auto;
   width: 90%;
   max-width: 24.0625rem;
 }
 
 @media (min-width: 1360px) {
-  .hero--app,
-.hero--graphic {
+  .c-hero.-app,
+.c-hero.-graphic {
     background-position: center left -3.75rem;
   }
 }
 
 @media (min-width: 1360px) {
-  .hero--web {
+  .c-hero.-web {
     background-position: center right;
   }
 }
 
 @media (min-width: 1360px) {
-  .hero--app {
+  .c-hero.-app {
     background-image: url(../assets/app-design/desktop/bg-pattern-intro-app.svg);
   }
 }
 
 @media (min-width: 1360px) {
-  .hero--graphic {
+  .c-hero.-graphic {
     background-image: url(../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg);
   }
 }
@@ -1008,7 +1008,7 @@ header {
   fill: var(--secondary-light);
 }
 
-.country__header {
+.c-country__header {
   margin-top: 3rem;
   margin-bottom: 2rem;
 }

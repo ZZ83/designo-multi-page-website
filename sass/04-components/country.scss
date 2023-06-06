@@ -1,6 +1,6 @@
 @use '../00-tools' as *;
 
-.country {
+.c-country {
     @extend %flex;
     @extend %flex-d-c;
     @extend %flex-ai-c;
