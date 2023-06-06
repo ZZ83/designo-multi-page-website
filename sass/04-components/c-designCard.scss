@@ -1,0 +1,82 @@
+@use '../00-tools' as *;
+
+.c-designCard {
+    width: 100%;
+    height: rem(250px);
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.6);
+    @extend %br-15;
+    &:hover {
+        background-blend-mode: screen;
+        background-color: rgba(231, 129, 107, 1);
+    }
+    @include mq(medium) {
+        height: rem(200px);
+    }
+    @include mq(large) {
+        height: rem(308px);
+    }
+}
+
+    .c-designCard__link {
+        color: inherit;
+        width:  100%;
+        height: 100%;
+        @extend %flex;
+        @extend %flex-d-c;
+        @extend %flex-jc-c;
+    }
+
+    .c-designCard__header {
+        margin-bottom: 2rem;
+    }
+    
+    .c-designCard__text::after {
+        display: inline-block;
+        width:  rem(12px);
+        height: rem(12px);
+        padding-left: rem(15px);
+        content: url('../assets/shared/desktop/icon-right-arrow.svg');
+    } 
+
+.c-designCard.-home {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    @include mq(large) {
+        height: 100%;
+    }
+}
+
+.c-designCard.-web {
+    background-image: url("../assets/home/mobile/image-web-design.jpg");
+    @include mq(medium) {
+        background-image: url("../assets/home/tablet/image-web-design.jpg");
+    }
+    @include mq(large) {
+        background-image: url("../assets/home/desktop/image-web-design-large.jpg");
+    }
+}
+
+.c-designCard.-app {
+    background-image: url("../assets/home/mobile/image-app-design.jpg");
+    @include mq(medium) {
+        background-image: url("../assets/home/tablet/image-app-design.jpg");
+    }
+    @include mq(large) {
+        background-image: url("../assets/home/desktop/image-app-design.jpg");
+    }
+}
+
+.c-designCard.-graphic {
+    background-image: url('../assets/home/mobile/image-graphic-design.jpg');
+    @include mq(medium) {
+        background-image: url('../assets/home/tablet/image-graphic-design.jpg');
+    }
+    @include mq(large) {
+        background-image: url('../assets/home/desktop/image-graphic-design.jpg');
+    }
+}
