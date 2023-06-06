@@ -498,30 +498,6 @@ a {
   text-decoration: none;
 }
 
-.wrapper {
-  margin: 0 auto;
-  width: calc(100% - 3rem);
-}
-.wrapper--hero {
-  width: 100%;
-  background-color: var(--secondary);
-}
-@media (min-width: 768px) {
-  .wrapper--hero {
-    border-radius: 15px;
-  }
-}
-@media (min-width: 768px) {
-  .wrapper {
-    width: calc(100% - 5rem);
-  }
-}
-@media (min-width: 1360px) {
-  .wrapper {
-    width: calc(100% - 20.625rem);
-  }
-}
-
 .a-logo {
   display: block;
   width: 12.625rem;
@@ -679,34 +655,49 @@ a {
   background-repeat: no-repeat;
   background-position: top right;
 }
-.hero__header {
-  padding-top: 6.5625rem;
-  padding-bottom: 1.5rem;
-}
-.hero__text {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 24.0625rem;
-}
 @media (min-width: 768px) {
   .hero {
     height: 15.75rem;
     background-position: center left -1.25rem;
   }
+}
+
+.hero__header {
+  padding-top: 6.5625rem;
+  padding-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
   .hero__header {
     padding-top: 3.9375rem;
   }
 }
+
+.hero__text {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 24.0625rem;
+}
+
 @media (min-width: 1360px) {
-  .hero--app, .hero--graphic {
+  .hero--app,
+.hero--graphic {
     background-position: center left -3.75rem;
   }
+}
+
+@media (min-width: 1360px) {
   .hero--web {
     background-position: center right;
   }
+}
+
+@media (min-width: 1360px) {
   .hero--app {
     background-image: url(../assets/app-design/desktop/bg-pattern-intro-app.svg);
   }
+}
+
+@media (min-width: 1360px) {
   .hero--graphic {
     background-image: url(../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg);
   }
@@ -1004,6 +995,35 @@ a {
 }
 .country__image--left {
   background-image: url("../assets/shared/tablet/bg-pattern-small-circle-left.svg");
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: calc(100% - 3rem);
+}
+@media (min-width: 768px) {
+  .wrapper {
+    width: calc(100% - 5rem);
+  }
+}
+@media (min-width: 1360px) {
+  .wrapper {
+    width: calc(100% - 20.625rem);
+  }
+}
+
+.wrapper--hero {
+  background-color: var(--secondary);
+}
+@media (max-width: 768px) {
+  .wrapper--hero {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper--hero {
+    border-radius: 15px;
+  }
 }
 
 header {

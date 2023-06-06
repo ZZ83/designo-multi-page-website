@@ -1,0 +1,47 @@
+@use '../00-tools' as *;
+
+.hero {
+    height: rem(320px);
+    background-image: url(../assets/web-design/desktop/bg-pattern-intro-web.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    @include mq(medium) {
+        height: rem(252px);
+        background-position: center left rem(-20px);
+    }
+}
+
+    .hero__header {
+        padding-top: rem(105px);
+        padding-bottom: rem(24px);
+        @include mq(medium) {
+            padding-top: rem(63px);
+        }
+    }
+    .hero__text {
+        margin: 0 auto;
+        width: 90%;
+        max-width: rem(385px);
+    }
+
+.hero--app,
+.hero--graphic {
+    @include mq(large) {
+        background-position: center left rem(-60px);
+    }
+}
+.hero--web {
+    @include mq(large) {
+        background-position: center right;
+    }
+}
+.hero--app {
+    @include mq(large) {
+        background-image: url(../assets/app-design/desktop/bg-pattern-intro-app.svg);
+    }
+}
+.hero--graphic {
+    @include mq(large) {
+        background-image: url(../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg);
+    }
+}
