@@ -1,22 +1,23 @@
 @use '../00-tools' as *;
 
-.secondary-navigation {
-    &__inner {
-        @extend %flex;
-        @extend %flex-d-c;
-        @extend %flex-ai-c;
-        @include mq(medium) {
-            flex-direction: row;
-            border-bottom: 1px solid #979797;
-        }
+.c-footerNavigation {
+    @extend %flex;
+    @extend %flex-d-c;
+    @extend %flex-ai-c;
+    @include mq(medium) {
+        flex-direction: row;
+        border-bottom: 1px solid #979797;
     }
-    &__list {
+}
+
+    .c-footerNavigation__list {
         padding-bottom: rem(32px); 
         @include mq(medium) {
             padding-bottom: rem(46px);
         }
     }
-    &__list:first-child {
+
+    .c-footerNavigation__list:first-child {
         width: 100%;
         margin-bottom: rem(32px);
         border-bottom: 1px solid #979797;
@@ -29,12 +30,14 @@
             border: none;
         }
     }
-    &__list:nth-last-child(-n+2) {
+
+    .c-footerNavigation__list:nth-last-child(-n+2) {
         @include mq(medium) {
             padding-left: 18px;
         }
     }
-    &__link {
+
+    .c-footerNavigation__link {
         color: var(--primary);
         font-size:   rem(14px);
         line-height: rem(14px);
@@ -43,5 +46,4 @@
             text-decoration: underline;
             text-decoration-color: var(--primary);
         }
-    }   
-}
+    }
