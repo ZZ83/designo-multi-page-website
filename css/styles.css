@@ -1013,31 +1013,6 @@ header {
   margin-bottom: 2rem;
 }
 
-.f-logo {
-  display: block;
-  width: 12.625rem;
-  height: 1.6875rem;
-  margin-top: 0.25rem;
-}
-
-.f-mobileNavIcons {
-  cursor: pointer;
-  width: 1.5rem;
-  height: 1.25rem;
-  border: 0;
-  background-color: transparent;
-  background-image: url(../assets/shared/mobile/icon-hamburger.svg);
-  background-repeat: no-repeat;
-}
-.f-mobileNavIcons[aria-expanded=true] {
-  background-image: url(../assets/shared/mobile/icon-close.svg);
-}
-@media (min-width: 768px) {
-  .f-mobileNavIcons {
-    display: none;
-  }
-}
-
 .f-btn {
   width: 9.5rem;
   height: 3.5rem;
@@ -1090,30 +1065,70 @@ header {
   background-image: url("../assets/shared/tablet/bg-pattern-small-circle-left.svg");
 }
 
-.a-shape {
+.f-logo {
+  display: block;
+  width: 12.625rem;
+  height: 1.6875rem;
+  margin-top: 0.25rem;
+}
+
+.f-mobileNavIcons {
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.25rem;
+  border: 0;
+  background-color: transparent;
+  background-image: url(../assets/shared/mobile/icon-hamburger.svg);
+  background-repeat: no-repeat;
+}
+.f-mobileNavIcons[aria-expanded=true] {
+  background-image: url(../assets/shared/mobile/icon-close.svg);
+}
+@media (min-width: 768px) {
+  .f-mobileNavIcons {
+    display: none;
+  }
+}
+
+.f-shape {
   display: none;
 }
 @media (min-width: 1360px) {
-  .a-shape {
+  .f-shape {
     display: initial;
     position: absolute;
     z-index: -10;
   }
-  .a-shape.-top281 {
+}
+
+@media (min-width: 1360px) {
+  .f-shape.-top281 {
     top: 17.5625rem;
   }
-  .a-shape.-top475 {
+}
+
+@media (min-width: 1360px) {
+  .f-shape.-top475 {
     top: 29.6875rem;
   }
-  .a-shape.-top161 {
+}
+
+@media (min-width: 1360px) {
+  .f-shape.-top885 {
+    top: 55.3125rem;
     right: 0;
-    bottom: 10.0625rem;
   }
-  .a-shape.-top1777 {
+}
+
+@media (min-width: 1360px) {
+  .f-shape.-top1777 {
     top: 111.0625rem;
     right: -24.75rem;
   }
-  .a-shape.-top1879 {
+}
+
+@media (min-width: 1360px) {
+  .f-shape.-top1879 {
     top: 117.4375rem;
     right: 0;
     transform: rotate(-180deg);

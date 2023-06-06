@@ -1,0 +1,44 @@
+@use '../00-tools' as *;
+
+.f-shape {
+    display: none;
+    @include mq(large) {
+        display: initial;
+        position: absolute;
+        z-index: -10;
+    }
+}
+
+.f-shape.-top281 {
+    @include mq(large) {
+        top: rem(281px);
+    }
+}
+
+.f-shape.-top475 {
+    @include mq(large) {
+        top: rem(475px);
+    }
+}
+
+.f-shape.-top885 {
+    @include mq(large) {
+        top: rem(885px);
+        right: 0;
+    }
+}
+
+.f-shape.-top1777 {
+    @include mq(large) {
+        top: rem(1777px);
+        right: rem(-396px);
+    }
+}
+
+.f-shape.-top1879 {
+    @include mq(large) {
+        top: rem(1879px);
+        right: 0;
+        transform: rotate(-180deg);
+    }
+}
