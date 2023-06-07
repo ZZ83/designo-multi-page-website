@@ -1,0 +1,40 @@
+@use '../../../00-tools' as *;
+
+.c-aboutUsCardContent {
+    background-color: var(--secondary);
+    padding: rem(80px) rem(24px);
+    background-size: rem(292px);
+    background-repeat: no-repeat;
+    background-position: top rem(-146px) right;
+    background-image: url(../assets/about/desktop/bg-pattern-hero-about-desktop.svg);
+    @include mq(medium) {
+        padding: rem(64px) rem(58px);
+        background-size: rem(640px);
+        background-position: top rem(-430px) left rem(-122px);
+        border-radius: 0 0 15px 15px; 
+    }
+    @include mq(large) {
+        width: 57.4%;
+        padding: rem(135px) rem(80px) rem(135px) rem(95px);
+        background-position: bottom left;
+        border-radius: 15px 0 0 15px; 
+    }
+}
+
+    .c-aboutUsCardContent__header,
+    .c-aboutUsCardContent__text {
+        @include mq(large) {
+            text-align: left;
+        }
+    }
+
+    .c-aboutUsCardContent__header {
+        margin-bottom: rem(24px);
+    }
+
+    .c-aboutUsCardContent__text {
+        @include mq(medium) {
+            margin: auto;
+            max-width: rem(720px);
+        }
+    }

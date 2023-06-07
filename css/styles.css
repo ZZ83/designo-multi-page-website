@@ -1504,6 +1504,155 @@ a {
   }
 }
 
+.c-aboutCard {
+  background-color: transparent;
+}
+@media (min-width: 1360px) {
+  .c-aboutCard {
+    display: flex;
+  }
+}
+
+.c-aboutCard__image {
+  width: 100%;
+  display: block;
+}
+@media (min-width: 768px) {
+  .c-aboutCard__image {
+    border-radius: 15px 15px 0 0;
+  }
+}
+@media (min-width: 1360px) {
+  .c-aboutCard__image {
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+  }
+}
+
+@media (min-width: 1360px) {
+  .c-aboutCard__image.-world {
+    border-radius: 15px 0 0 15px;
+  }
+}
+
+.c-aboutCard.-about {
+  margin-bottom: -7.5rem;
+}
+@media (min-width: 768px) {
+  .c-aboutCard.-about {
+    margin-bottom: initial;
+  }
+}
+
+.c-aboutCard.-reverse {
+  flex-direction: row-reverse;
+}
+
+.c-aboutCardContent {
+  color: var(--tertiary);
+  background-color: #FDF3F0;
+  background-image: url(../assets/about/mobile/test.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 5rem 1.5rem;
+}
+@media (min-width: 768px) {
+  .c-aboutCardContent {
+    background-position: bottom 2.75rem right 0.6875rem;
+    padding: 4.25rem 3.625rem;
+    border-radius: 0 0 15px 15px;
+  }
+}
+@media (min-width: 1360px) {
+  .c-aboutCardContent {
+    width: 57.4%;
+    background-position: bottom left -9.125rem;
+    padding: 9.625rem 5.875rem;
+    border-radius: 0 15px 15px 0;
+  }
+}
+
+@media (min-width: 1360px) {
+  .c-aboutCardContent__header,
+.c-aboutCardContent__text {
+    text-align: left;
+  }
+}
+
+.c-aboutCardContent__header {
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  text-transform: none;
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+.c-aboutCardContent__text {
+  margin: auto;
+  padding-bottom: 1.5rem;
+  max-width: 35.75rem;
+}
+
+.c-aboutCardContent__text:last-child {
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .c-aboutCardContent.-real {
+    border-radius: 0 0 15px 15px;
+  }
+}
+@media (min-width: 1360px) {
+  .c-aboutCardContent.-real {
+    border-radius: 15px 0 0 15px;
+    background-image: url(../assets/shared/desktop/bg-pattern-two-circles.svg);
+    background-position: bottom left;
+  }
+}
+
+.c-aboutUsCardContent {
+  background-color: var(--secondary);
+  padding: 5rem 1.5rem;
+  background-size: 18.25rem;
+  background-repeat: no-repeat;
+  background-position: top -9.125rem right;
+  background-image: url(../assets/about/desktop/bg-pattern-hero-about-desktop.svg);
+}
+@media (min-width: 768px) {
+  .c-aboutUsCardContent {
+    padding: 4rem 3.625rem;
+    background-size: 40rem;
+    background-position: top -26.875rem left -7.625rem;
+    border-radius: 0 0 15px 15px;
+  }
+}
+@media (min-width: 1360px) {
+  .c-aboutUsCardContent {
+    width: 57.4%;
+    padding: 8.4375rem 5rem 8.4375rem 5.9375rem;
+    background-position: bottom left;
+    border-radius: 15px 0 0 15px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .c-aboutUsCardContent__header,
+.c-aboutUsCardContent__text {
+    text-align: left;
+  }
+}
+
+.c-aboutUsCardContent__header {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .c-aboutUsCardContent__text {
+    margin: auto;
+    max-width: 45rem;
+  }
+}
+
 @media (min-width: 1360px) {
   .m-contactContent {
     max-width: 27.8125rem;
@@ -1670,145 +1819,6 @@ a {
     gap: 5.9375rem;
     padding: 3.4375rem 5.9375rem;
     max-width: initial;
-  }
-}
-
-.c-aboutCard {
-  background-color: transparent;
-}
-@media (min-width: 1360px) {
-  .c-aboutCard {
-    display: flex;
-  }
-}
-
-.c-aboutCard__image {
-  width: 100%;
-  display: block;
-}
-@media (min-width: 768px) {
-  .c-aboutCard__image {
-    border-radius: 15px 15px 0 0;
-  }
-}
-@media (min-width: 1360px) {
-  .c-aboutCard__image {
-    height: 100%;
-    border-radius: 0 15px 15px 0;
-  }
-}
-
-@media (min-width: 1360px) {
-  .c-aboutCard__image.-world {
-    border-radius: 15px 0 0 15px;
-  }
-}
-
-.c-aboutCard.-about {
-  margin-bottom: -7.5rem;
-}
-@media (min-width: 768px) {
-  .c-aboutCard.-about {
-    margin-bottom: initial;
-  }
-}
-
-.c-aboutCard.-reverse {
-  flex-direction: row-reverse;
-}
-
-.about-content {
-  color: var(--tertiary);
-  background-color: #FDF3F0;
-  background-image: url(../assets/about/mobile/test.svg);
-  background-repeat: no-repeat;
-  background-position: top left;
-  padding: 5rem 1.5rem;
-}
-@media (min-width: 768px) {
-  .about-content {
-    background-position: bottom 2.75rem right 0.6875rem;
-    padding: 4.25rem 3.625rem;
-    border-radius: 0 0 15px 15px;
-  }
-}
-@media (min-width: 1360px) {
-  .about-content {
-    width: 57.4%;
-    background-position: bottom left -9.125rem;
-    padding: 9.625rem 5.875rem;
-    border-radius: 0 15px 15px 0;
-  }
-}
-@media (min-width: 1360px) {
-  .about-content__header, .about-content__text {
-    text-align: left;
-  }
-}
-.about-content__header {
-  color: var(--secondary);
-  margin-bottom: 1.5rem;
-  text-transform: none;
-  font-size: 2rem;
-  line-height: 2.25rem;
-}
-.about-content__text {
-  margin: auto;
-  padding-bottom: 1.5rem;
-  max-width: 35.75rem;
-}
-.about-content__text:last-child {
-  padding: 0;
-}
-@media (min-width: 768px) {
-  .about-content--real {
-    border-radius: 0 0 15px 15px;
-  }
-}
-@media (min-width: 1360px) {
-  .about-content--real {
-    border-radius: 15px 0 0 15px;
-    background-image: url(../assets/shared/desktop/bg-pattern-two-circles.svg);
-    background-position: bottom left;
-  }
-}
-
-.m-aboutUsContent {
-  background-color: var(--secondary);
-  padding: 5rem 1.5rem;
-  background-size: 18.25rem;
-  background-repeat: no-repeat;
-  background-position: top -9.125rem right;
-  background-image: url(../assets/about/desktop/bg-pattern-hero-about-desktop.svg);
-}
-@media (min-width: 768px) {
-  .m-aboutUsContent {
-    padding: 4rem 3.625rem;
-    background-size: 40rem;
-    background-position: top -26.875rem left -7.625rem;
-    border-radius: 0 0 15px 15px;
-  }
-}
-@media (min-width: 1360px) {
-  .m-aboutUsContent {
-    width: 57.4%;
-    padding: 8.4375rem 5rem 8.4375rem 5.9375rem;
-    background-position: bottom left;
-    border-radius: 15px 0 0 15px;
-  }
-}
-@media (min-width: 1360px) {
-  .m-aboutUsContent__header, .m-aboutUsContent__text {
-    text-align: left;
-  }
-}
-.m-aboutUsContent__header {
-  margin-bottom: 1.5rem;
-}
-@media (min-width: 768px) {
-  .m-aboutUsContent__text {
-    margin: auto;
-    max-width: 45rem;
   }
 }
 

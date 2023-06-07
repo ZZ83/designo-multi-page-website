@@ -1,0 +1,57 @@
+@use '../../../00-tools' as *;
+
+.c-aboutCardContent {
+    color: var(--tertiary);
+    background-color: #FDF3F0;
+    background-image: url(../assets/about/mobile/test.svg);
+    background-repeat: no-repeat;
+    background-position:  top left;
+    padding: rem(80px) rem(24px);
+    @include mq(medium) {
+        background-position: bottom rem(44px) right rem(11px);
+        padding: rem(68px) rem(58px);
+        border-radius: 0 0 15px 15px; 
+    }
+    @include mq(large) {
+        width: 57.4%;
+        background-position:  bottom left rem(-146px);
+        padding: rem(154px) rem(94px);
+        border-radius: 0 15px 15px 0; 
+    }
+}
+
+    .c-aboutCardContent__header,
+    .c-aboutCardContent__text {
+        @include mq(large) {
+            text-align: left;
+        }
+    }
+
+    .c-aboutCardContent__header {
+        color: var(--secondary);
+        margin-bottom: rem(24px);
+        text-transform: none;
+        font-size:   rem(32px);
+        line-height: rem(36px);
+    }
+
+    .c-aboutCardContent__text {
+        margin: auto;
+        padding-bottom: rem(24px);
+        max-width: rem(572px);
+    }
+
+    .c-aboutCardContent__text:last-child {
+        padding: 0;
+    }
+
+.c-aboutCardContent.-real {
+    @include mq(medium) {
+        border-radius: 0 0 15px 15px; 
+    }
+    @include mq(large) {
+        border-radius: 15px 0 0 15px; 
+        background-image: url(../assets/shared/desktop/bg-pattern-two-circles.svg);
+        background-position:  bottom left;
+    }
+}
