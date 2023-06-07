@@ -4,11 +4,14 @@
 @use '04-components' as *;
 @use '05-fragments'  as *;
 
-@use 'pages/home';
+@use 'pages/home/00-layout'     as *;
+@use 'pages/home/01-components' as *;
+@use 'pages/home/02-fragments'  as *;
+
+
 @use 'pages/design';
 @use 'pages/locations';
 
 @use 'pages/about/01-components' as *;
 
 @use 'pages/contact';
-

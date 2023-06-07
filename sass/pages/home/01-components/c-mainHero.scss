@@ -1,6 +1,6 @@
-@use '../../00-tools' as *;
+@use '../../../00-tools' as *;
 
-.main-hero {
+.c-mainHero {
     margin: 0 auto;
     max-width: rem(330px);
     position: relative;
@@ -17,7 +17,9 @@
         align-items: flex-start;
         justify-content: space-between;
     }
-    &__header {
+}
+
+    .c-mainHero__header {
         padding-top:    rem(80px);
         padding-bottom: rem(24px);
         @include mq(medium) {
@@ -28,7 +30,8 @@
             text-align: left;
         }
     }
-    &__text{
+
+    .c-mainHero__text {
         font-weight: 400;
         font-size: rem(15px);
         line-height: rem(25px);
@@ -41,4 +44,3 @@
             margin-bottom: 0;
         }
     }
-}
