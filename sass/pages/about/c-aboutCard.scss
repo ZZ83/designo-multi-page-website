@@ -1,0 +1,38 @@
+@use '../../00-tools' as *;
+
+.c-aboutCard {
+    background-color: transparent;
+    @include mq(large) {
+        display: flex;
+    }
+}
+
+    .c-aboutCard__image {
+        width:  100%;
+        display: block;
+        @include mq(medium) {
+            border-radius: 15px 15px 0 0; 
+        }
+        @include mq(large) {
+            height: 100%;
+            border-radius: 0 15px 15px 0;
+        }
+    }
+
+    .c-aboutCard__image.-world {
+        @include mq(large) {
+            border-radius: 15px 0 0 15px;
+        }
+    }
+
+
+.c-aboutCard.-about {
+    margin-bottom: rem(-120px);
+    @include mq(medium) {
+        margin-bottom: initial;
+    }
+}
+
+.c-aboutCard.-reverse {
+    flex-direction: row-reverse;
+}

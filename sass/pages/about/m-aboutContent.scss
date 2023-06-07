@@ -81,6 +81,7 @@
     }
     &__text {
         @include mq(medium) {
+            margin: auto;
             max-width: rem(720px);
         }
     }

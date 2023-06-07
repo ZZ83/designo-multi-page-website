@@ -2,7 +2,6 @@
 
 .c-letsTalk {
     height: rem(379px);
-    // margin-top:    rem(96px);
     margin-bottom: rem(-190px);
     padding: rem(64px) rem(24px);
     background-color: var(--secondary);
@@ -18,14 +17,12 @@
     @extend %flex-jc-sb;
     @include mq(medium) {
         height: rem(350px);
-        // margin-top:    rem(67px);
         margin-bottom: rem(-86px);
         padding: rem(57px);
         background-position: center right rem(-170px);
     }
     @include mq(large) {
         height: rem(292px);
-        // margin-top:    rem(160px);
         margin-bottom: rem(-72px);
         padding: rem(72px) rem(68px);
         flex-direction: row;
@@ -61,10 +58,3 @@
             max-width: rem(455px);
         }
     }
-
-.c-letsTalk.-about {
-    margin-top: rem(120px);
-    @include mq(medium) {
-        margin-top: 0;
-    }
-}

@@ -536,20 +536,6 @@ header {
   }
 }
 
-.design-cards-section {
-  display: grid;
-  gap: 24px;
-}
-@media (min-width: 1360px) {
-  .design-cards-section {
-    height: 40rem;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .design-cards-section--projects {
-    height: auto;
-  }
-}
-
 .footer {
   position: relative;
   height: 50.9375rem;
@@ -580,7 +566,6 @@ header {
 
 .countries-section {
   max-width: 21.875rem;
-  margin: 7.5rem auto;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -621,6 +606,16 @@ header {
     margin-top: 1.9375rem;
     align-items: flex-end;
     flex-direction: row;
+  }
+}
+
+.l-designCardsSection {
+  display: grid;
+  gap: 24px;
+}
+@media (min-width: 1360px) {
+  .l-designCardsSection {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -958,15 +953,6 @@ header {
   .c-letsTalk__text {
     text-align: left;
     max-width: 28.4375rem;
-  }
-}
-
-.c-letsTalk.-about {
-  margin-top: 7.5rem;
-}
-@media (min-width: 768px) {
-  .c-letsTalk.-about {
-    margin-top: 0;
   }
 }
 
@@ -1682,33 +1668,47 @@ header {
   }
 }
 
-.m-aboutCard {
+.c-aboutCard {
   background-color: transparent;
 }
 @media (min-width: 1360px) {
-  .m-aboutCard {
+  .c-aboutCard {
     display: flex;
   }
 }
-.m-aboutCard__image {
+
+.c-aboutCard__image {
   width: 100%;
-  height: 100%;
   display: block;
 }
 @media (min-width: 768px) {
-  .m-aboutCard__image {
+  .c-aboutCard__image {
     border-radius: 15px 15px 0 0;
   }
 }
 @media (min-width: 1360px) {
-  .m-aboutCard__image {
+  .c-aboutCard__image {
+    height: 100%;
     border-radius: 0 15px 15px 0;
   }
-  .m-aboutCard__image--world {
+}
+
+@media (min-width: 1360px) {
+  .c-aboutCard__image.-world {
     border-radius: 15px 0 0 15px;
   }
 }
-.m-aboutCard.-reverse {
+
+.c-aboutCard.-about {
+  margin-bottom: -7.5rem;
+}
+@media (min-width: 768px) {
+  .c-aboutCard.-about {
+    margin-bottom: initial;
+  }
+}
+
+.c-aboutCard.-reverse {
   flex-direction: row-reverse;
 }
 
@@ -1802,20 +1802,8 @@ header {
 }
 @media (min-width: 768px) {
   .m-aboutUsContent__text {
+    margin: auto;
     max-width: 45rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .o-ourCompany {
-    display: flex;
-    flex-direction: column;
-    gap: 7.5rem;
-  }
-}
-@media (min-width: 1360px) {
-  .o-ourCompany {
-    gap: 10rem;
   }
 }
 

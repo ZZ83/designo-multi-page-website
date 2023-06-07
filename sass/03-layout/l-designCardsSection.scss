@@ -1,13 +1,9 @@
 @use '../00-tools' as *;
 
-.design-cards-section {
+.l-designCardsSection {
     display: grid;
     gap: 24px;
     @include mq(large) {
-        height: rem(640px);
         grid-template-columns: repeat(2, 1fr);
-        &--projects {
-            height: auto;
-        }
     }
 }
