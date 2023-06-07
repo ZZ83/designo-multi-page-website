@@ -536,34 +536,6 @@ header {
   }
 }
 
-.footer {
-  position: relative;
-  height: 50.9375rem;
-  background-color: var(--tertiary);
-  padding-top: 15.8125rem;
-}
-@media (min-width: 768px) {
-  .footer {
-    height: 26.4375rem;
-    padding-top: 10.375rem;
-  }
-}
-@media (min-width: 1360px) {
-  .footer {
-    height: 24.5625rem;
-    padding-top: 9rem;
-  }
-}
-.footer--contact {
-  padding: 3.375rem 0;
-  height: initial;
-}
-@media (min-width: 768px) {
-  .footer--contact {
-    padding: 4.5rem 0;
-  }
-}
-
 .countries-section {
   max-width: 21.875rem;
   display: flex;
@@ -616,6 +588,35 @@ header {
 @media (min-width: 1360px) {
   .l-designCardsSection {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.l-footer {
+  position: relative;
+  height: 50.9375rem;
+  background-color: var(--tertiary);
+  padding-top: 15.8125rem;
+}
+@media (min-width: 768px) {
+  .l-footer {
+    height: 26.4375rem;
+    padding-top: 10.375rem;
+  }
+}
+@media (min-width: 1360px) {
+  .l-footer {
+    height: 24.5625rem;
+    padding-top: 9rem;
+  }
+}
+
+.l-footer.-contact {
+  padding: 3.375rem 0;
+  height: initial;
+}
+@media (min-width: 768px) {
+  .l-footer.-contact {
+    padding: 4.5rem 0;
   }
 }
 

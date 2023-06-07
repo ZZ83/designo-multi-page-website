@@ -1,6 +1,6 @@
 @use '../00-tools' as *;
 
-.footer {
+.l-footer {
     position: relative;
     height: rem(815px);
     background-color: var(--tertiary);
@@ -13,11 +13,12 @@
         height: rem(393px);
         padding-top: rem(144px);
     }
-    &--contact {
-        padding: rem(54px) 0;
-        height: initial;
-        @include mq(medium) {
-            padding: rem(72px) 0;
-        }    
-    }
+}
+
+.l-footer.-contact {
+    padding: rem(54px) 0;
+    height: initial;
+    @include mq(medium) {
+        padding: rem(72px) 0;
+    } 
 }
