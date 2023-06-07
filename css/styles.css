@@ -558,20 +558,6 @@ a {
   }
 }
 
-.footer-content {
-  display: flex;
-  margin-top: 0.3125rem;
-  flex-direction: column;
-  align-items: center;
-}
-@media (min-width: 768px) {
-  .footer-content {
-    margin-top: 1.9375rem;
-    align-items: flex-end;
-    flex-direction: row;
-  }
-}
-
 .l-designCardsSection {
   display: grid;
   gap: 24px;
@@ -608,6 +594,20 @@ a {
 @media (min-width: 768px) {
   .l-footer.-contact {
     padding: 4.5rem 0;
+  }
+}
+
+.l-footerContent {
+  display: flex;
+  margin-top: 0.3125rem;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .l-footerContent {
+    margin-top: 1.9375rem;
+    align-items: flex-end;
+    flex-direction: row;
   }
 }
 
