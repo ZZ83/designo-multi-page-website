@@ -365,15 +365,15 @@ html {
   box-sizing: inherit;
 }
 
-.contactForm, .o-traitsSection, .trait, .main-hero, .c-socialIcons, .c-primaryNavigation__inner, .c-letsTalk, .c-footerNavigation, .c-footerNavigation__list:first-child, .c-designCard__link, .c-country, header {
+.contactForm, .o-traitsSection, .trait, .main-hero, .c-socialIcons, .c-primaryNavigation__inner, .c-letsTalk, .c-footerNavigation, .c-footerNavigation__list:first-child, .c-designCard__link, .c-country, .l-header {
   display: flex;
 }
 
-.trait, .main-hero, .c-socialIcons, .c-letsTalk, .c-footerNavigation, .c-country, header {
+.trait, .main-hero, .c-socialIcons, .c-letsTalk, .c-footerNavigation, .c-country, .l-header {
   align-items: center;
 }
 
-.c-socialIcons, .c-primaryNavigation__inner, .c-letsTalk, header {
+.c-socialIcons, .c-primaryNavigation__inner, .c-letsTalk, .l-header {
   justify-content: space-between;
 }
 
@@ -527,15 +527,6 @@ a {
   }
 }
 
-header {
-  height: 6rem;
-}
-@media (min-width: 768px) {
-  header {
-    height: 9.6875rem;
-  }
-}
-
 .countries-section {
   max-width: 21.875rem;
   display: flex;
@@ -617,6 +608,15 @@ header {
 @media (min-width: 768px) {
   .l-footer.-contact {
     padding: 4.5rem 0;
+  }
+}
+
+.l-header {
+  height: 6rem;
+}
+@media (min-width: 768px) {
+  .l-header {
+    height: 9.6875rem;
   }
 }
 

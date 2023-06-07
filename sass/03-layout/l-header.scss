@@ -1,6 +1,6 @@
 @use '../00-tools' as *;
 
-header {
+.l-header {
     height: rem(96px);
     @extend %flex;
     @extend %flex-ai-c;
