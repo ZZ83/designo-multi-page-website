@@ -1,6 +1,6 @@
 @use '../00-tools' as *;
 
-.wrapper {
+.l-wrapper {
     margin: 0 auto;
     width: calc(100% - rem(48px));
     @include mq(medium) {
@@ -11,7 +11,7 @@
     }
 }
 
-.wrapper--hero {
+.l-wrapper.-hero {
     background-color: var(--secondary);
     @media (max-width: 767px) {
         width: 100%;
