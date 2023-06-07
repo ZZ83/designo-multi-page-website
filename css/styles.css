@@ -551,34 +551,33 @@ a {
   }
 }
 
-.countries-section {
-  max-width: 21.875rem;
+.l-countriesSection {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  .countries-section {
+  .l-countriesSection {
     gap: 3.625rem;
   }
 }
 @media (min-width: 1360px) {
-  .countries-section {
-    width: calc(100% - 20.625rem);
-    max-width: initial;
-    height: 22.75rem;
+  .l-countriesSection {
     flex-direction: row;
-    justify-content: space-between;
     gap: 1.875rem;
   }
 }
-.countries-section--contact {
-  margin: 7.5rem auto;
+
+.l-countriesSection.-contact {
+  max-width: 69.375rem;
+  margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
 }
 @media (min-width: 1360px) {
-  .countries-section--contact {
-    margin: 10rem auto;
+  .l-countriesSection.-contact {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
   }
 }
 
@@ -644,6 +643,11 @@ a {
   }
 }
 
+@media (min-width: 1360px) {
+  .c-country {
+    width: 21.875rem;
+  }
+}
 .c-country__header {
   margin-top: 3rem;
   margin-bottom: 2rem;

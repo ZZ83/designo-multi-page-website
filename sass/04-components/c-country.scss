@@ -4,6 +4,9 @@
     @extend %flex;
     @extend %flex-d-c;
     @extend %flex-ai-c;
+    @include mq(large) {
+        width: rem(350px);
+    }
     &__header {
         margin-top:    rem(48px);
         margin-bottom: rem(32px);

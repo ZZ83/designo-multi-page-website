@@ -1,0 +1,25 @@
+@use '../00-tools' as *;
+
+.l-countriesSection {
+    display: flex;
+    flex-direction: column;
+    gap: rem(48px);
+    margin: 0 auto;
+    @include mq(medium) {
+       gap: rem(58px);
+    }
+    @include mq(large) {
+        flex-direction: row;
+        gap: rem(30px);
+    }
+}
+
+.l-countriesSection.-contact {
+    max-width: rem(1110px);
+    margin-top:    rem(120px);
+    margin-bottom: rem(120px);
+    @include mq(large) {
+        margin-top:    rem(160px);
+        margin-bottom: rem(160px);
+    }
+}
