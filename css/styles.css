@@ -648,6 +648,7 @@ a {
     width: 21.875rem;
   }
 }
+
 .c-country__header {
   margin-top: 3rem;
   margin-bottom: 2rem;
@@ -663,10 +664,6 @@ a {
   background-blend-mode: overlay;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.c-designCard:hover {
-  background-blend-mode: screen;
-  background-color: rgb(231, 129, 107);
-}
 @media (min-width: 768px) {
   .c-designCard {
     height: 12.5rem;
@@ -676,6 +673,11 @@ a {
   .c-designCard {
     height: 19.25rem;
   }
+}
+
+.c-designCard:hover {
+  background-blend-mode: screen;
+  background-color: rgb(231, 129, 107);
 }
 
 .c-designCard__link {
@@ -790,6 +792,7 @@ a {
   line-height: 0.875rem;
   letter-spacing: 0.125rem;
 }
+
 .c-footerNavigation__link:hover {
   text-decoration: underline;
   text-decoration-color: var(--primary);
@@ -1026,9 +1029,11 @@ a {
     margin-left: auto;
   }
 }
+
 .c-socialIcons__icon {
   fill: var(--secondary);
 }
+
 .c-socialIcons__icon:hover {
   fill: var(--secondary-light);
 }
@@ -1041,12 +1046,6 @@ a {
   text-transform: uppercase;
 }
 
-.f-btn.-primary:hover,
-.f-btn.-secondary:hover {
-  color: var(--primary);
-  background-color: var(--secondary-light);
-}
-
 .f-btn.-primary {
   color: var(--tertiary);
   background-color: var(--primary);
@@ -1055,6 +1054,12 @@ a {
 .f-btn.-secondary {
   color: var(--primary);
   background-color: var(--secondary);
+}
+
+.f-btn.-primary:hover,
+.f-btn.-secondary:hover {
+  color: var(--primary);
+  background-color: var(--secondary-light);
 }
 
 .f-btn.-submit {
@@ -1793,12 +1798,14 @@ a {
     padding-left: 1rem;
   }
 }
+
 .c-contactForm__input:focus,
 .c-contactForm__textarea:focus {
   outline: none;
   opacity: 1;
   border-bottom: 2px solid var(--primary);
 }
+
 .c-contactForm__input::placeholder,
 .c-contactForm__textarea::placeholder {
   color: var(--primary);
@@ -1810,6 +1817,7 @@ a {
   height: 2.375rem;
   margin-bottom: 1.5625rem;
 }
+
 .c-contactForm__input::after {
   content: "";
 }

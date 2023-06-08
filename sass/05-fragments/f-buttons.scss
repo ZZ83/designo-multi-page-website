@@ -9,14 +9,6 @@
     @extend %flex-center;
 }
 
-.f-btn.-primary,
-.f-btn.-secondary {
-    &:hover {
-        color: var(--primary);
-        background-color: var(--secondary-light);
-    }
-}
-
 .f-btn.-primary {
     color: var(--tertiary);
     background-color: var(--primary);
@@ -25,6 +17,12 @@
 .f-btn.-secondary {
     color: var(--primary);
     background-color: var(--secondary);
+}
+
+.f-btn.-primary:hover,
+.f-btn.-secondary:hover {
+    color: var(--primary);
+    background-color: var(--secondary-light);
 }
 
 .f-btn.-submit {

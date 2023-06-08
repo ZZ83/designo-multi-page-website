@@ -7,8 +7,9 @@
     @include mq(large) {
         width: rem(350px);
     }
-    &__header {
-        margin-top:    rem(48px);
-        margin-bottom: rem(32px);
-    }
+}
+
+.c-country__header {
+    margin-top:    rem(48px);
+    margin-bottom: rem(32px);
 }

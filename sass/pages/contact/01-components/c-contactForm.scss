@@ -32,24 +32,30 @@
         @include mq(large) {
             padding-left: rem(16px);
         }
-        &:focus {
-            outline: none;
-            opacity: 1;
-            border-bottom: 2px solid var(--primary);
-        }
-        &::placeholder {
-            color: var(--primary);
-            opacity: 0.5;
-        }
+    }
+
+    .c-contactForm__input:focus,
+    .c-contactForm__textarea:focus {
+        outline: none;
+        opacity: 1;
+        border-bottom: 2px solid var(--primary);
+    }
+
+    .c-contactForm__input::placeholder,
+    .c-contactForm__textarea::placeholder {
+        color: var(--primary);
+        opacity: 0.5;
     }
 
     .c-contactForm__input {
         position: relative;
         height: rem(38px);
         margin-bottom: rem(25px);
-        &::after { 
-            content: "";
-        }
+
+    }
+
+    .c-contactForm__input::after { 
+        content: "";
     }
 
     .c-contactForm__textarea {

@@ -42,8 +42,9 @@
         font-size:   rem(14px);
         line-height: rem(14px);
         letter-spacing: rem(2px);
-        &:hover {
-            text-decoration: underline;
-            text-decoration-color: var(--primary);
-        }
+    }
+
+    .c-footerNavigation__link:hover {
+        text-decoration: underline;
+        text-decoration-color: var(--primary);
     }

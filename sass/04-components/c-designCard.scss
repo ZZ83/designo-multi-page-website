@@ -10,16 +10,17 @@
     background-blend-mode: overlay;
     background-color: rgba(0, 0, 0, 0.6);
     @extend %br-15;
-    &:hover {
-        background-blend-mode: screen;
-        background-color: rgba(231, 129, 107, 1);
-    }
     @include mq(medium) {
         height: rem(200px);
     }
     @include mq(large) {
         height: rem(308px);
     }
+}
+
+.c-designCard:hover {
+    background-blend-mode: screen;
+    background-color: rgba(231, 129, 107, 1);
 }
 
     .c-designCard__link {
