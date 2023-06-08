@@ -1,16 +1,19 @@
-@use '../../00-tools' as *;
+@use '../../../00-tools' as *;
 
-.m-contactContent {
+.c-contactContent {
     @include mq(large) {
         max-width: rem(445px);
-    }
-    &__header,
-    &__text {
+    }  
+}
+
+    .c-contactContent__header,
+    .c-contactContent__text {
         @include mq(medium) {
             text-align: left;
         }
     }
-    &__header {
+
+    .c-contactContent__header {
         margin-bottom: rem(24px);
         @include mq(medium) {
             margin-bottom: rem(32px);
@@ -19,4 +22,3 @@
             margin-top: rem(80px);
         }
     }
-}

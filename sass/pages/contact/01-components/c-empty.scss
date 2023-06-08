@@ -1,0 +1,50 @@
+@use '../../../00-tools' as *;
+
+.c-empty {
+    width: rem(104px);
+    display: none;
+    align-items: center; 
+    justify-content: space-between;
+    position: absolute;
+    right: rem(8px);
+}
+    .c-empty__message {
+        font-family: 'Jost';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 26px;
+        letter-spacing: normal;
+        text-transform: none;
+    }
+
+.c-empty.-name,
+.c-empty.-email,
+.c-empty.-phone,
+.c-empty.-message,
+.c-empty.-error {
+    display: flex;
+}
+
+.c-empty.-error,
+.c-empty.-phone {
+    position: relative;
+    margin-top: rem(-20px);
+    margin-left: auto;
+    width: rem(200px);
+    right: 0;
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+}
+
+.c-empty.-email {
+    top: rem(63px);
+}
+
+.c-empty.-phone {
+    width: rem(145px);
+}
+
+.c-empty.-message {
+    top: rem(189px);
+}

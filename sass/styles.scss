@@ -17,4 +17,5 @@
 
 @use 'pages/about/01-components' as *;
 
-@use 'pages/contact';
+@use 'pages/contact/00-layout'     as *;
+@use 'pages/contact/01-components' as *;

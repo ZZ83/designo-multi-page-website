@@ -1,6 +1,6 @@
-@use '../../00-tools' as *;
+@use '../../../00-tools' as *;
 
-.contactForm {
+.c-contactForm {
     position: relative;
     margin-top: rem(48px);
     @extend %flex;
@@ -13,8 +13,10 @@
         max-width: rem(380px);
         margin: 0;
     }
-    &__input,
-    &__textarea {
+}
+
+    .c-contactForm__input,
+    .c-contactForm__textarea {
         font-size: rem(15px);
         line-height: rem(26px);
         color: var(--primary);
@@ -40,19 +42,20 @@
             opacity: 0.5;
         }
     }
-    &__input {
+
+    .c-contactForm__input {
         position: relative;
         height: rem(38px);
         margin-bottom: rem(25px);
         &::after { 
-            content: "Remember this";
+            content: "";
         }
     }
-    &__textarea {
+
+    .c-contactForm__textarea {
         height: rem(102px);
         margin-bottom: rem(40px);
         @include mq(medium) {
             margin-bottom: rem(24px);
         }
     }
-}

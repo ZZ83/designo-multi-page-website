@@ -365,7 +365,7 @@ html {
   box-sizing: inherit;
 }
 
-.contactForm, .c-trait, .c-mainHero, .l-traitsSection, .c-socialIcons, .c-primaryNavigation__inner, .c-letsTalk, .c-footerNavigation, .c-footerNavigation__list:first-child, .c-designCard__link, .c-country, .l-header {
+.c-contactForm, .c-trait, .c-mainHero, .l-traitsSection, .c-socialIcons, .c-primaryNavigation__inner, .c-letsTalk, .c-footerNavigation, .c-footerNavigation__list:first-child, .c-designCard__link, .c-country, .l-header {
   display: flex;
 }
 
@@ -381,7 +381,7 @@ html {
   justify-content: center;
 }
 
-.contactForm, .c-trait, .c-mainHero, .l-traitsSection, .c-primaryNavigation__inner, .c-letsTalk, .c-footerNavigation, .c-designCard__link, .c-country {
+.c-contactForm, .c-trait, .c-mainHero, .l-traitsSection, .c-primaryNavigation__inner, .c-letsTalk, .c-footerNavigation, .c-designCard__link, .c-country {
   flex-direction: column;
 }
 
@@ -1683,47 +1683,94 @@ a {
   }
 }
 
+.l-contactBackgroundImage {
+  background-repeat: no-repeat;
+  background-position: top left -5.75rem;
+  background-image: url("../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
+}
+@media (min-width: 768px) {
+  .l-contactBackgroundImage {
+    background-image: url("../assets/contact/desktop/bg-pattern-hero-desktop.svg");
+    background-position: top -5.1875rem left -7.625rem;
+  }
+}
 @media (min-width: 1360px) {
-  .m-contactContent {
+  .l-contactBackgroundImage {
+    background-position: bottom left;
+  }
+}
+
+.l-contactSection {
+  padding: 4.5rem 1.5rem;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .l-contactSection {
+    padding-left: 3.625rem;
+    padding-right: 3.625rem;
+    max-width: 42.8125rem;
+  }
+}
+@media (min-width: 1360px) {
+  .l-contactSection {
+    display: flex;
+    gap: 5.9375rem;
+    padding: 3.4375rem 5.9375rem;
+    max-width: initial;
+  }
+}
+
+.l-emptyFormsWrapper {
+  position: absolute;
+  right: 0;
+}
+
+@media (min-width: 1360px) {
+  .c-contactContent {
     max-width: 27.8125rem;
   }
 }
+
 @media (min-width: 768px) {
-  .m-contactContent__header, .m-contactContent__text {
+  .c-contactContent__header,
+.c-contactContent__text {
     text-align: left;
   }
 }
-.m-contactContent__header {
+
+.c-contactContent__header {
   margin-bottom: 1.5rem;
 }
 @media (min-width: 768px) {
-  .m-contactContent__header {
+  .c-contactContent__header {
     margin-bottom: 2rem;
   }
 }
 @media (min-width: 1360px) {
-  .m-contactContent__header {
+  .c-contactContent__header {
     margin-top: 5rem;
   }
 }
 
-.contactForm {
+.c-contactForm {
   position: relative;
   margin-top: 3rem;
 }
 @media (min-width: 768px) {
-  .contactForm {
+  .c-contactForm {
     margin-top: 2.5rem;
   }
 }
 @media (min-width: 1360px) {
-  .contactForm {
+  .c-contactForm {
     width: 100%;
     max-width: 23.75rem;
     margin: 0;
   }
 }
-.contactForm__input, .contactForm__textarea {
+
+.c-contactForm__input,
+.c-contactForm__textarea {
   font-size: 0.9375rem;
   line-height: 1.625rem;
   color: var(--primary);
@@ -1735,48 +1782,49 @@ a {
   padding-bottom: 0.75rem;
 }
 @media (min-width: 768px) {
-  .contactForm__input, .contactForm__textarea {
+  .c-contactForm__input,
+.c-contactForm__textarea {
     padding-left: 1.5rem;
   }
 }
 @media (min-width: 1360px) {
-  .contactForm__input, .contactForm__textarea {
+  .c-contactForm__input,
+.c-contactForm__textarea {
     padding-left: 1rem;
   }
 }
-.contactForm__input:focus, .contactForm__textarea:focus {
+.c-contactForm__input:focus,
+.c-contactForm__textarea:focus {
   outline: none;
   opacity: 1;
   border-bottom: 2px solid var(--primary);
 }
-.contactForm__input::placeholder, .contactForm__textarea::placeholder {
+.c-contactForm__input::placeholder,
+.c-contactForm__textarea::placeholder {
   color: var(--primary);
   opacity: 0.5;
 }
-.contactForm__input {
+
+.c-contactForm__input {
   position: relative;
   height: 2.375rem;
   margin-bottom: 1.5625rem;
 }
-.contactForm__input::after {
-  content: "Remember this";
+.c-contactForm__input::after {
+  content: "";
 }
-.contactForm__textarea {
+
+.c-contactForm__textarea {
   height: 6.375rem;
   margin-bottom: 2.5rem;
 }
 @media (min-width: 768px) {
-  .contactForm__textarea {
+  .c-contactForm__textarea {
     margin-bottom: 1.5rem;
   }
 }
 
-.emptyFormsWrapper {
-  position: absolute;
-  right: 0;
-}
-
-.empty {
+.c-empty {
   width: 6.5rem;
   display: none;
   align-items: center;
@@ -1784,28 +1832,8 @@ a {
   position: absolute;
   right: 0.5rem;
 }
-.empty--name, .empty--email, .empty--phone, .empty--message, .empty--error {
-  display: flex;
-}
-.empty--error, .empty--phone {
-  position: relative;
-  margin-top: -1.25rem;
-  margin-left: auto;
-  width: 12.5rem;
-  right: 0;
-  text-decoration: underline;
-  text-decoration-color: var(--primary);
-}
-.empty--email {
-  top: 3.9375rem;
-}
-.empty--phone {
-  width: 9.0625rem;
-}
-.empty--message {
-  top: 11.8125rem;
-}
-.empty__message {
+
+.c-empty__message {
   font-family: "Jost";
   font-style: italic;
   font-weight: 400;
@@ -1815,41 +1843,35 @@ a {
   text-transform: none;
 }
 
-.o-contactBackgroundImage {
-  background-repeat: no-repeat;
-  background-position: top left -5.75rem;
-  background-image: url("../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
-}
-@media (min-width: 768px) {
-  .o-contactBackgroundImage {
-    background-image: url("../assets/contact/desktop/bg-pattern-hero-desktop.svg");
-    background-position: top -5.1875rem left -7.625rem;
-  }
-}
-@media (min-width: 1360px) {
-  .o-contactBackgroundImage {
-    background-position: bottom left;
-  }
+.c-empty.-name,
+.c-empty.-email,
+.c-empty.-phone,
+.c-empty.-message,
+.c-empty.-error {
+  display: flex;
 }
 
-.o-contactSection {
-  padding: 4.5rem 1.5rem;
-  margin: auto;
+.c-empty.-error,
+.c-empty.-phone {
+  position: relative;
+  margin-top: -1.25rem;
+  margin-left: auto;
+  width: 12.5rem;
+  right: 0;
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
 }
-@media (min-width: 768px) {
-  .o-contactSection {
-    padding-left: 3.625rem;
-    padding-right: 3.625rem;
-    max-width: 42.8125rem;
-  }
+
+.c-empty.-email {
+  top: 3.9375rem;
 }
-@media (min-width: 1360px) {
-  .o-contactSection {
-    display: flex;
-    gap: 5.9375rem;
-    padding: 3.4375rem 5.9375rem;
-    max-width: initial;
-  }
+
+.c-empty.-phone {
+  width: 9.0625rem;
+}
+
+.c-empty.-message {
+  top: 11.8125rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

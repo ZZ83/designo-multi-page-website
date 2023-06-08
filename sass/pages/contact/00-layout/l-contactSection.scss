@@ -1,6 +1,6 @@
-@use '../../00-tools' as *;
+@use '../../../00-tools' as *;
 
-.o-contactSection {
+.l-contactSection {
     padding: rem(72px) rem(24px);
     margin: auto;
     @include mq(medium) {

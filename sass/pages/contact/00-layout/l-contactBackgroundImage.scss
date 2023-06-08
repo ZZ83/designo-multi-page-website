@@ -1,6 +1,6 @@
-@use '../../00-tools' as *;
+@use '../../../00-tools' as *;
 
-.o-contactBackgroundImage {
+.l-contactBackgroundImage {
     background-repeat: no-repeat;
     background-position: top left rem(-92px);
     background-image: url("../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
