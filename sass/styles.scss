@@ -11,8 +11,9 @@
 @use 'pages/design/00-layout'     as *;
 @use 'pages/design/01-components' as *;
 
-
-@use 'pages/locations';
+@use 'pages/locations/00-layout'     as *;
+@use 'pages/locations/01-components' as *;
+@use 'pages/locations/02-fragments'  as *;
 
 @use 'pages/about/01-components' as *;
 

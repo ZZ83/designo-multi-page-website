@@ -1,6 +1,6 @@
-@use '../../00-tools' as *;
+@use '../../../00-tools' as *;
 
-.o-locationSection {
+.l-locationSection {
     width: 100%;
     display: grid;
     gap: rem(40px);

@@ -1,48 +1,54 @@
-@use '../../00-tools' as *;
+@use '../../../00-tools' as *;
 
-.m-locationCard {
+.c-locationCard {
     height: rem(394px);
     background-color: #FDF3F0;
     padding: rem(80px) rem(24px);
     background-repeat: no-repeat;
     background-image: url("../assets/locations/mobile/bg-mobile.png");
     background-position: top left;
-    &__header {
-        color: var(--secondary);
-        font-size: rem(32px);
-        text-transform: capitalize;
-        margin-bottom: rem(24px);
-        letter-spacing: normal;
-    }
-    &__inner {
-        display: grid;
-        gap: rem(24px);
-        margin: auto;
-        max-width: rem(540px);
-    }
     @include mq(medium) {
         height: rem(326px);
         border-radius: 15px;
         padding: rem(88px) rem(75px);
         background-image: url("../assets/locations/tablet/bg-tablet.png");
         background-position: bottom left;
-        &__header {
+    }
+   
+}
+
+    .c-locationCard__header {
+        color: var(--secondary);
+        font-size: rem(32px);
+        text-transform: capitalize;
+        margin-bottom: rem(24px);
+        letter-spacing: normal;
+        @include mq(medium) {
             font-size: rem(40px);
             text-align: left;
         }
-        &__inner {
+    }
+
+    .c-locationCard__inner {
+        display: grid;
+        gap: rem(24px);
+        margin: auto;
+        max-width: rem(540px);
+
+        @include mq(medium) {
+        
             display: flex;
             gap: rem(24px);
             margin: initial;
+            
         }
-    }
-    @include mq(large) {
-        padding: rem(88px) rem(95px);
-        &__inner {
+        @include mq(large) {
             justify-content: space-between;
         }
-        &.-switch {
-            order: -1;
-        }
+    }
+
+.c-locationCard.-switch {
+    @include mq(large) {
+        order: -1;
     }
 }

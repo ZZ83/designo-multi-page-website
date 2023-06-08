@@ -1,6 +1,6 @@
-@use '../../00-tools' as *;
+@use '../../../00-tools' as *;
 
-.o-location {
+.l-location {
     @include mq(medium) {
         display: grid;
         gap: rem(30px);

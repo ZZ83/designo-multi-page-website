@@ -1,6 +1,6 @@
-@use '../../00-tools' as *;
+@use '../../../00-tools' as *;
 
-.a-map {
+.f-map {
     width: 100%;
     display: block;
     @include mq(medium) {
