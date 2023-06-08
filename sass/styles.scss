@@ -8,8 +8,10 @@
 @use 'pages/home/01-components' as *;
 @use 'pages/home/02-fragments'  as *;
 
+@use 'pages/design/00-layout'     as *;
+@use 'pages/design/01-components' as *;
 
-@use 'pages/design';
+
 @use 'pages/locations';
 
 @use 'pages/about/01-components' as *;

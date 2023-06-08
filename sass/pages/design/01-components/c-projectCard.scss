@@ -1,0 +1,66 @@
+@use '../../../00-tools' as *;
+
+.c-projectCard {
+    @include mq(medium) {
+        display: flex;
+    }
+    @include mq(large) {  
+        height: rem(478px);
+        flex-direction: column;
+    }
+}
+
+    .c-projectCard__image {
+        display: block;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+        @include mq(medium) {
+            width: 50%;
+            border-radius: 15px 0 0 15px;
+        }
+        @include mq(large) {  
+            width: 100%;
+            height: rem(320px);
+            border-radius: 15px 15px 0 0;
+        }
+    }
+
+    .c-projectCard__inner {
+        cursor: pointer;
+        border-radius: 0 0 15px 15px;
+        background-color: #FDF3F0;
+        height: rem(158px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        @include mq(medium) {
+            border-radius: 0 15px 15px 0;
+            height: initial;
+            width: 50%;
+        }
+        @include mq(large) {  
+            border-radius: 0 0 15px 15px;
+            height: rem(158px);
+            width: 100%;
+        }
+    }
+
+    .c-projectCard__inner:hover {
+        background-color: var(--secondary);
+        .c-projectCard__header,
+        .c-projectCard__text {
+            color: var(--primary);
+        }
+    }
+
+    .c-projectCard__header {
+        color: var(--secondary);
+        padding-bottom: rem(16px);
+    }
+
+    .c-projectCard__text {
+        color: var(--tertiary-light);
+        font-size: 1rem;
+        line-height: rem(26px);
+    }   
