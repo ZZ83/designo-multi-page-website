@@ -7,17 +7,8 @@ const nameInput    = document.getElementById('name');
 const emailInput   = document.getElementById('email');
 const phoneInput   = document.getElementById('phone');
 const messageInput = document.getElementById('message');
-const emptyInputs  = document.getElementById('empty');
 
-function isFormReady() {
-    if (nameInput.value !== "" && emailInput.value !== "" && messageInput.value !== "" ) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-function validateEmail(input) {
+function validateEmail (input) {
     var validRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (input.value.match(validRegex)) {
         error.classList.remove("-error");
@@ -28,20 +19,32 @@ function validateEmail(input) {
     }
 }
 
-function validatePhoneNumber(input_str) {
+function validatePhoneNumber (input_str) {
     var re = /^\(?([0-9]{3})\)?[-]?([0-9]{3})[-]?([0-9]{4})$/;
     return re.test(input_str);
 }
 
+function isFormReady () {
+    if ( nameInput.value    !== "" && 
+         emailInput.value   !== "" && 
+         messageInput.value !== "" && 
+         (validatePhoneNumber(phoneInput.value) || phoneInput.value === "") &&
+         (validateEmail(emailInput)) ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 nameInput.addEventListener("keyup", () => {
     if (nameInput.value !== "") {
-        emptyInputs.children[0].classList.remove("-name");
+        nameInput.nextElementSibling.classList.remove("-message");
     } 
 });
 
 emailInput.addEventListener("keyup", () => {
     if (emailInput.value !== "") {
-        emptyInputs.children[1].classList.remove("-email");
+        emailInput.nextElementSibling.classList.remove("-message");
         validateEmail(emailInput);
     } else {
         error.classList.remove("-error");
@@ -50,9 +53,9 @@ emailInput.addEventListener("keyup", () => {
 
 phoneInput.addEventListener("keyup", () => {
     if(validatePhoneNumber(phoneInput.value) || phoneInput.value === "") {
-        phoneError.classList.remove("-phone");
+        phoneError.classList.remove("-error");
     } else {
-        phoneError.classList.add("-phone");
+        phoneError.classList.add("-error");
     }
 });
 
@@ -64,21 +67,21 @@ phoneInput.addEventListener('invalid', (function(){
 
 messageInput.addEventListener("keyup", () => {
     if (messageInput.value !== "") {
-        emptyInputs.children[2].classList.remove("-message");
+        messageInput.nextElementSibling.classList.remove("-message");
     } 
 });
 
 submitButton.addEventListener("click", (event) => {
     if( !isFormReady() ) {
         event.preventDefault()
-        if (nameInput.value == "") {
-            emptyInputs.children[0].classList.add("-name");
+        if (nameInput.value === "") {
+            nameInput.nextElementSibling.classList.add("-message");
         }
-        if (emailInput.value == "") {
-            emptyInputs.children[1].classList.add("-email");
+        if (emailInput.value === "") {
+            emailInput.nextElementSibling.classList.add("-message");
         }
-        if (messageInput.value == "") {
-            emptyInputs.children[2].classList.add("-message");
+        if (messageInput.value === "") {
+            messageInput.nextElementSibling.classList.add("-message");
         }
     } else {
         form.submit();
