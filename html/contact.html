@@ -39,36 +39,53 @@
 					</div>
 					<!-- CONTACT FORM -->
 					<form id="form" class="c-contactForm" target="_blank" action="" method="POST">
-						<input id="name"  class="c-contactForm__input" type="text" name="name"  placeholder="Name"          required/>
-						<input id="email" class="c-contactForm__input" type="text" name="email" placeholder="Email Address" required/>
-						<!-- EMAIL ERROR MESSAGE -->
-						<div id="error" class="c-empty">
+
+						<!-- NAME INPUT -->
+						<div class="l-inputWrapper">
+							<input id="name"  class="c-contactForm__input" type="text" name="name"  placeholder="Name" required/>
+							<!-- EMPTY FIELD ERROR MESSAGE -->
+							<div class="c-empty -message">
+								<span class="c-empty__message">Can't be empty</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#FFF"/><path fill="#E7816B" d="M11 14v2H9v-2h2zm0-9v7H9V5h2z"/></g></svg>
+							</div>
+						</div>
+
+						<!-- EMAIL INPUT -->
+						<div class="l-inputWrapper">
+							<input id="email" class="c-contactForm__input" type="text" name="email" placeholder="Email Address" required/>
+							<!-- EMPTY FIELD ERROR MESSAGE -->
+							<div class="c-empty -message">
+								<span class="c-empty__message">Can't be empty</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#FFF"/><path fill="#E7816B" d="M11 14v2H9v-2h2zm0-9v7H9V5h2z"/></g></svg>
+							</div>
+						</div>
+						<!-- EMAIL INPUT ERROR MESSAGE -->
+						<div id="error" class="c-empty -error">
 							<span class="c-empty__message">Please use a valid email address</span>
 							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#FFF"/><path fill="#E7816B" d="M11 14v2H9v-2h2zm0-9v7H9V5h2z"/></g></svg>
 						</div>
+
+						<!-- PHONE INPUT -->
 						<input id="phone" class="c-contactForm__input" type="tel"  name="phone" placeholder="Phone (Optional)" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-						<!-- PHONE ERROR MESSAGE -->
-						<div id="phoneFormat" class="c-empty">
+						<!-- PHONE INPUT ERROR MESSAGE -->
+						<div id="phoneFormat" class="c-empty -error">
 							<span class="c-empty__message">Format 525-333-5215</span>
 							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#FFF"/><path fill="#E7816B" d="M11 14v2H9v-2h2zm0-9v7H9V5h2z"/></g></svg>
 						</div>
-						<textarea id="message" class="c-contactForm__textarea" name="text"  placeholder="Your Message" required></textarea>
-						<button id="submitButton" class="f-btn -primary -submit">Send Message</button>
-						<!-- EMPTY FIELD ERROR MESSAGE -->
-						<div id="empty" class="l-emptyFormsWrapper">
-							<div class="c-empty">
-								<span class="c-empty__message">Can't be empty</span>
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#FFF"/><path fill="#E7816B" d="M11 14v2H9v-2h2zm0-9v7H9V5h2z"/></g></svg>
-							</div>
-							<div class="c-empty">
-								<span class="c-empty__message">Can't be empty</span>
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#FFF"/><path fill="#E7816B" d="M11 14v2H9v-2h2zm0-9v7H9V5h2z"/></g></svg>
-							</div>
-							<div class="c-empty">
+
+						<!-- TEXTAREA/MESSAGE INPUT -->
+						<div class="l-inputWrapper">
+							<textarea id="message" class="c-contactForm__textarea" name="text"  placeholder="Your Message" required></textarea>
+							<!-- EMPTY FIELD ERROR MESSAGE -->
+							<div class="c-empty -message">
 								<span class="c-empty__message">Can't be empty</span>
 								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><g fill="none" fill-rule="evenodd"><circle cx="10" cy="10" r="10" fill="#FFF"/><path fill="#E7816B" d="M11 14v2H9v-2h2zm0-9v7H9V5h2z"/></g></svg>
 							</div>
 						</div>
+
+						<!-- SUBMIT BUTTON -->
+						<button id="submitButton" class="f-btn -primary -submit">Send Message</button>
+
 					</form>
 				</section>
 			</div>

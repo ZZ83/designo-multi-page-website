@@ -12,39 +12,29 @@
         font-family: 'Jost';
         font-style: italic;
         font-weight: 400;
-        font-size: 12px;
-        line-height: 26px;
+        font-size: rem(12px);
+        line-height: rem(26px);
         letter-spacing: normal;
         text-transform: none;
     }
 
-.c-empty.-name,
-.c-empty.-email,
-.c-empty.-phone,
 .c-empty.-message,
 .c-empty.-error {
     display: flex;
 }
 
-.c-empty.-error,
-.c-empty.-phone {
+.c-empty.-error {
     position: relative;
+    left: rem(8px);
+    justify-content: flex-start;
+    gap: rem(16px);
+    width: initial;
     margin-top: rem(-20px);
-    margin-left: auto;
-    width: rem(200px);
-    right: 0;
+    padding-bottom: rem(16px);
     text-decoration: underline;
     text-decoration-color: var(--primary);
 }
 
-.c-empty.-email {
-    top: rem(63px);
-}
-
-.c-empty.-phone {
-    width: rem(145px);
-}
-
 .c-empty.-message {
-    top: rem(189px);
+    top: rem(1px);
 }

@@ -17,6 +17,7 @@
 
     .c-contactForm__input,
     .c-contactForm__textarea {
+        width: 100%;
         font-size: rem(15px);
         line-height: rem(26px);
         color: var(--primary);

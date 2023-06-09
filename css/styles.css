@@ -1725,9 +1725,8 @@ a {
   }
 }
 
-.l-emptyFormsWrapper {
-  position: absolute;
-  right: 0;
+.l-inputWrapper {
+  position: relative;
 }
 
 @media (min-width: 1360px) {
@@ -1776,6 +1775,7 @@ a {
 
 .c-contactForm__input,
 .c-contactForm__textarea {
+  width: 100%;
   font-size: 0.9375rem;
   line-height: 1.625rem;
   color: var(--primary);
@@ -1845,41 +1845,31 @@ a {
   font-family: "Jost";
   font-style: italic;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 26px;
+  font-size: 0.75rem;
+  line-height: 1.625rem;
   letter-spacing: normal;
   text-transform: none;
 }
 
-.c-empty.-name,
-.c-empty.-email,
-.c-empty.-phone,
 .c-empty.-message,
 .c-empty.-error {
   display: flex;
 }
 
-.c-empty.-error,
-.c-empty.-phone {
+.c-empty.-error {
   position: relative;
+  left: 0.5rem;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: initial;
   margin-top: -1.25rem;
-  margin-left: auto;
-  width: 12.5rem;
-  right: 0;
+  padding-bottom: 1rem;
   text-decoration: underline;
   text-decoration-color: var(--primary);
 }
 
-.c-empty.-email {
-  top: 3.9375rem;
-}
-
-.c-empty.-phone {
-  width: 9.0625rem;
-}
-
 .c-empty.-message {
-  top: 11.8125rem;
+  top: 0.0625rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
