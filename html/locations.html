@@ -7,6 +7,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 		<link rel="stylesheet" href="../css/styles.css">
 		<title>Frontend Mentor | Designo Agency Website Challenge</title>
 	</head>
@@ -34,11 +36,7 @@
 				<!-- LOCATION -->
 				<div class="l-location -switch">
 					<!-- MAP -->
-					<picture>
-						<source srcset="../assets/locations/desktop/image-map-canada.png" media="(min-width: 1360px)"/>
-						<source srcset="../assets/locations/tablet/image-map-canada.png"  media="(min-width: 768px)"/>
-						<img class="f-map" src="../assets/locations/desktop/image-map-canada.png" alt="Map of Toronto Canada"/>
-					</picture>
+					<div id="canadaMap" class="f-map"></div>
 					<!-- LOCATION CARD -->
 					<div class="c-locationCard -switch">
 						<h2  class="c-locationCard__header">Canada</h2>
@@ -60,11 +58,7 @@
 				<!-- LOCATION -->
 				<div class="l-location">
 					<!-- MAP -->
-					<picture>
-						<source srcset="../assets/locations/desktop/image-map-australia.png" media="(min-width: 1360px)"/>
-						<source srcset="../assets/locations/tablet/image-map-australia.png"  media="(min-width: 768px)"/>
-						<img class="f-map" src="../assets/locations/desktop/image-map-australia.png" alt="Map of New South Wales Australia"/>
-					</picture>
+					<div id="australiaMap" class="f-map"></div>
 					<!-- LOCATION CARD -->
 					<div class="c-locationCard">
 						<h2 class="c-locationCard__header">Australia</h2>
@@ -86,11 +80,7 @@
 				<!-- LOCATION -->
 				<div class="l-location -switch">
 					<!-- MAP -->
-					<picture>
-						<source srcset="../assets/locations/desktop/image-map-uk.png" media="(min-width: 1360px)"/>
-						<source srcset="../assets/locations/tablet/image-map-uk.png"  media="(min-width: 768px)"/>
-						<img class="f-map" src="../assets/locations/desktop/image-map-uk.png" alt="Map of Rhyd-y-fro SA8 9GA United Kingdom"/>
-					</picture>
+					<div id="unitedKingdomMap" class="f-map"></div>
 					<!-- LOCATION CARD -->
 					<div class="c-locationCard -switch"">
 						<h2  class="c-locationCard__header">United Kingdom</h2>
@@ -98,7 +88,7 @@
 							<!-- INFO LOCATION -->
 							<div class="c-info -location"">
 								<strong class="c-info__header">Designo UK Office</strong>
-								<small  class="c-info__text">13  Colorado Way</small>
+								<small  class="c-info__text">17 Waun Penlan</small>
 								<small  class="c-info__text">Rhyd-y-fro SA8 9GA</small>
 							</div>
 							<div class="c-info -location"">
@@ -153,6 +143,7 @@
 				</div>
 			</section>
 		</footer>
+		<script src="../js/maps.js"></script>
 		<script src="../script.js"></script>
 	</body>
 </html>

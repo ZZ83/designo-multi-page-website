@@ -2,11 +2,9 @@
 
 .f-map {
     width: 100%;
-    display: block;
+    height: rem(326px);
+    @extend %flex-center;
     @include mq(medium) {
         border-radius: 15px;
-    }
-    @include mq(large) {
-        height: rem(326px);
     }
 }
