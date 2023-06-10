@@ -1,0 +1,27 @@
+{
+  "name": "designo-multi-page-website",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Designo agency website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass":    "sass sass/styles.scss css/styles.css",
+    "postcss": "postcss css/styles.css --output css/post-styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZZ83/designo-multi-page-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZZ83/designo-multi-page-website/issues"
+  },
+  "homepage": "https://github.com/ZZ83/designo-multi-page-website#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0"
+  }
+}
