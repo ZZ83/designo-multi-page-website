@@ -1184,7 +1184,8 @@ a {
 }
 
 .l-traitsSection {
-  width: 20.4375rem;
+  width: calc(100% - 3rem);
+  max-width: 20.4375rem;
   margin: auto;
   gap: 5rem;
 }

@@ -5,7 +5,7 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass":    "sass sass/styles.scss css/styles.css",
+    "sass": "sass sass/styles.scss css/styles.css",
     "postcss": "postcss css/styles.css --output css/post-styles.css"
   },
   "repository": {
@@ -22,6 +22,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.24",
-    "postcss-cli": "^10.1.0"
+    "postcss-cli": "^10.1.0",
+    "postcss-combine-media-query": "^1.0.1"
   }
 }
