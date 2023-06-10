@@ -1388,14 +1388,14 @@ a {
 }
 
 .c-projectCard__inner {
-  cursor: pointer;
-  border-radius: 0 0 15px 15px;
-  background-color: #FDF3F0;
-  height: 9.875rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
+  border-radius: 0 0 15px 15px;
+  background-color: #FDF3F0;
+  height: 9.875rem;
 }
 @media (min-width: 768px) {
   .c-projectCard__inner {
