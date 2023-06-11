@@ -60,7 +60,12 @@
     }
 
     .c-projectCard__text {
+        max-width: rem(286px);
+        padding: 0 rem(12px);
         color: var(--tertiary-light);
         font-size: 1rem;
         line-height: rem(26px);
+        @include mq(small) {
+            padding: 0;
+        }
     }   

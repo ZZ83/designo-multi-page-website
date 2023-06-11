@@ -1440,9 +1440,16 @@ a {
 }
 
 .c-projectCard__text {
+  max-width: 17.875rem;
+  padding: 0 0.75rem;
   color: var(--tertiary-light);
   font-size: 1rem;
   line-height: 1.625rem;
+}
+@media (min-width: 380px) {
+  .c-projectCard__text {
+    padding: 0;
+  }
 }
 
 @media (min-width: 768px) {
