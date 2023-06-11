@@ -4,7 +4,12 @@
 
 // Media queries
 @mixin mq($break) {
-    @if $break == "medium" {
+    @if $break == "small" {
+        @media (min-width: 380px) {
+            @content;
+        }
+    }
+    @else if $break == "medium" {
         @media (min-width: 768px) {
             @content;
         }

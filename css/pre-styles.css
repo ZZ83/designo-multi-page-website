@@ -827,6 +827,15 @@ a {
   max-width: 24.0625rem;
 }
 
+.c-hero__break {
+  display: none;
+}
+@media (min-width: 380px) {
+  .c-hero__break {
+    display: initial;
+  }
+}
+
 @media (min-width: 1360px) {
   .c-hero.-app,
 .c-hero.-graphic {
