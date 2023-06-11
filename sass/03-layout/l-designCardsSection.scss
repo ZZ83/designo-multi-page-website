@@ -2,7 +2,7 @@
 
 .l-designCardsSection {
     display: grid;
-    gap: 24px;
+    gap: rem(24px);
     @include mq(large) {
         grid-template-columns: repeat(2, 1fr);
     }

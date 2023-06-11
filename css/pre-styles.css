@@ -583,7 +583,7 @@ a {
 
 .l-designCardsSection {
   display: grid;
-  gap: 24px;
+  gap: 1.5rem;
 }
 @media (min-width: 1360px) {
   .l-designCardsSection {
