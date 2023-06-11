@@ -33,7 +33,10 @@
     }
 
     .c-designCard__header {
-        margin-bottom: 2rem;
+        margin-bottom: rem(12px);
+        @include mq(medium) {
+            margin-bottom: rem(24px);
+        }
     }
     
     .c-designCard__text::after {

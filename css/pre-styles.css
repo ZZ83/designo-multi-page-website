@@ -687,7 +687,12 @@ a {
 }
 
 .c-designCard__header {
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 768px) {
+  .c-designCard__header {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .c-designCard__text::after {
