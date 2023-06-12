@@ -1,8 +1,10 @@
 @use '../../../00-tools' as *;
 
 .c-aboutCard {
+    max-width: rem(689px);
     background-color: transparent;
     @include mq(large) {
+        max-width: initial;
         display: flex;
     }
 }

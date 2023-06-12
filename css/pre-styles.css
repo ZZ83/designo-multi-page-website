@@ -1586,10 +1586,12 @@ a {
 }
 
 .c-aboutCard {
+  max-width: 43.0625rem;
   background-color: transparent;
 }
 @media (min-width: 1360px) {
   .c-aboutCard {
+    max-width: initial;
     display: flex;
   }
 }
