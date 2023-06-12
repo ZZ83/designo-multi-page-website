@@ -1409,6 +1409,7 @@ a {
 .c-projectCard__image {
   display: block;
   width: 100%;
+  height: auto;
   border-radius: 15px 15px 0 0;
 }
 @media (min-width: 768px) {

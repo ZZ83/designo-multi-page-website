@@ -13,6 +13,7 @@
     .c-projectCard__image {
         display: block;
         width: 100%;
+        height: auto;
         border-radius: 15px 15px 0 0;
         @include mq(medium) {
             width: 50%;
