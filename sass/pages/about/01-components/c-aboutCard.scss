@@ -11,6 +11,7 @@
 
     .c-aboutCard__image {
         width:  100%;
+        height: auto;
         display: block;
         @include mq(medium) {
             border-radius: 15px 15px 0 0; 
