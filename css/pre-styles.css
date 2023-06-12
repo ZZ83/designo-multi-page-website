@@ -405,6 +405,7 @@ html {
   --primary-dark: hsl(210, 17%, 95%);
   --secondary: hsl(11, 73%, 66%);
   --secondary-light: hsl(11, 100%, 80%);
+  --secondary-dark: hsl(11, 73%, 45%);
   --tertiary: hsl(270, 3%, 11%);
   --tertiary-light: hsl(264, 5%, 20%);
   /*----- FONT SIZE -----*/
@@ -1460,7 +1461,7 @@ a {
 }
 
 .c-projectCard__header {
-  color: var(--secondary);
+  color: var(--secondary-dark);
   padding-bottom: 1rem;
 }
 
