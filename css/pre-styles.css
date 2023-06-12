@@ -1092,7 +1092,7 @@ a {
 
 .f-btn.-secondary {
   color: var(--primary);
-  background-color: var(--secondary);
+  background-color: var(--secondary-dark);
 }
 
 .f-btn.-primary:hover,
