@@ -1463,6 +1463,9 @@ a {
 .c-projectCard__header {
   color: var(--secondary-dark);
   padding-bottom: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.3125rem;
 }
 
 .c-projectCard__text {

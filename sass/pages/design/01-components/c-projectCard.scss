@@ -58,6 +58,9 @@
     .c-projectCard__header {
         color: var(--secondary-dark);
         padding-bottom: rem(16px);
+        font-size: rem(20px);
+        line-height: rem(26px);
+        letter-spacing: rem(5px);
     }
 
     .c-projectCard__text {
