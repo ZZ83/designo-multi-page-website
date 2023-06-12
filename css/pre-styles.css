@@ -491,11 +491,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25rem;
-  color: var(--tertiary-light);
   text-transform: uppercase;
-  line-height: 1.625rem;
-  letter-spacing: 0.3125rem;
 }
 
 p {
@@ -677,6 +673,10 @@ a {
 .c-country__header {
   margin-top: 3rem;
   margin-bottom: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.3125rem;
+  color: var(--tertiary-light);
 }
 
 .c-designCard {

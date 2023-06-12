@@ -12,4 +12,8 @@
 .c-country__header {
     margin-top:    rem(48px);
     margin-bottom: rem(32px);
+    font-size: rem(20px);
+    line-height: rem(26px);
+    letter-spacing: rem(5px);
+    color: var(--tertiary-light);
 }
