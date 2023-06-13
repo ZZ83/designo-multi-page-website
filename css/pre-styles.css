@@ -528,7 +528,7 @@ a {
     width: calc(100% - 5rem);
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .l-wrapper {
     width: calc(100% - 20.625rem);
   }
@@ -552,7 +552,7 @@ a {
   display: grid;
   gap: 7.5rem;
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .l-spacer {
     gap: 10rem;
   }
@@ -566,7 +566,7 @@ a {
     gap: 7.5rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .l-spacer.-design {
     gap: 10rem;
   }
@@ -583,7 +583,7 @@ a {
     gap: 3.625rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .l-countriesSection {
     flex-direction: row;
     gap: 1.875rem;
@@ -595,7 +595,7 @@ a {
   margin-top: 7.5rem;
   margin-bottom: 7.5rem;
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .l-countriesSection.-contact {
     margin-top: 10rem;
     margin-bottom: 10rem;
@@ -606,7 +606,7 @@ a {
   display: grid;
   gap: 1.5rem;
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .l-designCardsSection {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -624,7 +624,7 @@ a {
     padding-top: 10.375rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .l-footer {
     height: 24.5625rem;
     padding-top: 9rem;
@@ -675,7 +675,7 @@ a {
   width: 1px;
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-country {
     width: 21.875rem;
   }
@@ -705,7 +705,7 @@ a {
     height: 12.5rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-designCard {
     height: 19.25rem;
   }
@@ -743,7 +743,7 @@ a {
   grid-row-start: 1;
   grid-row-end: 3;
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-designCard.-home {
     height: 100%;
   }
@@ -757,7 +757,7 @@ a {
     background-image: url("../assets/home/tablet/image-web-design.jpg");
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-designCard.-web {
     background-image: url("../assets/home/desktop/image-web-design-large.jpg");
   }
@@ -771,7 +771,7 @@ a {
     background-image: url("../assets/home/tablet/image-app-design.jpg");
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-designCard.-app {
     background-image: url("../assets/home/desktop/image-app-design.jpg");
   }
@@ -785,7 +785,7 @@ a {
     background-image: url("../assets/home/tablet/image-graphic-design.jpg");
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-designCard.-graphic {
     background-image: url("../assets/home/desktop/image-graphic-design.jpg");
   }
@@ -877,26 +877,26 @@ a {
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-hero.-app,
 .c-hero.-graphic {
     background-position: center left -3.75rem;
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-hero.-web {
     background-position: center right;
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-hero.-app {
     background-image: url(../assets/app-design/desktop/bg-pattern-intro-app.svg);
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-hero.-graphic {
     background-image: url(../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg);
   }
@@ -918,7 +918,7 @@ a {
     margin-right: 0.625rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-info {
     width: 21.875rem;
     margin-right: 1.875rem;
@@ -967,7 +967,7 @@ a {
     background-position: center right -10.625rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-letsTalk {
     height: 18.25rem;
     margin-bottom: -4.5rem;
@@ -993,7 +993,7 @@ a {
     line-height: 2.5rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-letsTalk__header {
     text-align: left;
   }
@@ -1007,7 +1007,7 @@ a {
     max-width: 29.375rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-letsTalk__text {
     text-align: left;
     max-width: 28.4375rem;
@@ -1168,7 +1168,7 @@ a {
 .f-shape {
   display: none;
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .f-shape {
     display: initial;
     position: absolute;
@@ -1176,26 +1176,26 @@ a {
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .f-shape.-top281 {
     top: 17.5625rem;
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .f-shape.-top475 {
     top: 29.6875rem;
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .f-shape.-top885 {
     top: 55.3125rem;
     right: 0;
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .f-shape.-top1777 {
     z-index: -1;
     top: 111.0625rem;
@@ -1203,7 +1203,7 @@ a {
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .f-shape.-top1879 {
     top: 117.4375rem;
     right: 0;
@@ -1225,7 +1225,7 @@ a {
     background-position: top 7.5rem right -7.5rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .l-mainHeroSection {
     display: flex;
     height: 40rem;
@@ -1252,7 +1252,7 @@ a {
     margin-bottom: -3.3125rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .l-traitsSection {
     width: calc(100% - 20.625rem);
     max-width: initial;
@@ -1273,7 +1273,7 @@ a {
     max-width: 35.9375rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-mainHero {
     height: 21.875rem;
     margin: 9.0625rem 0 0 5.9375rem;
@@ -1291,7 +1291,7 @@ a {
     padding-top: 3.75rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-mainHero__header {
     padding: 0;
     text-align: left;
@@ -1309,7 +1309,7 @@ a {
     max-width: 27.8125rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-mainHero__text {
     text-align: left;
     margin-bottom: 0;
@@ -1319,7 +1319,7 @@ a {
 .c-trait {
   color: var(--tertiary-light);
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-trait {
     max-width: 21.875rem;
   }
@@ -1356,7 +1356,7 @@ a {
     padding-bottom: 1rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-trait__header {
     margin-top: 3rem;
     margin-bottom: 2rem;
@@ -1381,7 +1381,7 @@ a {
     padding-top: 39.875rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .f-phoneImage {
     width: 29.3125rem;
     height: 51.25rem;
@@ -1403,7 +1403,7 @@ a {
     gap: 2rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .l-projectsSection {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem 1.875rem;
@@ -1415,7 +1415,7 @@ a {
     display: flex;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-projectCard {
     height: 29.875rem;
     flex-direction: column;
@@ -1434,7 +1434,7 @@ a {
     border-radius: 15px 0 0 15px;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-projectCard__image {
     width: 100%;
     height: 20rem;
@@ -1459,7 +1459,7 @@ a {
     width: 50%;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-projectCard__inner {
     border-radius: 0 0 15px 15px;
     height: 9.875rem;
@@ -1503,7 +1503,7 @@ a {
     grid-template-columns: 1fr;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .l-location {
     gap: 2.71%;
     grid-template-columns: 31.53% 65.76%;
@@ -1526,7 +1526,7 @@ a {
     width: calc(100% - 5rem);
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .l-locationSection {
     gap: 2rem;
     width: calc(100% - 20.625rem);
@@ -1578,13 +1578,13 @@ a {
     margin: initial;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-locationCard__inner {
     justify-content: space-between;
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-locationCard.-switch {
     order: -1;
   }
@@ -1604,7 +1604,7 @@ a {
   max-width: 43.0625rem;
   background-color: transparent;
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-aboutCard {
     max-width: initial;
     display: flex;
@@ -1621,14 +1621,14 @@ a {
     border-radius: 15px 15px 0 0;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-aboutCard__image {
     height: 100%;
     border-radius: 0 15px 15px 0;
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-aboutCard__image.-world {
     border-radius: 15px 0 0 15px;
   }
@@ -1662,7 +1662,7 @@ a {
     border-radius: 0 0 15px 15px;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-aboutCardContent {
     width: 57.4%;
     background-position: bottom left -9.125rem;
@@ -1671,7 +1671,7 @@ a {
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-aboutCardContent__header,
 .c-aboutCardContent__text {
     text-align: left;
@@ -1701,7 +1701,7 @@ a {
     border-radius: 0 0 15px 15px;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-aboutCardContent.-real {
     border-radius: 15px 0 0 15px;
     background-image: url(../assets/shared/desktop/bg-pattern-two-circles.svg);
@@ -1725,7 +1725,7 @@ a {
     border-radius: 0 0 15px 15px;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-aboutUsCardContent {
     width: 57.4%;
     padding: 8.4375rem 5rem 8.4375rem 5.9375rem;
@@ -1734,7 +1734,7 @@ a {
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-aboutUsCardContent__header,
 .c-aboutUsCardContent__text {
     text-align: left;
@@ -1763,7 +1763,7 @@ a {
     background-position: top -5.1875rem left -7.625rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .l-contactBackgroundImage {
     background-position: bottom left;
   }
@@ -1780,7 +1780,7 @@ a {
     max-width: 42.8125rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .l-contactSection {
     display: flex;
     gap: 5.9375rem;
@@ -1793,7 +1793,7 @@ a {
   position: relative;
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-contactContent {
     max-width: 27.8125rem;
   }
@@ -1814,7 +1814,7 @@ a {
     margin-bottom: 2rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-contactContent__header {
     margin-top: 5rem;
   }
@@ -1829,7 +1829,7 @@ a {
     margin-top: 2.5rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-contactForm {
     width: 100%;
     max-width: 23.75rem;
@@ -1856,7 +1856,7 @@ a {
     padding-left: 1.5rem;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1360px) {
   .c-contactForm__input,
 .c-contactForm__textarea {
     padding-left: 1rem;
