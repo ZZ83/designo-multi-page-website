@@ -15,7 +15,7 @@
         }
     }
     @else if $break == "large" {
-        @media (min-width: 1360px) {
+        @media (min-width: 1350px) {
             @content;
         }
     }

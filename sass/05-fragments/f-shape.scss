@@ -30,6 +30,7 @@
 
 .f-shape.-top1777 {
     @include mq(large) {
+        z-index: -1;
         top: rem(1777px);
         right: rem(-396px);
     }
