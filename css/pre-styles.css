@@ -879,7 +879,7 @@ a {
 
 @media (min-width: 1360px) {
   .c-hero.-app,
-.c-hero.-graphic {
+  .c-hero.-graphic {
     background-position: center left -3.75rem;
   }
 }
@@ -1673,7 +1673,7 @@ a {
 
 @media (min-width: 1360px) {
   .c-aboutCardContent__header,
-.c-aboutCardContent__text {
+  .c-aboutCardContent__text {
     text-align: left;
   }
 }
@@ -1736,7 +1736,7 @@ a {
 
 @media (min-width: 1360px) {
   .c-aboutUsCardContent__header,
-.c-aboutUsCardContent__text {
+  .c-aboutUsCardContent__text {
     text-align: left;
   }
 }
@@ -1801,7 +1801,7 @@ a {
 
 @media (min-width: 768px) {
   .c-contactContent__header,
-.c-contactContent__text {
+  .c-contactContent__text {
     text-align: left;
   }
 }
@@ -1852,13 +1852,13 @@ a {
 }
 @media (min-width: 768px) {
   .c-contactForm__input,
-.c-contactForm__textarea {
+  .c-contactForm__textarea {
     padding-left: 1.5rem;
   }
 }
 @media (min-width: 1360px) {
   .c-contactForm__input,
-.c-contactForm__textarea {
+  .c-contactForm__textarea {
     padding-left: 1rem;
   }
 }
