@@ -22,3 +22,8 @@ Lorem ipsum dolor sit amet, consectetur [Designo agency website challenge on Fro
 
 ## How I Organized the Project
 One of the challenges I faced when working on this project was how do I organize my CSS. To help me solve this problem, I researched different CSS methodologies by reading articles and watching informative videos. I ultimately decided on an approach that mixes [ABEM](https://imarc-boilerplate.netlify.app/pattern-library/docs/abem.html) with [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/) and my own personal preference.
+
+
+## Form
+When submitting the contact form, an error message, "Can't be empty," will be displayed if any of the required form fields are left empty.
+![](./assets/empty-form.jpg)
