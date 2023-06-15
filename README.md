@@ -1,5 +1,5 @@
 # Designo Agency Website
-![](./assets/des.png)
+![](./assets/main.jpg)
 
 
 ## About The Project
