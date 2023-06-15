@@ -26,4 +26,4 @@ One of the challenges I faced when working on this project was how do I organize
 
 ## Form
 When submitting the contact form, an error message, "Can't be empty," will be displayed if any of the required form fields are left empty.
-![](./assets/empty.png)
+![](./assets/empty-form.jpg)
