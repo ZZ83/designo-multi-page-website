@@ -35,6 +35,6 @@ If the email address or phone number is not formatted correctly, an error messag
 
 
 ## Leaflet.js
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+I used Leaflet.js to help me display the map locations on the location page.
 
 ![](./assets/leaf.jpg)
