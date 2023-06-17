@@ -3,7 +3,7 @@
 
 
 ## About The Project
-This is a solution to the [Designo agency website challenge](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT) on Frontend Mentor. It is a seven-page website with a home, our company, location, and contact page. In addition, there are three more pages to showcase the app, web, and graphic design projects. These three design pages all share the same layout.
+This is my solution to the [Designo agency website challenge](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT) on Frontend Mentor. It is a seven-page website with a home, our company, location, and contact page. In addition, there are three more pages to showcase the app, web, and graphic design projects. These three design pages all share the same page layout.
 
 [Frontend Mentor](https://www.frontendmentor.io) provided the design as a Figma file, and I was the only person to work on the project. It was a fun and challenging project that helped reinforce my HTML, CSS, and JavaScript skills, and I look forward to more challenges in the future.
 
