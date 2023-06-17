@@ -3,7 +3,7 @@
 
 
 ## About The Project
-Lorem ipsum dolor sit amet, consectetur [Designo agency website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT). adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This is a solution to the [Designo agency website challenge](https://www.frontendmentor.io/challenges/designo-multipage-website-G48K6rfUT) on Frontend Mentor. It is a seven-page website with a home, our company, location, and contact page. In addition, there are three more pages to showcase the app, web, and graphic design projects. These three design pages all share the same layout. The website was a fun and challenging project that helped me to grow my Front-End Development skills.
 
 
 ## How I Organized the Project
